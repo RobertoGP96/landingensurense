@@ -1,0 +1,26 @@
+{
+  "name": "M C Solutions Insurance LLC",
+  "short_name": "MC Solutions",
+  "description": "Cobertura con visión de águila — seguros bilingües en FL, TX y GA.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#e3edf3",
+  "theme_color": "#0a1628",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/assets/eagle.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
