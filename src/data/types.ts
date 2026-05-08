@@ -6,6 +6,38 @@ export type CoverageItem = {
   bullets: string[];
 };
 
+export type ProductCategory = "personal" | "commercial" | "specialty";
+
+export type ProductItem = {
+  slug: string;
+  num: string;
+  name: string;
+  tagline: string;
+  body: string;
+  bullets: string[];
+  category: ProductCategory;
+};
+
+export type FieldType = "text" | "email" | "tel" | "textarea" | "select" | "date" | "number";
+
+export type FieldDef = {
+  key: string;
+  label: string;
+  type: FieldType;
+  placeholder?: string;
+  required?: boolean;
+  options?: string[];
+};
+
+export type ServiceItem = {
+  slug: string;
+  num: string;
+  name: string;
+  tagline: string;
+  body: string;
+  formFields: FieldDef[];
+};
+
 export type Translation = {
   nav: string[];
   topbar: { hours: string; phone: string; license: string };
@@ -78,6 +110,56 @@ export type Translation = {
     after: string;
     after_d: string;
   };
+  products: {
+    kicker: string;
+    heading_a: string;
+    heading_it: string;
+    heading_b: string;
+    lede: string;
+    categories: { personal: string; commercial: string; specialty: string };
+    detail: { overview: string; coverage: string; quote_cta: string; back: string };
+    items: ProductItem[];
+  };
+  services: {
+    kicker: string;
+    heading_a: string;
+    heading_it: string;
+    heading_b: string;
+    lede: string;
+    detail: { request: string; back: string };
+    items: ServiceItem[];
+  };
+  contact_form: {
+    kicker: string;
+    heading_a: string;
+    heading_it: string;
+    heading_b: string;
+    sub: string;
+    labels: {
+      name: string;
+      email: string;
+      phone: string;
+      subject: string;
+      message: string;
+      consent: string;
+    };
+    placeholders: { name: string; email: string; phone: string; message: string };
+    subjects: string[];
+    submit: string;
+  };
+  forms: {
+    step: string;
+    of: string;
+    next: string;
+    back: string;
+    review: string;
+    submitting: string;
+    success_title: string;
+    success_body: string;
+    required: string;
+    summary: string;
+  };
+  quote_extra: Record<string, FieldDef[]>;
   footer: {
     tag: string;
     states: string;
@@ -85,6 +167,7 @@ export type Translation = {
     links: string[];
     address: string;
     lic: string;
+    cols: { products: string; services: string; company: string };
   };
 };
 

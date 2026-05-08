@@ -1,5 +1,10 @@
 import type { Translation } from "../data/types";
+import { Link } from "react-router";
+
 export default function Footer({ t }: { t: Translation }) {
+  const productCols = t.products.items.slice(0, 8);
+  const services = t.services.items;
+
   return (
     <footer
       style={{
@@ -45,30 +50,54 @@ export default function Footer({ t }: { t: Translation }) {
               {t.footer.lic}
             </p>
           </div>
-          {[
-            { h: t.nav[0], items: t.coverage.items.slice(0, 4).map((i) => i.name) },
-            { h: t.nav[3] || "Servicios", items: t.coverage.items.slice(4).map((i) => i.name) },
-            {
-              h: t.nav[4] || "Contacto",
-              items: [t.topbar.phone, "hola@mcsolutionsins.com", t.footer.states],
-            },
-          ].map((col, i) => (
-            <div key={i}>
-              <div className="mono" style={{ opacity: 0.55, marginBottom: 18 }}>
-                {col.h}
-              </div>
-              <ul
-                className="grid"
-                style={{ listStyle: "none", padding: 0, margin: 0, gap: 10 }}
-              >
-                {col.items.map((it, j) => (
-                  <li key={j} style={{ fontSize: 14, color: "var(--color-ink)" }}>
-                    <a href="#">{it}</a>
-                  </li>
-                ))}
-              </ul>
+
+          <div>
+            <div className="mono" style={{ opacity: 0.55, marginBottom: 18 }}>
+              {t.footer.cols.products}
             </div>
-          ))}
+            <ul className="grid" style={{ listStyle: "none", padding: 0, margin: 0, gap: 10 }}>
+              {productCols.map((p) => (
+                <li key={p.slug} style={{ fontSize: 14, color: "var(--color-ink)" }}>
+                  <Link to={`/products/${p.slug}`}>{p.name}</Link>
+                </li>
+              ))}
+              <li style={{ fontSize: 13, color: "var(--color-ink)", opacity: 0.7 }}>
+                <Link to="/products">→ {t.products.detail.back}</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="mono" style={{ opacity: 0.55, marginBottom: 18 }}>
+              {t.footer.cols.services}
+            </div>
+            <ul className="grid" style={{ listStyle: "none", padding: 0, margin: 0, gap: 10 }}>
+              {services.map((s) => (
+                <li key={s.slug} style={{ fontSize: 14, color: "var(--color-ink)" }}>
+                  <Link to={`/services/${s.slug}`}>{s.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <div className="mono" style={{ opacity: 0.55, marginBottom: 18 }}>
+              {t.footer.cols.company}
+            </div>
+            <ul className="grid" style={{ listStyle: "none", padding: 0, margin: 0, gap: 10 }}>
+              <li style={{ fontSize: 14 }}>
+                <Link to="/quote">{t.nav[1]}</Link>
+              </li>
+              <li style={{ fontSize: 14 }}>
+                <Link to="/contact">{t.nav[5]}</Link>
+              </li>
+              <li style={{ fontSize: 14, color: "var(--color-ink-soft)" }}>{t.topbar.phone}</li>
+              <li style={{ fontSize: 14, color: "var(--color-ink-soft)" }}>
+                hola@mcsolutionsins.com
+              </li>
+              <li style={{ fontSize: 13, color: "var(--color-ink-soft)" }}>{t.footer.states}</li>
+            </ul>
+          </div>
         </div>
 
         <div
