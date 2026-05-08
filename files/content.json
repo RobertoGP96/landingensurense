@@ -1,0 +1,5310 @@
+{
+  "company": {
+    "legalName": "ATI Insurance Group, Inc.",
+    "incorporated": "2015-06-08",
+    "incorporatedState": "Florida",
+    "type": "Independent insurance agency",
+    "specialty": "Commercial Truck Insurance",
+    "tagline": "We are in the business of helping people. We help consumers save money, we help businesses reduce risk and we help families protect and preserve their financial future.",
+    "homeHeadline": "How can we help you today?",
+    "mission": "To provide an affordable, trustworthy, and immediate valuable service with respect and integrity.",
+    "vision": "To be one of the largest independent insurance agencies in South Florida. The goal of our company is to continually grow in ability, excellence, size, stature, profitability, and employee development. Our core values will be utilized as an active guide to achieve this goal so that we can continue being a company that is respected, humble, and a true value to its clients, employees and communities. All of this will be achieved through our most important asset, our staff, who is empowered to reflect the deep rooted principles of integrity, stability and commitment to our vision.",
+    "coreValues": [
+      {
+        "letter": "A",
+        "title": "Affordable",
+        "description": "Affordable and promptly priced insurance quotes, with the highest customer service response."
+      },
+      {
+        "letter": "T",
+        "title": "Trustworthy",
+        "description": "Trustworthy professional concerns, to our clients' insurance needs."
+      },
+      {
+        "letter": "I",
+        "title": "Integrity",
+        "description": "Integrity, high ethical standards, respect and honesty for our clients."
+      }
+    ],
+    "aboutShort": "ATI Insurance Group, Inc. is an independent insurance agency licensed in Florida and specializing in Commercial Truck Insurance, and offering products of service in other areas of Personal & Commercial Insurance.",
+    "aboutLong": "Our insurance agency is proud to serve Miami Dade and the surrounding Florida communities by protecting the people we work with just like we protect our own family members. If you're not thrilled with your current insurance contact us today.",
+    "logoUrl": "https://www.atiinsurancegroup.com/uploads/6/4/1/8/64182739/published/ati.png?1687549770"
+  },
+  "contact": {
+    "phone": "(305) 603-7757",
+    "phoneE164": "+13056037757",
+    "fax": "(305) 603-7734",
+    "email": "[email protected]",
+    "physicalAddress": {
+      "line1": "2451 W 68th Street",
+      "line2": "Suite #1",
+      "city": "Hialeah",
+      "state": "FL",
+      "zip": "33016"
+    },
+    "mailingAddress": {
+      "line1": "8004 NW 154 St",
+      "line2": "Unit 106",
+      "city": "Miami Lakes",
+      "state": "FL",
+      "zip": "33016"
+    },
+    "coordinates": {
+      "lat": 25.8848958,
+      "lng": -80.3326866
+    },
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "hours": {
+      "monFri": "9:30am - 5:00pm",
+      "saturday": "By Appointment Only",
+      "sunday": "Closed",
+      "online": "24/7/365"
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/atiinsurancegroup",
+      "instagram": "https://instagram.com/atiinsurancegroup"
+    },
+    "agentLogin": "http://www.atiinsurancegroup.com/login"
+  },
+  "licensedStates": [
+    "Florida",
+    "Georgia",
+    "Illinois",
+    "Mississippi",
+    "North Carolina",
+    "New Jersey",
+    "Texas"
+  ],
+  "testimonials": [
+    {
+      "name": "Maria P.",
+      "quote": "Switching to your agency was one of the best financial decisions I ever made. And not just because you saved me so much money."
+    },
+    {
+      "name": "Robert B.",
+      "quote": "As a small business owner, I have so many different things to worry about. It means so much to me that my insurance is not one of them. Thanks to all of you."
+    },
+    {
+      "name": "Julianne S.",
+      "quote": "Money in our household is pretty tight right now. That's why saving so much on our insurance policies made such a huge difference."
+    }
+  ],
+  "navigation": {
+    "primary": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Quotes",
+        "href": "/quotes",
+        "children": [
+          {
+            "label": "Trucking Insurance Quote",
+            "href": "/quotes/trucking"
+          },
+          {
+            "label": "Auto Quote",
+            "href": "https://secure.consumerratequotes.com/ConsumerV2?id=64845",
+            "external": true
+          },
+          {
+            "label": "Homeowner Quote",
+            "href": "/quotes/homeowner"
+          },
+          {
+            "label": "Business Quote",
+            "href": "/quotes/business"
+          },
+          {
+            "label": "Boatowner Quote",
+            "href": "/quotes/boatowner"
+          },
+          {
+            "label": "Business Owners Package (BOP) Insurance Quote",
+            "href": "/quotes/bop"
+          },
+          {
+            "label": "Condo Quote",
+            "href": "/quotes/condo"
+          },
+          {
+            "label": "Event Insurance Quote",
+            "href": "/quotes/event"
+          },
+          {
+            "label": "Flood Quote",
+            "href": "/quotes/flood"
+          },
+          {
+            "label": "Health Insurance Quote",
+            "href": "/quotes/health"
+          },
+          {
+            "label": "Insurance Bonds Quote",
+            "href": "/quotes/bonds"
+          },
+          {
+            "label": "Landlords Insurance Quote",
+            "href": "/quotes/landlords"
+          },
+          {
+            "label": "Renters Quote",
+            "href": "/quotes/renters"
+          },
+          {
+            "label": "Umbrella Quote",
+            "href": "/quotes/umbrella"
+          },
+          {
+            "label": "Workers Compensation Quote",
+            "href": "/quotes/workers-comp"
+          }
+        ]
+      },
+      {
+        "label": "Services",
+        "href": "/services",
+        "children": [
+          {
+            "label": "Certificates",
+            "href": "/services/certificates"
+          },
+          {
+            "label": "Update Contact Info",
+            "href": "/services/update-contact"
+          },
+          {
+            "label": "Policy Changes",
+            "href": "/services/policy-changes",
+            "children": [
+              {
+                "label": "Add & Remove Driver(s)",
+                "href": "/services/policy-changes/drivers"
+              },
+              {
+                "label": "Add & Remove Vehicle(s)",
+                "href": "/services/policy-changes/vehicles"
+              }
+            ]
+          },
+          {
+            "label": "Proof of Insurance",
+            "href": "/services/proof-of-insurance"
+          },
+          {
+            "label": "Endorsement Request",
+            "href": "/services/endorsement"
+          },
+          {
+            "label": "Online Documents",
+            "href": "/services/documents"
+          },
+          {
+            "label": "Free Consultation",
+            "href": "/services/consultation"
+          }
+        ]
+      },
+      {
+        "label": "Products",
+        "href": "/products",
+        "children": [
+          {
+            "label": "Trucking Insurance",
+            "href": "/products/trucking"
+          },
+          {
+            "label": "Auto Insurance",
+            "href": "/products/auto"
+          },
+          {
+            "label": "Home Insurance",
+            "href": "/products/home"
+          },
+          {
+            "label": "Business Insurance",
+            "href": "/products/business"
+          },
+          {
+            "label": "Boat Insurance",
+            "href": "/products/boat"
+          },
+          {
+            "label": "Business Owners Package (BOP) Insurance",
+            "href": "/products/bop"
+          },
+          {
+            "label": "Condo Insurance",
+            "href": "/products/condo"
+          },
+          {
+            "label": "Event Insurance",
+            "href": "/products/event"
+          },
+          {
+            "label": "Flood Insurance",
+            "href": "/products/flood"
+          },
+          {
+            "label": "Health Insurance",
+            "href": "/products/health"
+          },
+          {
+            "label": "Insurance Bonds",
+            "href": "/products/bonds"
+          },
+          {
+            "label": "Landlords Insurance",
+            "href": "/products/landlords"
+          },
+          {
+            "label": "Renters Insurance",
+            "href": "/products/renters"
+          },
+          {
+            "label": "Umbrella Insurance",
+            "href": "/products/umbrella"
+          },
+          {
+            "label": "Workers Compensation",
+            "href": "/products/workers-comp"
+          }
+        ]
+      },
+      {
+        "label": "About",
+        "href": "/about",
+        "children": [
+          {
+            "label": "Client Testimonials",
+            "href": "/about/testimonials"
+          },
+          {
+            "label": "Refer a Friend",
+            "href": "/about/refer"
+          },
+          {
+            "label": "Industry Links",
+            "href": "/about/industry-links"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy"
+          },
+          {
+            "label": "Accessibility Statement",
+            "href": "/accessibility"
+          },
+          {
+            "label": "News",
+            "href": "/news"
+          }
+        ]
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ]
+  },
+  "products": [
+    {
+      "slug": "trucking",
+      "name": "Trucking Insurance",
+      "category": "commercial-trucking",
+      "featured": true,
+      "hero": {
+        "title": "Trucking Insurance",
+        "subtitle": ""
+      },
+      "description": "",
+      "sections": [
+        {
+          "title": "Coverages Available",
+          "items": [
+            {
+              "title": "Liability",
+              "description": "Every motor carrier must carry liability insurance on every truck and trailer, as well as leased units. Liability insurance protects you against liability arising from damage or injuries to other people because of trucking accidents."
+            },
+            {
+              "title": "Physical Damage",
+              "description": "Is coverage for your truck and/or trailer. This type of coverage provides actual cash value protection for your equipment in the event of an accident. This coverage applies to (but is not limited to) collision, vandalism and theft of the insured equipment. Your premium is based on the value of your equipment and is usually a percentage of the value. Coverage is not required by law, but if your vehicle is financed, the lien-holder (bank/loss payee) will require this coverage."
+            },
+            {
+              "title": "Motor Truck Cargo",
+              "description": "Provides insurance on the freight or commodity hauled by a For-hire trucker. It covers your liability for cargo that is lost or damaged due to causes such as fire, collision, or striking of a load. The policy is purchased with maximum load limit per vehicle. The value of the load, and who is responsible for the condition of the load, should be clearly established and understood by both the shipper and the transporter before the shipment is moved. This is usually by contract or bill of lading."
+            },
+            {
+              "title": "Non-Trucking Liability (Bob-Tail) or NTL",
+              "description": "Is insurance coverage for when you use your truck for non-business purposes. NTL offers you liability coverage for property damage or bodily injury to a third party. Any personal use between your return and next dispatch points will be covered under NTL."
+            },
+            {
+              "title": "Occupational Accident",
+              "description": "Trucker's Occupational Accident is an alternative to Workers Compensation, which is accident coverage for an owner operator or driver who gets injured while under dispatch. Note: this coverage is only available when Workers Compensation is not required."
+            },
+            {
+              "title": "General Liability Insurance (GL)",
+              "description": "Is coverage that can protect you from a variety of claims including bodily injury, property damage, personal injury and others that can arise from your business operations."
+            },
+            {
+              "title": "Garage Liability",
+              "description": "Any business that handles customers' vehicles needs garage liability insurance in addition to its commercial general liability coverage. This includes businesses such as repair shops, car dealerships, tow truck drivers and service stations."
+            },
+            {
+              "title": "Garage Keepers",
+              "description": "Legal Liability coverage is a coverage designed for business owners who offer towing services or operate service stations. It protects a customer's vehicle when you are keeping it at a covered location for parking or storing, or to perform service."
+            },
+            {
+              "title": "Warehouse Legal",
+              "description": "Is a third-party liability insurance coverage. That means that if the warehouse operator is negligent in the care of the customer's goods, the insurance carrier directly pays the customer for the loss incurred."
+            },
+            {
+              "title": "Trailer Interchange",
+              "description": "A type of coverage available under either the truckers or the motor carrier policy form that covers the insured's legal liability for damage to the trailers of others. Coverage is also available, by endorsement, under the business auto policy (BAP)."
+            },
+            {
+              "title": "State & Federal Filings",
+              "description": "Filings are electronic confirmation of insurance coverage sent direct from the insurance carrier. Note, that state filings may be required by some states, where federal filings will be required by the Federal Motor Carrier Safety Administration (FMCSA) for all trucking companies that travel interstate (long haul). These required federal filings are filed under forms BMC 91X (Liability) and BMC 34 (Cargo)."
+            },
+            {
+              "title": "Intermodal Trucking",
+              "description": "Intermodal trucking is the transfer of goods and products using various forms of transportation including the road, railroad tracks and water. We design an insurance policy that is specific to your business. With intermodal insurance, we offer you all the coverage and protection you could possibly need. Whether your business delivers your own products and commodities or products for another entity, we cover it all. Traveling by truck, train or ship; every form of transportation is exposed to different risks."
+            },
+            {
+              "title": "Customs Bond",
+              "description": "A Customs bond is a financial guaranty between 3 parties: the Insurance/Surety company issuing the Customs bond, the Principal (who is required to file the bond), and Customs & Border Protection (CBP)."
+            },
+            {
+              "title": "Surety Bond",
+              "description": "A surety bond is defined as a contract among at least three parties: the obligee - the party who is the recipient of an obligation, the principal, the primary party who will perform the contractual obligation; the surety is who assures the obligee that the principal can perform the task."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "auto",
+      "name": "Auto Insurance",
+      "category": "personal",
+      "featured": false,
+      "hero": {
+        "title": "Auto Insurance",
+        "subtitle": "Get an auto insurance quote from our agency and you may save thousands of dollars a year. It only takes a few minutes to find out how much we can save you!"
+      },
+      "description": "Auto insurance provides financial protection against physical damage and/or bodily injury resulting from traffic collisions and against liability that could also arise therefrom. Auto insurance may also offers financial protection against theft of the vehicle and damage to the vehicle, sustained from things other than traffic collisions.",
+      "sections": [
+        {
+          "title": "Auto Insurance Coverages",
+          "items": [
+            {
+              "title": "Bodily injury liability",
+              "description": "for injuries the policyholder causes to someone else."
+            },
+            {
+              "title": "Medical payments or Personal Injury Protection (PIP)",
+              "description": "for treatment of injuries to the driver and passengers of the policyholder's car."
+            },
+            {
+              "title": "Property damage liability",
+              "description": "for damage the policyholder causes to someone else's property."
+            },
+            {
+              "title": "Collision",
+              "description": "for damage to the policyholder's car from a collision."
+            },
+            {
+              "title": "Comprehensive",
+              "description": "for damage to the policyholder's car not involving a collision with another car (including damage from fire, explosions, earthquakes, floods, and riots), and theft."
+            },
+            {
+              "title": "Uninsured motorists coverage",
+              "description": "for costs resulting from an accident involving a hit-and-run driver or a driver who does not have insurance."
+            }
+          ],
+          "intro": "There are basically six different types of coverages. Some may be required by law. Others are optional. They are:"
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "name": "Home Insurance",
+      "category": "personal",
+      "featured": false,
+      "hero": {
+        "title": "Home Insurance",
+        "subtitle": "As your largest investment, it's important to make sure your home has the proper insurance coverage. We'll protect your home and everything in it for the lowest possible price."
+      },
+      "description": "Home insurance, also commonly called hazard insurance or homeowner's insurance (and often abbreviated in the US real estate industry as HO1), is a type of property insurance that covers a private residence. It is an insurance policy that combines various personal insurance protections, which can include losses occurring to one's home, its contents, loss of use (additional living expenses), or loss of other personal possessions of the homeowner, as well as liability insurance for accidents that may happen at the home or at the hands of the homeowner within the policy territory.",
+      "sections": [
+        {
+          "title": "Typical Home Insurance Coverages",
+          "items": []
+        },
+        {
+          "title": "Section I — Property Coverages",
+          "items": [
+            {
+              "title": "Coverage A – Dwelling",
+              "description": "Covers the value of the dwelling itself (not including the land). Typically, a coinsurance clause states that as long as the dwelling is insured to 80% of actual value, losses will be adjusted at replacement cost, up to the policy limits. This is in place to give a buffer against inflation. HO-4 (renter's insurance) typically has no Coverage A, although it has additional coverages for improvements."
+            },
+            {
+              "title": "Coverage B – Other Structures",
+              "description": "Covers other structure around the property that are not used for business, except as a private garage. Typically limited at 10% to 20% of the Coverage A, with additional amounts available by endorsement."
+            },
+            {
+              "title": "Coverage C – Personal Property",
+              "description": "Covers personal property, with limits for the theft and loss of particular classes of items (e.g., $200 for money, banknotes, bullion, coins, medals, etc.). Typically 50 to 70% of coverage A is required for contents."
+            },
+            {
+              "title": "Coverage D – Loss of Use/Additional Living Expenses",
+              "description": "Covers expenses associated with additional living expenses (i.e. rental expenses) and fair rental value, if part of the residence was rented, however only the rental income for the actual rent of the space not services provided such as utilities."
+            },
+            {
+              "title": "Additional Coverages",
+              "description": "Covers a variety of expenses such as debris removal, reasonable repairs, damage to trees and shrubs for certain named perils (excluding the most common causes of damage, wind and ice), fire department changes, removal of property, credit card / identity theft charges, loss assessment, collapse, landlord's furnishing, and some building additions. These vary depending upon the form."
+            },
+            {
+              "title": "Exclusions",
+              "description": "In an open perils policy, specific exclusions will be stated in this section. These generally include earth movement, water damage, power failure, neglect, war, nuclear hazard, septic tank back-up expenses, intentional loss, and concurrent causation (for HO3)."
+            },
+            {
+              "title": "Floods",
+              "description": "Flood damage is typically excluded under standard homeowners and renters insurance policies. Flood coverage, however, is available in the form of a separate policy both from the National Flood Insurance Program (NFIP) and from a few private insurers."
+            }
+          ]
+        },
+        {
+          "title": "Section II — Liability Coverages",
+          "items": [
+            {
+              "title": "Coverage E – Personal Liability",
+              "description": "Covers damages which the insured is legally liable for and provides a legal defense at the insurer's own expense. About a third of the losses for this coverage are from dog bites."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "business",
+      "name": "Business Insurance",
+      "category": "commercial",
+      "featured": false,
+      "hero": {
+        "title": "Business Insurance",
+        "subtitle": "Having the proper business insurance coverage at an affordable rate can make the difference between the success and failure of your business. Allow our commercial insurance experts to help guide you to success."
+      },
+      "description": "Business insurance protects your investment by minimizing financial risks associated with unexpected events such as a death of a partner, an injured employee, a lawsuit, or a natural disaster. Business Insurance is a broad name for different coverages available to the business owner to protect against losses and to insure the continuing operation of the business.",
+      "sections": [
+        {
+          "title": "Major Types of Business Insurance",
+          "items": [
+            {
+              "title": "Commercial Auto Insurance",
+              "description": "Covers cars, trucks, motorcycles, and other road vehicles owned by or operated within a business. Its primary use is to provide financial protection against physical damage and/or bodily injury resulting from traffic collisions and against liability that could also arise therefrom. Commercial auto insurance may also offer financial protection against theft of the vehicle and possibly damage to the vehicle, sustained from events other than traffic collisions."
+            },
+            {
+              "title": "Commercial Property Insurance",
+              "description": "Covers risk of loss to an organization's buildings or personal property. Usually includes buildings, personal property of the insured business or business owner, personal property of others on site and in the insured's possession. Coverage can be provided on an all risk or specific perils basis."
+            },
+            {
+              "title": "Commercial Umbrella Insurance",
+              "description": "Commercial Umbrella insurance is liability coverage that is in excess of specified other commercial insurance policies and also potentially primary insurance for losses not covered by the other policies. When an insured business is liable to someone, the insured's primary insurance policies pay up to their limits and any additional amount is paid by the umbrella policy (up to the coverage limit of the umbrella policy)."
+            },
+            {
+              "title": "Professional Liability Insurance",
+              "description": "Professional liability insurance (PLI), also called professional indemnity insurance (PII) but more commonly known as errors & omissions (E&O) in the US, is a form of liability insurance that helps protect professional advice and service-providing companies from bearing the full cost of defending against a negligence claim made by a client, and damages awarded in such a civil lawsuit. Professional liability coverage sometimes also provides for the defense costs, including when legal action turns out to be groundless."
+            },
+            {
+              "title": "Business Owner's Package",
+              "description": "A Business Owner's Package (often called a BOP) is an insurance policiy that combines protection from all major property and liability risks in one package. It typically combines all the basic coverages required by a business owner into one bundle. It is usually sold at a premium that is less than the total cost of the individual coverages. Business Owners Policies usually target small and medium-sized businesses and typically contain business interruption insurance, which provides reimbursement for up to a year of lost revenue resulting from an insured property loss."
+            },
+            {
+              "title": "Workers Compensation",
+              "description": "Workers' compensation is a form of insurance providing wage replacement and medical benefits to employees injured in the course of employment in exchange for mandatory relinquishment of the employee's right to sue his or her employer for the tort of negligence."
+            },
+            {
+              "title": "Group Health Insurance",
+              "description": "Group health insurance coverage is a policy that is purchased by an employer and is offered to eligible employees of the company (and often to the employees' family members) as a benefit of working for that company. A group health insurance plan is a major part of many employee benefits packages that employers provide for their employees."
+            },
+            {
+              "title": "Group Life Insurance",
+              "description": "Group life insurance (also known as wholesale life insurance or institutional life insurance) is term insurance covering a group of people, usually employees of a company, members of a union or association, or members of a pension or superannuation fund. Individual proof of insurability is not normally a consideration in the underwriting. Rather, the underwriter considers the size, turnover, and financial strength of the group."
+            },
+            {
+              "title": "Group Disability Insurance",
+              "description": "Group Disability Insurance is a type of group insurance that provides regular income replacement payments to an insured member of the group in the event of an eligible disability resulting from illness or injury. Coverage is generally offered in two types: short-term disability (STD) or long-term disability (LTD)."
+            },
+            {
+              "title": "Supplemental Insurance",
+              "description": "Supplemental insurance is extra or additional insurance that you can purchase to help you pay for services and out-of-pocket expenses that your regular insurance does not cover."
+            }
+          ],
+          "intro": "General Liability Insurance A standard insurance policy issued to business organizations to protect them against liability claims for bodily injury and property damage arising out of premises, operations, products, and completed operations; and advertising and personal injury liability."
+        }
+      ]
+    },
+    {
+      "slug": "boat",
+      "name": "Boat Insurance",
+      "category": "personal",
+      "featured": false,
+      "hero": {
+        "title": "Boat Insurance",
+        "subtitle": "When's the last time you reviewed your boat insurance policy? Let's take a few minutes to make sure you're covered for everything and have the most affordable boat insurance rates."
+      },
+      "description": "Boat insurance protects a boat, its owner, and passengers in the event of a loss. Boat insurance can include all motorized water vehicles including, but not limited to, fishing boats, pontoon boats, yachts, and jet skis.",
+      "sections": [
+        {
+          "title": "Boating Insurance Coverages",
+          "items": [
+            {
+              "title": "Liability Coverage",
+              "description": "pays for injuries and property damage to others as a result of a covered accident in which you are found to be legally liable. This may include pollution liability and wreckage removal depending on your policy."
+            },
+            {
+              "title": "Collision Coverage",
+              "description": "pays for damages to your boat, motor, trolling motor, trailer along with the permanent and some portable boating equipment as a result of a covered accident with another boat or object."
+            },
+            {
+              "title": "Comprehensive Coverage",
+              "description": "covers damages to your boat, motor, trolling motor, trailer and some permanent and portable boating equipment that are the result of events other than collision. For example, this can include damage from fire, theft or storms."
+            },
+            {
+              "title": "Uninsured or Underinsured Boater Coverage",
+              "description": "Covers the insured for damages and bodily injury that you and any passenger of your boat sustain if injured in a covered accident involving an uninsured or underinsured boater and also in some cases a hit-and-run boater."
+            },
+            {
+              "title": "Medical Payments",
+              "description": "Cover medical expenses for the treatment of injuries that are incurred by you or your boat passengers while operating or occupying your boat. On-Water Towing and Labor Coverage - This coverage option pays for towing expenses and other emergency services up to pre-defined limits in the event your boat becomes disabled on the water."
+            },
+            {
+              "title": "Fishing Equipment Coverage",
+              "description": "Specific coverage to help pay for damage to fishing equipment while on your insured boat or while being carried onto or off of your insured boat."
+            },
+            {
+              "title": "Personal Effects Coverage",
+              "description": "pays replacement cost for damages or losses of your personal property while onboard or while being carried onto or off of your insured boat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bop",
+      "name": "Business Owners Package (BOP) Insurance",
+      "category": "commercial",
+      "featured": false,
+      "hero": {
+        "title": "Business Owners Package (BOP) Insurance",
+        "subtitle": "Business Owner's Package (BOP) Insurance"
+      },
+      "description": "A business owner policy packages all required coverage a business owner would need. Often, BOPs will include business interruption insurance, property insurance, vehicle coverage, liability insurance, and crime insurance . Based on your company's specific needs, you can alter what is included in a BOP. Typically, a business owner will save money by choosing a BOP because the bundle of services often costs less than the total cost of all the individual coverage's. What's Covered with a Typical BOP Policy? BOPs typically include: Property insurance for buildings and contents owned by the company -- there are two different forms, standard and special, which provides more comprehensive coverage. Business interruption insurance , which covers the loss of income resulting from a fire or other catastrophe that disrupts the operation of the business. It can also include the extra expense of operating out of a temporary location. Liability protection , which covers your company's legal responsibility for the harm it may cause to others. This harm is a result of things that you and your employees do or fail to do in your business operations that may cause bodily injury or property damage due to defective products, faulty installations and errors in services provided. In most cases, BOPs do NOT cover professional liability, auto insurance, worker's compensation or health and disability insurance. You'll need separate insurance policies to cover professional services, vehicles and your employees.",
+      "sections": []
+    },
+    {
+      "slug": "condo",
+      "name": "Condo Insurance",
+      "category": "personal",
+      "featured": false,
+      "hero": {
+        "title": "Condo Insurance",
+        "subtitle": "You won't believe how affordable our condo insurance rates are. Get a quote from our agency today and protect your belongings from fire, theft, and other losses."
+      },
+      "description": "Condo Insurance is designed for individuals who live in a unit structure owned and insured by a condo association, townhouse association cooperative, homeowner's association, planned community or other similar type of organization. The insurance the association provides only covers the outside dwelling, not the contents of your unit, so it's important to consider purchasing this type of insurance to protect against personal property losses and liability",
+      "sections": [
+        {
+          "title": "Typical Benefits of a Condo Insurance Policy",
+          "items": [],
+          "intro": "Coverage for damage to personal property such as furniture, computer equipment and clothing Fill in the gaps of the master insurance policy and cover losses under master policy deductibles Personal liability coverage Interior walls and floor coverings coverage Coverage for improvements or upgrades (most master insurance policies only cover the original condition and value of the unit). Usually has small deductible and fairly inexpensive"
+        }
+      ]
+    },
+    {
+      "slug": "event",
+      "name": "Event Insurance",
+      "category": "specialty",
+      "featured": false,
+      "hero": {
+        "title": "Event Insurance",
+        "subtitle": "Events Insurance"
+      },
+      "description": "Event Insurance covers the legal liability you or your company may hold from certain types of claims arising from accidents taking place during an event you host. Subject to the specific coverage terms, conditions and exclusions, it offers protection for the host / honoree for damage to the facility caused by a guest or vendor, bodily injury to guests they are found liable for, and alcohol-related accidents they are found liable for. Do You Need Event Insurance? No matter the size of your event or how well prepared you are, you never know when the worst-case scenario could become your reality. It's the small things that cause the most problems if you're not properly covered. So even the most basic coverage policy could prove to be a big help in the long run. Make sure the unexpected doesn't ruin your next planned event. We are insurance professionals who understand your risk and needs. Give us a call and get your event insured today.",
+      "sections": []
+    },
+    {
+      "slug": "flood",
+      "name": "Flood Insurance",
+      "category": "personal",
+      "featured": false,
+      "hero": {
+        "title": "Flood Insurance",
+        "subtitle": "It doesn't matter if you live in a flood plain, every property owner is susceptible to flood damage and your current insurance probably doesn't cover it. Let us give you a quote today!"
+      },
+      "description": "Flood insurance is the specific insurance coverage against property loss from flooding. To determine risk factors for specific properties, insurers will often refer to topographical maps that denote lowlands, floodplains and floodways that are susceptible to flooding. More About Flood Insurance Nationwide, only 20% of American homes at risk for floods are actually covered by flood insurance. Most private insurers do not insure against the peril of flood due to the prevalence of adverse selection, which is the purchase of insurance by persons most affected by the specific peril of flood. Flooding is defined by the National Flood Insurance Program as a general and temporary condition of partial or complete inundation of two or more acres of normally dry land area or two or more properties (at least one of which is your property) from: Overflow of inland waters, unusual and rapid accumulation or runoff of surface waters from any source, and mudflows This can be brought on by landslides, a hurricane, earthquakes, or other natural disasters that influence flooding, but while a homeowner may, for example, have earthquake coverage, that coverage may not cover floods as a result of earthquakes.",
+      "sections": []
+    },
+    {
+      "slug": "health",
+      "name": "Health Insurance",
+      "category": "personal",
+      "featured": false,
+      "hero": {
+        "title": "Health Insurance",
+        "subtitle": "Having the proper health insurance coverage can literally be a matter of life or death. We'll make sure you're family is properly covered with health insurance premiums you can afford."
+      },
+      "description": "Health insurance is coverage that provides for the payments of benefits as a result of sickness or injury. Includes insurance for losses from accident, medical expense, disability, or accidental death and dismemberment. Health Insurance Types Health Maintenance Organizations (HMOs) and Exclusive Provider Organizations (EPOs) HMOs and EPOs may limit coverage to providers inside their networks. A network is a list of doctors, hospitals, and other health care providers that provide medical care to members of a specific health plan. If you use a doctor or facility that isn't in the HMO's network, you may have to pay the full cost of the services provided. HMO members usually have a primary care doctor and must get referrals to see specialists. This is generally not true for EPOs. Preferred Provider Organizations (PPOs) and Point-of-Service plans (POS) These insurance plans give you a choice of getting care within or outside of a provider network. With PPO or POS plans, you may use out-of-network providers and facilities, but you'll have to pay more than if you use in-network ones. If you have a PPO plan, you can visit any doctor without a referral. If you have a POS plan, you can visit any in-network provider without a referral, but you'll need one to visit a provider out-of-network. High Deductible Health Plan (HDHP) High Deductible Health Plans typically feature lower premiums and higher deductibles than traditional insurance plans. If you have an HDHP, you can use a health savings account or a health reimbursement arrangement to pay for qualified out-of-pocket medical costs. This can lower the amount of federal tax you owe. Catastrophic Health Insurance Plan A catastrophic health insurance plan covers essential health benefits but has a very high deductible. This means it provides a kind of \"safety net\" coverage in case you have an accident or serious illness. Catastrophic plans usually do not provide coverage for services like prescription drugs or shots. Premiums for catastrophic plans may be lower than traditional health insurance plans, but deductibles are usually much higher.",
+      "sections": []
+    },
+    {
+      "slug": "bonds",
+      "name": "Insurance Bonds",
+      "category": "specialty",
+      "featured": false,
+      "hero": {
+        "title": "Insurance Bonds",
+        "subtitle": "If you need an insurance bond to bid on or get hired for a new job call us. We're insurance bond experts and we'll get it taken care of you... Fast!"
+      },
+      "description": "An insurance bond ensures contract completion in the event of contractor default and are typically required by project owners when seeking a contractor to fulfill a contract. The contractor obtains a bond so the insurance company is obligated compensate the project owner for the financial loss incurred if the work is not completed. Typical Insurance Bond Types Although there are many types of insurance bonds, the four most common types needed by business owners are: Bid Bond - Ensures the bidder on a contract will enter into the contract and furnish the required payment and performance bonds if awarded the contract. Payment Bond - Ensures suppliers and subcontractors are paid for work performed under the contract. Performance Bond - Ensures the contract will be completed in accordance with the terms and conditions of the contract. Ancillary Bond - Ensures requirements integral to the contract, but not directly performance related, are performed.",
+      "sections": []
+    },
+    {
+      "slug": "landlords",
+      "name": "Landlords Insurance",
+      "category": "commercial",
+      "featured": false,
+      "hero": {
+        "title": "Landlords Insurance",
+        "subtitle": "Landlord Insurance"
+      },
+      "description": "Landlords' insurance is an insurance policy that covers a property owner from financial losses connected with rental properties. The policy covers the building, with the option of insuring any contents that belong to the landlord that are inside. Landlords' insurance is often referred to as buy-to-let insurance, however buy-to-let insurance is a type of landlords' insurance. It is important to distinguish between buy-to-let insurance which generally covers one property that has been purchased with a buy-to-let mortgage, and multi-property insurance, which covers two or more properties. Each of these types of landlords' insurance covers different things. The policy will normally cover standard perils such as fire, lightning, explosion, earthquake, storm, flood, escape of water/oil, subsidence, theft and malicious damage. Each insurance policy is different and may or may not include all these items. Optional coverage might include accidental damage, malicious damage by tenant, terrorism, legal protection, alternative accommodation costs, contents insurance, rent guarantee insurance, and liability insurance. Landlords' insurance policies typically do not cover any personal property belonging to tenants, or otherwise protect the interest of tenants; although a liability policy protecting a landlord or property manager will be of benefit to tenants should they incur a loss for which the landlord is responsible. Whether you own hundreds of properties or just one, we'll help you find the best coverage and the most affordable rates. Let us give you a quote and start saving money today!",
+      "sections": []
+    },
+    {
+      "slug": "renters",
+      "name": "Renters Insurance",
+      "category": "personal",
+      "featured": false,
+      "hero": {
+        "title": "Renters Insurance",
+        "subtitle": "Could you afford to replace all your belongings if there were a fire, theft, or other major loss tomorrow? It only takes a few minutes to see how affordable renters coverage can be."
+      },
+      "description": "Renters' insurance is an insurance policy which provides most of the benefits of homeowners' insurance. This includes liability insurance. The tenant's personal property is also covered against named perils such as fire, theft and vandalism. Renters' insurance does not include coverage for the dwelling, or structure, with the exception of small alterations that a tenant makes to the structure. The owner of the building is responsible for insuring it, but bears no responsibility for the tenant's belongings How Much Renters' Insurance Do I Need? The cost of renters insurance and the amount of personal property coverage you need depends on how much your property is worth. To get a better understanding of your coverage needs, ask yourself the following questions: How much are my belongings worth? Could I afford to buy it all back again if it were destroyed in a fire or stolen? What would I do in the event of a liability lawsuit against me? And one more thing. If you have ever asked yourself \"Do I need renters insurance?\" the answer is probably yes.",
+      "sections": []
+    },
+    {
+      "slug": "umbrella",
+      "name": "Umbrella Insurance",
+      "category": "personal",
+      "featured": false,
+      "hero": {
+        "title": "Umbrella Insurance",
+        "subtitle": "Umbrella insurance offers the ultimate peace of mind. Eliminate the gaps and insufficient limits on all your policies. You'll be amazed at how affordable coverage can be."
+      },
+      "description": "Umbrella insurance refers to liability insurance that is in excess of specified other policies and also potentially primary insurance for losses not covered by the other policies. When an insured is liable to someone, the insured's primary insurance policies pay up to their limits and any additional amount is paid by the umbrella policy up to the limit of the umbrella policy. Common Situations Protected by Umbrella Insurance: Motor vehicle accidents with excessive physical damage, bodily injuries, or death. Slip and fall accidents on your property. Boating Accidents. Swimming Pool Accidents. Physical damage or bodily injury caused by your dog. Slander, libel, and defamation lawsuits. Judgments that exceed the limits of your auto or home policies.",
+      "sections": []
+    },
+    {
+      "slug": "workers-comp",
+      "name": "Workers Compensation",
+      "category": "commercial",
+      "featured": false,
+      "hero": {
+        "title": "Workers Compensation",
+        "subtitle": "Let us help you make sure your adequately covered for workers comp. We'll get you a great rate and keep your business going strong."
+      },
+      "description": "Workers' compensation is a form of insurance providing wage replacement and medical benefits to employees injured in the course of employment in exchange for mandatory relinquishment of the employee's right to sue his or her employer for the tort of negligence. Additional Information about Workers' Comp Insurance While plans differ among jurisdictions, provision can be made for weekly payments in place of wages (functioning in this case as a form of disability insurance), compensation for economic loss (past and future), reimbursement or payment of medical and like expenses (functioning in this case as a form of health insurance), and benefits payable to the dependents of workers killed during employment (functioning in this case as a form of life insurance). General damages for pain and suffering, and punitive damages for employer negligence, are generally not available in workers' compensation plans, and negligence is generally not an issue in the case.",
+      "sections": []
+    }
+  ],
+  "services": [
+    {
+      "slug": "certificates",
+      "name": "Certificates",
+      "headline": "Request Certificates",
+      "form": {
+        "title": "Certificates",
+        "intro": "Request Certificates",
+        "fields": [
+          {
+            "label": "Insured Policy Name",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Company Name",
+            "required": true,
+            "type": "text",
+            "section": "Please list the information where to send your certificate below"
+          },
+          {
+            "label": "Address",
+            "required": true,
+            "compound": [
+              "Line 1",
+              "Line 2",
+              "City",
+              "State",
+              "Zip Code",
+              "Country"
+            ],
+            "type": "compound",
+            "section": "Please list the information where to send your certificate below"
+          },
+          {
+            "label": "Email address to send the COI",
+            "required": true,
+            "type": "email",
+            "section": "Please list the information where to send your certificate below"
+          },
+          {
+            "label": "Notes",
+            "required": true,
+            "type": "textarea",
+            "section": "Please list the information where to send your certificate below"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "update-contact",
+      "name": "Update Contact Info",
+      "headline": "Request to Update Contact Information",
+      "form": {
+        "title": "Update Contact Info",
+        "intro": "Request to Update Contact Information",
+        "fields": [
+          {
+            "label": "Your Name",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "What Changed?",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Name",
+              "Address",
+              "Phone",
+              "Email Address",
+              "Other"
+            ]
+          },
+          {
+            "label": "Please Explain:",
+            "required": true,
+            "type": "textarea"
+          },
+          {
+            "label": "Contact Email Address:",
+            "required": true,
+            "type": "email"
+          },
+          {
+            "label": "Contact Phone Number",
+            "required": true,
+            "type": "tel"
+          },
+          {
+            "label": "Update Your Contact Information",
+            "required": false,
+            "type": "date"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "policy-changes",
+      "name": "Policy Changes",
+      "headline": "Policy Change Request",
+      "form": {
+        "title": "Policy Changes",
+        "intro": "Policy Change Request",
+        "fields": [
+          {
+            "label": "Your Name",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Insurance Carrier",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Policy Number",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "What would you like to change?",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Contact Email Address:",
+            "required": true,
+            "type": "email"
+          },
+          {
+            "label": "Contact Phone Number",
+            "required": true,
+            "type": "tel"
+          },
+          {
+            "label": "Request a Policy Change",
+            "required": false,
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "add-remove-drivers",
+      "name": "Add & Remove Driver(s)",
+      "headline": "Driver Change Request",
+      "form": {
+        "title": "Add & Remove Driver(s)",
+        "intro": "Add & Remove Driver(s)",
+        "fields": [
+          {
+            "label": "Date of Requested",
+            "required": true,
+            "type": "date"
+          },
+          {
+            "label": "Named Insured",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Named Insured Email",
+            "required": true,
+            "type": "email"
+          },
+          {
+            "label": "Policy Number",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Coverage Type: Please mark all that apply",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Liability",
+              "Cargo",
+              "Physical Damage"
+            ]
+          },
+          {
+            "label": "Request/Remarks:",
+            "required": true,
+            "type": "textarea"
+          },
+          {
+            "label": "DRIVER CHANGE REQUEST",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Add",
+              "Delete",
+              "Driver #1"
+            ]
+          },
+          {
+            "label": "Print Name",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Date of Birth",
+            "required": true,
+            "type": "date"
+          },
+          {
+            "label": "Driver's License #",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driving Experience (Years)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Married",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Violation/Accident",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "DRIVER CHANGE REQUEST",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Add",
+              "Delete",
+              "Driver #2"
+            ]
+          },
+          {
+            "label": "Print Name",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Date of Birth",
+            "required": true,
+            "type": "date"
+          },
+          {
+            "label": "Driver's License #",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driving Experience (Years)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Married",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Violation/Accident",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "As an authorized representative of the aforementioned insurance policy, I hereby acknowledge sending this request to add a driver does not necessarily and automatically include the driver in question to be included on my insurance policy. I also understand it takes 24-48 hours from the time of this request to receive a written and formal approval/denial from my insurance company regarding the status of my request.",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Acknowledgement of this form will be your copy of our change request sent to the insurance company. If you do not receive an acknowledgement within five days, please notify us. No coverage changes will be in effect until you receive confirmation from our office.",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "All endorsement requests received after 4:00 pm will be processed the next business day after 9:30 am.",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "All Emailed endorsements must be sent to [email protected]",
+            "required": false,
+            "type": "email"
+          },
+          {
+            "label": "I confirm that the information given in this form is true, complete and accurate.",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Yes, I confirm",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Date",
+            "required": true,
+            "type": "date"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "add-remove-vehicles",
+      "name": "Add & Remove Vehicle(s)",
+      "headline": "Vehicle Change Request",
+      "form": {
+        "title": "Add & Remove Vehicle(s)",
+        "intro": "Add & Remove Vehicle(s)",
+        "fields": [
+          {
+            "label": "Change a Request Form",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Date of Request",
+            "required": true,
+            "type": "date"
+          },
+          {
+            "label": "Named Insured",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Named Insured Email",
+            "required": true,
+            "type": "email"
+          },
+          {
+            "label": "Coverage Type: Please mark all that apply",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Liability",
+              "Cargo",
+              "Physical Damage"
+            ]
+          },
+          {
+            "label": "Request/Remarks:",
+            "required": true,
+            "type": "textarea"
+          },
+          {
+            "label": "Vehicle Change Request",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Vehicle #1",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Add Vehicle",
+              "Delete Vehicle"
+            ]
+          },
+          {
+            "label": "Year",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Make",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Model",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "VIN #",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Stated Amt",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Additional Insured",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Name",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Address",
+            "required": true,
+            "compound": [
+              "Line 1",
+              "Line 2",
+              "City",
+              "State",
+              "Zip Code",
+              "Country"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "As an authorized representative of the aforementioned insurance policy, I hereby acknowledge sending this request to add a driver does not necessarily and automatically include the driver in question to be included on my insurance policy. I also understand it takes 24-48 hours from the time of this request to receive a written and formal approval/denial from my insurance company regarding the status of my request.",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Acknowledgement of this form will be your copy of our change request sent to the insurance company. If you do not receive an acknowledgement within five days, please notify us. No coverage changes will be in effect until you receive confirmation from our office.",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "I confirm that the information given in this form is true, complete and accurate.",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Yes, I confirm",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Date",
+            "required": true,
+            "type": "date"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "proof-of-insurance",
+      "name": "Proof of Insurance",
+      "headline": "Request Proof of Insurance",
+      "form": {
+        "title": "Proof of Insurance",
+        "intro": "Request Proof of Insurance",
+        "fields": [
+          {
+            "label": "Type of Proof Required",
+            "required": true,
+            "type": "select",
+            "options": [
+              "ID Card",
+              "Certificate of Insurance",
+              "Declaration Pages",
+              "Other"
+            ]
+          },
+          {
+            "label": "Your Name",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Insurance Carrier",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Policy Number",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Please describe what you need from us.",
+            "required": true,
+            "type": "textarea"
+          },
+          {
+            "label": "How do you want it delivered?",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Fax",
+              "Email",
+              "Mail",
+              "Pickup In Agency",
+              "Other"
+            ]
+          },
+          {
+            "label": "Contact Email Address:",
+            "required": true,
+            "type": "email"
+          },
+          {
+            "label": "Contact Phone Number",
+            "required": true,
+            "type": "tel"
+          },
+          {
+            "label": "Request Proof of Insurance Documentation",
+            "required": false,
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "endorsement-request",
+      "name": "Endorsement Request",
+      "headline": "Request a Policy Endorsement",
+      "form": {
+        "title": "Endorsement Request",
+        "intro": "Endorsement Request to Policies",
+        "fields": [
+          {
+            "label": "Endorsement Request Date",
+            "required": true,
+            "type": "date"
+          },
+          {
+            "label": "Driver Information",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Primary Driver Name",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Date of Birth",
+            "required": true,
+            "type": "date"
+          },
+          {
+            "label": "Driver License No",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driver License State",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driver License Type",
+            "required": true,
+            "type": "select",
+            "options": [
+              "-",
+              "CDL",
+              "Non/CDL"
+            ]
+          },
+          {
+            "label": "Driver 2 Name (if necessary)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Date of Birth (D2)",
+            "required": true,
+            "type": "date"
+          },
+          {
+            "label": "Driver License No (D2)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driver License State (D2)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driver License Type (D2)",
+            "required": true,
+            "type": "select",
+            "options": [
+              "-",
+              "CDL",
+              "Non/CDL"
+            ]
+          },
+          {
+            "label": "Driver 3 Name (if necessary)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Date of Birth (D3)",
+            "required": true,
+            "type": "date"
+          },
+          {
+            "label": "Driver License No (D3)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driver License State (D3)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driver License Type (D3)",
+            "required": true,
+            "type": "select",
+            "options": [
+              "-",
+              "CDL",
+              "Non/CDL"
+            ]
+          },
+          {
+            "label": "Driver 4 Name (if necessary)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Date of Birth (D4)",
+            "required": true,
+            "type": "date"
+          },
+          {
+            "label": "Driver License No (D4)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driver License State (D4)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Driver License Type (D4)",
+            "required": true,
+            "type": "select",
+            "options": [
+              "-",
+              "CDL",
+              "Non/CDL",
+              "Vehicle Information",
+              "Primary Vehicle"
+            ]
+          },
+          {
+            "label": "Year",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Make",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "VIN#",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Type",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Vehicle #2 (if necessary)",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Year (V2)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Make (V2)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "VIN# (V2)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Type (V2)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Vehicle #3 (if necessary)",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Year (V3)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Make (V3)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "VIN# (V3)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Type (V3)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Vehicle #4 (if necessary)",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Year (V4)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Make (V4)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "VIN# (V4)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Type (V4)",
+            "required": true,
+            "type": "text"
+          },
+          {
+            "label": "Additional Information",
+            "required": false,
+            "type": "text"
+          },
+          {
+            "label": "Name",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Address",
+            "required": true,
+            "compound": [
+              "Line 1",
+              "Line 2",
+              "City",
+              "State",
+              "Zip Code",
+              "Country"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Email",
+            "required": true,
+            "type": "email"
+          },
+          {
+            "label": "Phone Number",
+            "required": true,
+            "type": "tel"
+          },
+          {
+            "label": "Attachment 1",
+            "required": true,
+            "type": "text",
+            "section": "Attachments"
+          },
+          {
+            "label": "Max file size: 20MB",
+            "required": false,
+            "type": "text",
+            "section": "Attachments"
+          },
+          {
+            "label": "Attachment 2",
+            "required": true,
+            "type": "text",
+            "section": "Attachments"
+          },
+          {
+            "label": "Max file size: 20MB",
+            "required": false,
+            "type": "text",
+            "section": "Attachments"
+          },
+          {
+            "label": "Attachment 3",
+            "required": true,
+            "type": "text",
+            "section": "Attachments"
+          },
+          {
+            "label": "Max file size: 20MB",
+            "required": false,
+            "type": "text",
+            "section": "Attachments"
+          },
+          {
+            "label": "Comments: (IF REMOVING - DRIVER OR VEHICLE) PLEASE GIVE DESCRIPTION",
+            "required": true,
+            "type": "textarea",
+            "section": "Attachments"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "online-documents",
+      "name": "Online Documents",
+      "headline": "Online Insurance Forms/Documents",
+      "form": {
+        "title": "Online Documents",
+        "intro": "Online Insurance Forms/Documents",
+        "fields": []
+      }
+    },
+    {
+      "slug": "free-consultation",
+      "name": "Free Consultation",
+      "headline": "Request a Free Consultation",
+      "form": {
+        "title": "Free Consultation",
+        "intro": "Request a Free Consultation",
+        "fields": [
+          {
+            "label": "What type of consultation would you like?",
+            "required": true,
+            "type": "select",
+            "options": [
+              "Telephone",
+              "Face-to-face",
+              "Other"
+            ]
+          },
+          {
+            "label": "Name",
+            "required": true,
+            "compound": [
+              "First",
+              "Last"
+            ],
+            "type": "compound"
+          },
+          {
+            "label": "Email",
+            "required": true,
+            "type": "email"
+          },
+          {
+            "label": "Phone Number",
+            "required": true,
+            "type": "tel"
+          },
+          {
+            "label": "What would you like to discuss?",
+            "required": true,
+            "type": "textarea"
+          },
+          {
+            "label": "Free Insurance Consultation",
+            "required": false,
+            "type": "text"
+          }
+        ]
+      }
+    }
+  ],
+  "quoteForms": {
+    "trucking-quote": {
+      "title": "Trucking Insurance Quote",
+      "intro": "Complete the details below to get your free trucking insurance quote",
+      "fields": [
+        {
+          "label": "Insured Name including DBA",
+          "required": true,
+          "type": "text",
+          "section": "General Information"
+        },
+        {
+          "label": "MC Number",
+          "required": true,
+          "type": "text",
+          "section": "General Information"
+        },
+        {
+          "label": "US DOT Number",
+          "required": true,
+          "type": "text",
+          "section": "General Information"
+        },
+        {
+          "label": "Street Address",
+          "required": true,
+          "type": "text",
+          "section": "General Information"
+        },
+        {
+          "label": "FEIN/SSN",
+          "required": true,
+          "type": "text",
+          "section": "General Information"
+        },
+        {
+          "label": "Year in Business",
+          "required": true,
+          "type": "text",
+          "section": "General Information"
+        },
+        {
+          "label": "City",
+          "required": true,
+          "type": "text",
+          "section": "General Information"
+        },
+        {
+          "label": "State",
+          "required": true,
+          "type": "text",
+          "section": "General Information"
+        },
+        {
+          "label": "Zip Code",
+          "required": true,
+          "type": "text",
+          "section": "General Information"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel",
+          "section": "General Information"
+        },
+        {
+          "label": "Email Address",
+          "required": true,
+          "type": "email",
+          "section": "General Information"
+        },
+        {
+          "label": "Make (01)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "Value (01)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "Type (01)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "VIN Number (01)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "G.V.W. (01)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "Make (02)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "Value (02)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "Type (02)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "VIN Number (02)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "G.V.W. (02)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "Make (03)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "Value (03)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "Type (03)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "VIN Number (03)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "G.V.W. (03)",
+          "required": true,
+          "type": "text",
+          "section": "Vehicle Information"
+        },
+        {
+          "label": "Name (D1)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Date of Birth (D1)",
+          "required": true,
+          "type": "date",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Drivers License (D1)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "State (D1)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Years of Experience (D1)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Name (D2)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Date of Birth (D2)",
+          "required": true,
+          "type": "date",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Drivers License (D2)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "State (D2)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Years of Experience (D2)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Name (D3)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Date of Birth (D3)",
+          "required": true,
+          "type": "date",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Drivers License (D3)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "State (D3)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Years of Experience (D3)",
+          "required": true,
+          "type": "text",
+          "section": "Driver Information"
+        },
+        {
+          "label": "Bodily Injury Liability Limit",
+          "required": true,
+          "type": "text",
+          "section": "Coverage Desired"
+        },
+        {
+          "label": "Comprehensive Collision Deductible",
+          "required": true,
+          "type": "text",
+          "section": "Coverage Desired"
+        },
+        {
+          "label": "Radius",
+          "required": true,
+          "type": "text",
+          "section": "Coverage Desired"
+        },
+        {
+          "label": "Commodity Hauling",
+          "required": true,
+          "type": "text",
+          "section": "Coverage Desired"
+        },
+        {
+          "label": "Cargo Limit",
+          "required": true,
+          "type": "text",
+          "section": "Coverage Desired"
+        },
+        {
+          "label": "Garage Address",
+          "required": true,
+          "type": "text",
+          "section": "Comments and Other Information"
+        },
+        {
+          "label": "Comment",
+          "required": true,
+          "type": "textarea",
+          "section": "Comments and Other Information"
+        }
+      ]
+    },
+    "homeowner-quote": {
+      "title": "Home Insurance Quote",
+      "intro": "Complete the details below to get your free homeowner insurance quote",
+      "fields": [
+        {
+          "label": "Type of Home",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Single Family Home",
+            "Duplex",
+            "Townhome",
+            "Mobile Home",
+            "Other"
+          ]
+        },
+        {
+          "label": "Year Built",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Construction Type",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Mostly Wood Frame",
+            "Mostly Brick",
+            "Stucco",
+            "Other"
+          ]
+        },
+        {
+          "label": "Foundation",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Bsmt Fully Finished",
+            "Bsmt Half Finished",
+            "Bsmt Unfinished",
+            "Crawlspace",
+            "Slab",
+            "Other"
+          ]
+        },
+        {
+          "label": "Roof Type",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Asphalt Shingle",
+            "Tile",
+            "Concrete",
+            "Gable",
+            "Hip",
+            "Flat",
+            "Other"
+          ]
+        },
+        {
+          "label": "Roof Age",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Under 5 Years",
+            "5-10 Years",
+            "Over 10 Years"
+          ]
+        },
+        {
+          "label": "Garage Type",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Attached - 1 Car",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Attached - 2 Car",
+          "required": false,
+          "type": "select",
+          "options": [
+            "Attached - 3 Car",
+            "Attached Car Port",
+            "Detached - 1 Car",
+            "Detached - 2 Car",
+            "Detached - 3 Car",
+            "Detached Car Port",
+            "No Garage",
+            "Other"
+          ]
+        },
+        {
+          "label": "Fire Alarm",
+          "required": true,
+          "type": "select",
+          "options": [
+            "None",
+            "Monitored",
+            "Unmonitored",
+            "Not sure"
+          ]
+        },
+        {
+          "label": "Square Footage",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Primary Heating",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Gas (Forced Air)",
+            "Electric",
+            "Hot Water Radiator",
+            "Oil/Coal/Karosene",
+            "Propane",
+            "Stove"
+          ]
+        },
+        {
+          "label": "Bedrooms",
+          "required": true,
+          "type": "select",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7+"
+          ]
+        },
+        {
+          "label": "Bathrooms",
+          "required": true,
+          "type": "select",
+          "options": [
+            "1",
+            "1.5",
+            "2",
+            "2.5",
+            "3",
+            "3.5",
+            "4+"
+          ]
+        },
+        {
+          "label": "Stories",
+          "required": true,
+          "type": "select",
+          "options": [
+            "One Story",
+            "Bi Level",
+            "Two Story",
+            "Tri Level",
+            "Other"
+          ]
+        },
+        {
+          "label": "Security System",
+          "required": true,
+          "type": "select",
+          "options": [
+            "None",
+            "Monitored",
+            "Unmonitored",
+            "Unsure"
+          ]
+        },
+        {
+          "label": "Municipal Location",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Inside City Limits",
+            "Outside City Limits",
+            "Not Sure"
+          ]
+        },
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Select any additional property features that apply.",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Dead Bolts",
+            "Fire Extinguishers",
+            "Tramploline",
+            "Covered Deck/Patio",
+            "Swimming Pool"
+          ]
+        },
+        {
+          "label": "Have you reported any claims or losses to your insurance company within the past 5 years?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Is your home located in a flood plain?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No",
+            "Not Sure"
+          ]
+        },
+        {
+          "label": "Do you have any of the following breeds of dogs: Chow, Doberman, German Shepherd, Pit Bull, Rottweiler, Wolf Hybrid, or a mix of these?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Approximate Replacement Cost of Dwelling (not including land)",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Personal Liability Coverage Desired",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$100,000",
+            "$300,000",
+            "$500,000",
+            "$1,000,000",
+            "Other"
+          ]
+        },
+        {
+          "label": "Desired Deductible",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$250",
+            "$500",
+            "$1000",
+            "$2000",
+            "Other"
+          ]
+        },
+        {
+          "label": "Will this insurance replace an existing policy?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Credit Rating",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Excellent",
+            "Good",
+            "Poor",
+            "Unsure"
+          ]
+        },
+        {
+          "label": "Pets, If yes how many?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Additional Comments?",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "label": "Escrow Account",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Hurrican Shutters",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Prior Insurance Information",
+          "required": true,
+          "type": "text"
+        }
+      ]
+    },
+    "business-quote": {
+      "title": "Business Insurance Quote",
+      "intro": "Complete the details below to get your free business insurance quote",
+      "fields": [
+        {
+          "label": "Business Name",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Years in Business",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Legal Entity",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Sole Proprietorship",
+            "Partnership",
+            "LLC",
+            "S Corporation",
+            "C Corporation",
+            "Other"
+          ]
+        },
+        {
+          "label": "Partners/Owners",
+          "required": true,
+          "type": "select",
+          "options": [
+            "1",
+            "2",
+            "3-5",
+            "6-10",
+            "11+"
+          ]
+        },
+        {
+          "label": "Full-Time Employees",
+          "required": true,
+          "type": "select",
+          "options": [
+            "1",
+            "2-3",
+            "4-5",
+            "6-10",
+            "11-20",
+            "21+"
+          ]
+        },
+        {
+          "label": "Will this replace an existing business policy?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "No",
+            "Yes"
+          ]
+        },
+        {
+          "label": "Part-time Employees",
+          "required": true,
+          "type": "select",
+          "options": [
+            "0",
+            "1",
+            "2-3",
+            "4-5",
+            "6-10",
+            "11-20",
+            "20+"
+          ]
+        },
+        {
+          "label": "Sub-Contractors",
+          "required": true,
+          "type": "select",
+          "options": [
+            "None",
+            "1-2",
+            "3-4",
+            "5-10",
+            "10+"
+          ]
+        },
+        {
+          "label": "Is this a one-time event or seasonal business?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "No",
+            "One-time Event",
+            "Seasonal Business"
+          ]
+        },
+        {
+          "label": "Annual Revenue",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Under $100,000",
+            "$100,000-$500,000",
+            "$500,000-$1,000,000",
+            "$1,000,000-$5,000,000",
+            "$5,000,000-$10,000,000",
+            "$10,000,000+"
+          ]
+        },
+        {
+          "label": "Please describe the specific nature of your business.",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "What type(s) of business insurance are you interested in?",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Property/Casualty Insurance",
+          "required": true,
+          "type": "select",
+          "options": [
+            "General Liability",
+            "Commercial Auto",
+            "Commercial Property",
+            "Professional Liability",
+            "Directors and Officers Liability",
+            "Business Owners Package (BOP)",
+            "Workers Compensation",
+            "Commercial Crime"
+          ]
+        },
+        {
+          "label": "Employee Benefits",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Group Health Insurance",
+            "Group Life Insurance",
+            "Group Disability Insurance",
+            "401K / Retirement Plans",
+            "Supplemental Plans / AFLAC",
+            "Key Man Life Insurance",
+            "Key Man Disability Insurance",
+            "Deferred Compensation"
+          ]
+        },
+        {
+          "label": "Contact Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Contact Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Additional Comments?",
+          "required": true,
+          "type": "textarea"
+        }
+      ]
+    },
+    "boatowner-quote": {
+      "title": "Boat Insurance Quotes",
+      "intro": "Complete the details below to get your free boat insurance quote",
+      "fields": [
+        {
+          "label": "Watercraft Information",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Year",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Manufacturer",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Model",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Watercraft Type",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Runabout",
+            "Bass Boat",
+            "Cabin Cruiser",
+            "Pontoon",
+            "Sailboat - Single-Hull",
+            "Sailboat - Multi-Hull",
+            "Houseboat",
+            "Inflatable"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Boat Use?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Pleasure Use Exclusively",
+            "Racing/Speed Contests",
+            "Business/Commercial Use",
+            "Rented or Leased to Others",
+            "Residence"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Number of Engines",
+          "required": true,
+          "type": "select",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4+"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Engine Type",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Outboard",
+            "Inboard",
+            "Stern Drive (I/O)",
+            "Waterjet Pump",
+            "Other"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Hull Material",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Fiberglass",
+            "Aluminum",
+            "Rigid Hull Inflatable",
+            "Inflatable",
+            "Roplene",
+            "Wood",
+            "Steel"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Storage Location",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Home",
+            "Marina",
+            "Storage Facility"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Length",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Market Value",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Total Horsepower",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Deductible",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$100",
+            "$250",
+            "$500",
+            "$1000",
+            "No Coverage"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Trailer Coverage",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Not Desired",
+            "$1,000",
+            "$2,000",
+            "$3,000",
+            "$4,000",
+            "$5,000",
+            "$7,500",
+            "$10,000+"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Does your boat or engine have any structural modifications or performance customization?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No",
+            "Boat #2 (if necessary)"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Year (B2)",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Manuf. (B2)",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Model (B2)",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Watercraft Type (B2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Runabout",
+            "Bass Boat",
+            "Cabin Cruiser",
+            "Pontoon",
+            "Sailboat - Single-Hull",
+            "Sailboat - Multi-Hull",
+            "Houseboat",
+            "Inflatable"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Boat Use? (B2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Pleasure Use Exclusively",
+            "Racing/Speed Contests",
+            "Business/Commercial Use",
+            "Rented or Leased to Others",
+            "Residence"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Number of Engines (B2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4+"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Engine Type (B2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Outboard",
+            "Inboard",
+            "Stern Drive (I/O)",
+            "Waterjet Pump",
+            "Other"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Hull Material (B2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Fiberglass",
+            "Aluminum",
+            "Rigid Hull Inflatable",
+            "Inflatable",
+            "Roplene",
+            "Wood",
+            "Steel"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Storage Location (B2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Home",
+            "Marina",
+            "Storage Facility"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Length (B2)",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Market Value (B2)",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Total Horsepower (B2)",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Deductible (B2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$100",
+            "$250",
+            "$500",
+            "$1000",
+            "No Coverage"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Trailer Coverage (B2)",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Not Desired",
+          "required": false,
+          "type": "select",
+          "options": [
+            "$1,000",
+            "$2,000",
+            "$3,000",
+            "$4,000",
+            "$5,000",
+            "$7,500",
+            "$10,000+",
+            "Operator Information"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Primary Operator Name",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Gender",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Male",
+            "Female",
+            "n/a"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Age",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Under 16",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "16",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "17",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "18",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "19",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "20",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "21",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "22",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "23",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "24",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "25",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "26",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "27",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "28",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "29",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "30",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "31",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "32",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "33",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "34",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "35",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "36",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "37",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "38",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "39",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "40",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "41",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "42",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "43",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "44",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "45",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "46",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "47",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "48",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "49",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "50",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "51-55",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "56-60",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "61-65",
+          "required": false,
+          "type": "select",
+          "options": [
+            "66-70",
+            "71-75",
+            "76-80",
+            "81-85",
+            "86-90",
+            "91-95",
+            "96-100",
+            "100+"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Married?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Accidents/Tickets in the past 3 years",
+          "required": true,
+          "type": "select",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4+"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Operator 2 Name (if necessary)",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Gender (O2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Male",
+            "Female",
+            "n/a"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Age (O2)",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Under 16",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "16",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "17",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "18",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "19",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "20",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "21",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "22",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "23",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "24",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "25",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "26",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "27",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "28",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "29",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "30",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "31",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "32",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "33",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "34",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "35",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "36",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "37",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "38",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "39",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "40",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "41",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "42",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "43",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "44",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "45",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "46",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "47",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "48",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "49",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "50",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "51-55",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "56-60",
+          "required": false,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "61-65",
+          "required": false,
+          "type": "select",
+          "options": [
+            "66-70",
+            "71-75",
+            "76-80",
+            "81-85",
+            "86-90",
+            "91-95",
+            "96-100",
+            "100+"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Married? (O2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Accidents/Tickets in the past 3 years? (O2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4+"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "Coverage Desired",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Minimum Coverage",
+            "Standard Coverage",
+            "Premium Coverage"
+          ],
+          "section": "Boat #1"
+        },
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel",
+          "section": "Boat #1"
+        },
+        {
+          "label": "Message",
+          "required": true,
+          "type": "text",
+          "section": "Boat #1"
+        }
+      ]
+    },
+    "bop-quote": {
+      "title": "Business Owners Package (BOP) Insurance Quote",
+      "intro": "Complete the details below to get your free b usiness owners package (BOP) insurance quote",
+      "fields": [
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Business Name",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Please describe the nature of your business",
+          "required": true,
+          "type": "textarea"
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Contact Person's Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Additional Comments",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Next",
+            "Get a BOP Insurance Quote"
+          ]
+        }
+      ]
+    },
+    "condo-quote": {
+      "title": "Condo Insurance Quote",
+      "intro": "Complete the details below to get your free condo insurance quote",
+      "fields": [
+        {
+          "label": "Type of Home",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Single Family Home",
+            "Duplex",
+            "Townhome",
+            "Mobile Home",
+            "Other"
+          ]
+        },
+        {
+          "label": "Year Built",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Fire Alarm",
+          "required": true,
+          "type": "select",
+          "options": [
+            "None",
+            "Monitored",
+            "Unmonitored",
+            "Not sure"
+          ]
+        },
+        {
+          "label": "Number of Units in Your Complex?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5+"
+          ]
+        },
+        {
+          "label": "How is the Property Occupied?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Principal",
+            "Seasonal",
+            "Secondary",
+            "Long Term Rental",
+            "Vacant",
+            "Under Construction"
+          ]
+        },
+        {
+          "label": "Number of Rooms",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "1",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "2",
+          "required": false,
+          "type": "select",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10+"
+          ]
+        },
+        {
+          "label": "Square Footage",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Security System",
+          "required": true,
+          "type": "select",
+          "options": [
+            "None",
+            "Monitored",
+            "Unmonitored",
+            "Unsure"
+          ]
+        },
+        {
+          "label": "Within 5 Miles of a Fire Station?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Within 1000 feet of a fire hydrant?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Personal Property Quality",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Economy",
+            "Standard",
+            "Luxury"
+          ]
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Select any additional property features that apply.",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Dead Bolts",
+            "Fire Extinguishers",
+            "Tramploline",
+            "Covered Deck/Patio",
+            "Swimming Pool",
+            "Indoor Fire Sprinkler"
+          ]
+        },
+        {
+          "label": "Have you reported any claims or losses to your insurance company within the past 5 years?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Do you have any of the following breeds of dogs: Chow, Doberman, German Shepherd, Pit Bull, Rottweiler, Wolf Hybrid, or a mix of these?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Is any business conducted on the property?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Personal Liability Coverage Desired",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$100,000",
+            "$300,000",
+            "$500,000",
+            "$1,000,000",
+            "Other"
+          ]
+        },
+        {
+          "label": "Desired Deductible",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$250",
+            "$500",
+            "$1000",
+            "$2000",
+            "Other"
+          ]
+        },
+        {
+          "label": "Will this insurance replace an existing policy?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Credit Rating",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Excellent",
+            "Good",
+            "Poor",
+            "Unsure"
+          ]
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Additional Comments?",
+          "required": true,
+          "type": "textarea"
+        }
+      ]
+    },
+    "event-quote": {
+      "title": "Event Insurance Quotes",
+      "intro": "Complete the details below to get your free event insurance quote",
+      "fields": [
+        {
+          "label": "What is the date of the event?",
+          "required": true,
+          "type": "date"
+        },
+        {
+          "label": "Event Venue",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Contact Person's Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Please provide a short description of the event.",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Next",
+            "Get a quote for insurance on your event"
+          ]
+        }
+      ]
+    },
+    "flood-quote": {
+      "title": "Flood Insurance Quote",
+      "intro": "Complete the details below to get your free flood insurance quote",
+      "fields": [
+        {
+          "label": "What kind of home do you live in?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Single Family Home",
+            "Single Family Condo",
+            "2-4 Family Building",
+            "Other Residential",
+            "Non Residential",
+            "Single Family",
+            "Mobile Home"
+          ]
+        },
+        {
+          "label": "Is your home over water?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Not over water",
+            "Partially over water",
+            "Fully/Entirely over water"
+          ]
+        },
+        {
+          "label": "Building Purpose?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "100% Residential",
+            "100% Non-Residential",
+            "Mixed Use"
+          ]
+        },
+        {
+          "label": "Are you aware of any flood insurance claims that have been reported for this home?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Are you renting this home or do you rent this home to someone else?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Desired Contents Coverage",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "$8,000",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "$12,000",
+          "required": false,
+          "type": "select",
+          "options": [
+            "$20,000",
+            "$30,000",
+            "$40,000",
+            "$50,000",
+            "$60,000",
+            "$70,000",
+            "$80,000",
+            "$100,000"
+          ]
+        },
+        {
+          "label": "Desired Building Coverage",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Not Desired",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "$20,000",
+          "required": false,
+          "type": "select",
+          "options": [
+            "$30,000",
+            "$50,000",
+            "$75,000",
+            "$100,000",
+            "$125,000",
+            "$150,000",
+            "$200,000",
+            "$250,000+"
+          ]
+        },
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Comment",
+          "required": true,
+          "type": "textarea"
+        }
+      ]
+    },
+    "health-quote": {
+      "title": "Health Insurance Quote",
+      "intro": "Complete the details below to get your free health insurance quote",
+      "fields": [
+        {
+          "label": "Principal Information",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Currently Covered?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "If Yes, Insurance Company Name",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "How did you hear about us?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Social Security",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Telephone",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Gender",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Male",
+            "Female"
+          ]
+        },
+        {
+          "label": "Date of Birth",
+          "required": true,
+          "type": "date"
+        },
+        {
+          "label": "Status",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Asylum and TPS",
+            "Citizen",
+            "Employment Authorization",
+            "Notice Action I-797",
+            "Parolle",
+            "Resident"
+          ]
+        },
+        {
+          "label": "Identification Number",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Attached Copy of Driver's License",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Attached Copy of Status Document",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "(Asylum and TPS, Passport, Employment Authorization Card, Notice Action I-797, Parolle, Resident Card)",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Principal Income",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Option",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "W2",
+            "1099"
+          ]
+        },
+        {
+          "label": "Unemployed",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Work phone number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Work name",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Number of Dependents?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "label": "Coverage",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Yes",
+            "No"
+          ],
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Gender",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Male",
+            "Female"
+          ],
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound",
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Social Security",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Date of Birth",
+          "required": true,
+          "type": "date",
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Status",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Asylum and TPS",
+            "Citizen",
+            "Employment Authorization",
+            "Notice Action I-797",
+            "Parolle",
+            "Resident"
+          ],
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Identification number",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Attached Copy of Driver's License",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Attached Copy of Status Document",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "(Asylum and TPS, Passport, Employment Authorization Card, Notice Action I-797, Parolle, Resident Card)",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 1"
+        },
+        {
+          "label": "Coverage (D2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Yes",
+            "No"
+          ],
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Gender (D2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Male",
+            "Female"
+          ],
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Name (D2)",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound",
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Social Security (D2)",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Date of Birth (D2)",
+          "required": true,
+          "type": "date",
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Status (D2)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Asylum and TPS",
+            "Citizen",
+            "Employment Authorization",
+            "Notice Action I-797",
+            "Parolle",
+            "Resident"
+          ],
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Identification Number (D2)",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Attached Copy of Driver's License (D2)",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Attached Copy of Status Document (D2)",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "(Asylum and TPS, Passport, Employment Authorization Card, Notice Action I-797, Parolle, Resident Card)",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 2"
+        },
+        {
+          "label": "Coverage (D3)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Yes",
+            "No"
+          ],
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Gender (D3)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Male",
+            "Female"
+          ],
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Name (D3)",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Social Security (D3)",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Date of Birth (D3)",
+          "required": true,
+          "type": "date",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Status (D3)",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Asylum and TPS",
+            "Citizen",
+            "Employment Authorization",
+            "Notice Action I-797",
+            "Parolle",
+            "Resident"
+          ],
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Identification Number (D3)",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Attached Copy of Driver's License (D3)",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Attached Copy of Status Document (D3)",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "(Asylum and TPS, Passport, Employment Authorization Card, Notice Action I-797, Parolle, Resident Card)",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Spouse Income",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Coverage",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Yes",
+            "No"
+          ],
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Option",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "W2",
+            "1099"
+          ],
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Unemployed?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Yes",
+            "No"
+          ],
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Work Phone Number",
+          "required": true,
+          "type": "tel",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Work Name",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Total Income",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Spouse Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Social Security",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Telephone",
+          "required": true,
+          "type": "tel",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Gender",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Male",
+            "Female"
+          ],
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Date of Birth",
+          "required": true,
+          "type": "date",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Status",
+          "required": true,
+          "type": "select",
+          "options": [
+            "-",
+            "Asylum and TPS",
+            "Citizen",
+            "Employment Authorization",
+            "Notice Action I-797",
+            "Parolle",
+            "Resident"
+          ],
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Identification number",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Attached Copy of Driver's License",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Attached Copy of Status Document",
+          "required": true,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Max file size: 20MB",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "(Asylum and TPS, Passport, Employment Authorization Card, Notice Action I-797, Parolle, Resident Card)",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        },
+        {
+          "label": "Next",
+          "required": false,
+          "type": "text",
+          "section": "DEPENDENT 3"
+        }
+      ]
+    },
+    "bonds-quote": {
+      "title": "Insurance Bond Quote",
+      "intro": "Complete the details below to get your free insurance bond quote",
+      "fields": [
+        {
+          "label": "Bond Amount?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Business Name",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Contact Person's Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Comment",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Next",
+            "Get a quote for your insurance bond."
+          ]
+        }
+      ]
+    },
+    "landlords-quote": {
+      "title": "Landlords Insurance Quote",
+      "intro": "Complete the details below to get your free landlord insurance quote",
+      "fields": [
+        {
+          "label": "Number of Units",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Total Square Feet",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Comment",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Next",
+            "Get a quote for landlord insurance today"
+          ]
+        }
+      ]
+    },
+    "renters-quote": {
+      "title": "Renters Insurance Quote",
+      "intro": "Complete the details below to get your free renters insurance quote",
+      "fields": [
+        {
+          "label": "Property Type",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Apartment",
+            "Single Family Home",
+            "Duplex",
+            "Townhome",
+            "Mobile Home",
+            "Other"
+          ]
+        },
+        {
+          "label": "Estimated Square Footage",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Total Number of Rooms in your dwelling excluding basement and bathrooms",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "1",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "2",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "3",
+          "required": false,
+          "type": "select",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11+"
+          ]
+        },
+        {
+          "label": "Replacement value of all possessions",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$15,000",
+            "$30,000",
+            "$50,000",
+            "$100,000",
+            "$250,000+"
+          ]
+        },
+        {
+          "label": "Desired Deductible",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$250",
+            "$500",
+            "$1000",
+            "$2000",
+            "Other"
+          ]
+        },
+        {
+          "label": "Personal Liability Coverage Desired",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$100,000",
+            "$300,000",
+            "$500,000",
+            "$1,000,000",
+            "Other"
+          ]
+        },
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Select any additional property features that apply.",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Dead Bolts",
+            "Fire Extinguishers",
+            "Tramploline",
+            "Covered Deck/Patio",
+            "Swimming Pool"
+          ]
+        },
+        {
+          "label": "Do you have any of the following breeds of dogs: Chow, Doberman, German Shepherd, Pit Bull, Rottweiler, Wolf Hybrid, or a mix of these?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Have you reported any claims or losses to your insurance company within the past 5 years?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Will this insurance replace an existing policy?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Credit Rating",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Excellent",
+            "Good",
+            "Poor",
+            "Unsure"
+          ]
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Additional Comments?",
+          "required": true,
+          "type": "textarea"
+        }
+      ]
+    },
+    "umbrella-quote": {
+      "title": "Umbrella Insurance Quotes",
+      "intro": "Complete the details below to get your free umbrella insurance quote",
+      "fields": [
+        {
+          "label": "How Many Vehicles Do You Own?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "None",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6+"
+          ]
+        },
+        {
+          "label": "How Many Properties Do You Own?",
+          "required": true,
+          "type": "select",
+          "options": [
+            "None",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5+"
+          ]
+        },
+        {
+          "label": "Household Traffic Tickets in the Past 3 Years",
+          "required": true,
+          "type": "select",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7+"
+          ]
+        },
+        {
+          "label": "Household accidents in the past 3 years",
+          "required": true,
+          "type": "select",
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6+"
+          ]
+        },
+        {
+          "label": "Amount of Coverage Desired",
+          "required": true,
+          "type": "select",
+          "options": [
+            "$1,000,000",
+            "$2,000,000",
+            "$3,000,000",
+            "$4,000,000",
+            "$5,000,000",
+            "$10,000,000+"
+          ]
+        },
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Comment",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Next",
+            "Get your umbrella insurance quote today"
+          ]
+        }
+      ]
+    },
+    "wc-quote": {
+      "title": "Workers Compensation Quote",
+      "intro": "Complete the details below to get your free workers compensation insurance quote",
+      "fields": [
+        {
+          "label": "Type of Insurance Quote",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Annuity",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "All Terrain Vehicle Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Auto Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Business Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Boat Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "BOP Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Condo Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Classic/Antique Car Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Critical Illness Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Crop Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Dental Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Disability Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Earthquake Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Event Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Final Expense Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Flood Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Health Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Home Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Insurance Bonds",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Life Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Long Term Care Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Landlord Insurance",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Medicare Supplements",
+          "required": false,
+          "type": "text"
+        },
+        {
+          "label": "Motorcycle Insurance",
+          "required": false,
+          "type": "select",
+          "options": [
+            "Roadside Assistance",
+            "Recreational Vehicle Insurance",
+            "Renters Insurance",
+            "Travel Insurance",
+            "Umbrella Insurance",
+            "Vision Insurance",
+            "Workers Comp Insurance",
+            "Other Insurance Type"
+          ]
+        },
+        {
+          "label": "When would you like this policy to start?",
+          "required": true,
+          "type": "text"
+        },
+        {
+          "label": "Address",
+          "required": true,
+          "compound": [
+            "Line 1",
+            "Line 2",
+            "City",
+            "State",
+            "Zip Code",
+            "Country"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Name",
+          "required": true,
+          "compound": [
+            "First",
+            "Last"
+          ],
+          "type": "compound"
+        },
+        {
+          "label": "Email",
+          "required": true,
+          "type": "email"
+        },
+        {
+          "label": "Phone Number",
+          "required": true,
+          "type": "tel"
+        },
+        {
+          "label": "Comment",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Next",
+            "Get a quote for workers compensation insurance"
+          ]
+        }
+      ]
+    }
+  },
+  "industryLinks": {
+    "federal": [
+      "U.S. Department of Transportation",
+      "Federal Motor Carrier Safety Administration",
+      "Pipeline and Hazardous Materials Safety Administration",
+      "National Highway Traffic Safety Administration",
+      "National Transportation Safety Board"
+    ],
+    "trucking": [
+      "American Transportation Research Institute",
+      "American Trucking Associations",
+      "Commercial Vehicle Safety Alliance",
+      "National Tank Truck Carriers",
+      "National Private Truck Council",
+      "North American Transportation Management Institute",
+      "Professional Truck Driver Institute",
+      "Truckload Carriers Association",
+      "Uniform Intermodal Interchange & Facilities Access Agreement"
+    ],
+    "safety": [
+      "AAA Foundation",
+      "Commercial Vehicle Safety Alliance",
+      "National Safety Council",
+      "Insurance Institute for Highway Safety"
+    ]
+  },
+  "legal": {
+    "privacyPolicy": "Privacy Policy\nPrivacy Policy\nATI Insurance Group Inc., values you very much as a customer and takes your personal privacy seriously. When you request a rate quotation, apply for insurance, request changes to your insurance policy or submit a claim, you disclose information about yourself or members of your household. This notice tells you how we handle and safeguard the information we collect about you.\nWe collect information about you from:\nApplications or other forms you complete, and information you provide to us over the telephone, text, or email; Your business dealings with us and other companies;\nYour employer or association for ATI Insurance Group Inc. products;\nConsumer reporting agencies, Motor Vehicle Departments, inspection services and medical providers; and\nVisits to our ATI Insurance Group website.\nWe may disclose the following about you:\nInformation from your application or other forms, such as your name, date of birth, address, social security number, vehicle and driver information;\nInformation about your transactions with us, our affiliates or others, such as your insurance coverages, payment history, and certain claims information; and\nInformation we receive from third parties, such as your motor vehicle records and claims history.\nWe do not disclose personal information about you to anyone unless allowed by law. We are allowed by law to provide information to:\nA third party that performs services for us, such as claims investigations, medical examinations, inspections, and appraisals for assistance or the repair of your vehicle if you have a claim;\nOur affiliated insurance companies and reinsurers; Insurance regulators and reporting agencies;\nConsumer reporting agencies to obtain loss history information, motor vehicle reports, or credit report information where permitted by law;\nState Motor Vehicle Departments to obtain a report of any accidents or convictions or to confirm your compliance with compulsory motor vehicle liability insurance laws;\nLaw enforcement agencies or other government authorities to report suspected illegal activities;\nCompanies that provide marketing services on our behalf, or as part of a joint marketing agreement;\nAs otherwise permitted by law.\nHow we protect your information:\nWe maintain physical, electronic, and routine safeguards to protect your nonpublic personal information. These safeguards comply with applicable laws. We retain your information for as long as required by law or regulation. The only employees or agents who have access to your information are those who must have it to provide products or services to you. We do not sell your information to mass marketing or telemarketing companies. Any information we share with third parties, such as those organizations which perform a service for us, is subject to appropriate confidentiality protections and may be used only for the purposes intended.\nThis privacy notice is provided on behalf of ATI Insurance Group Inc.",
+    "accessibilityStatement": "Accessibility Statement\nAccessibility Statement\nUpdated: December 2019.\nGeneral\nwww.atiinsurancegroup.com strives to ensure that its services are accessible to people with disabilities. www.atiinsurancegroup.com has invested a significant amount of resources to help ensure that its website is made easier to use and more accessible for people with disabilities, with the strong belief that every person has the right to live with dignity, equality, comfort and independence.\nAccessibility on www.atiinsurancegroup.com\nwww.atiinsurancegroup.com makes available the UserWay Website Accessibility Widget that is powered by a dedicated accessibility server. The software allows www.atiinsurancegroup.com to improve its compliance with the Web Content Accessibility Guidelines (WCAG 2.1).\nEnabling the Accessibility Menu\nThe www.atiinsurancegroup.com accessibility menu can be enabled by clicking the accessibility menu icon that appears on the corner of the page. After triggering the accessibility menu, please wait a moment for the accessibility menu to load in its entirety.\nDisclaimer\nwww.atiinsurancegroup.com continues its efforts to constantly improve the accessibility of its site and services in the belief that it is our collective moral obligation to allow seamless, accessible and unhindered use also for those of us with disabilities.\nDespite our efforts to make all pages and content on www.atiinsurancegroup.com fully accessible, some content may not have yet been fully adapted to the strictest accessibility standards. This may be a result of not having found or identified the most appropriate technological solution.\nHere For You\nIf you are experiencing difficulty with any content on www.atiinsurancegroup.com or require assistance with any part of our site, please contact us during normal business hours as detailed below and we will be happy to assist.\nIf you wish to report an accessibility issue, have any questions or need assistance, please contact www.atiinsurancegroup.com Customer Support as follows:\nEmail: [email protected]"
+  },
+  "referAFriendForm": {
+    "title": "Refer a Friend",
+    "intro": "Refer a Friend to Our Agency",
+    "fields": [
+      {
+        "label": "There is no greater compliment you could give us than referring a friend to our agency. Thank you.",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "label": "Your Name",
+        "required": true,
+        "compound": [
+          "First",
+          "Last"
+        ],
+        "type": "compound",
+        "section": "About You"
+      },
+      {
+        "label": "Your Email",
+        "required": true,
+        "type": "email",
+        "section": "About You"
+      },
+      {
+        "label": "Your Friend's Name",
+        "required": true,
+        "compound": [
+          "First",
+          "Last"
+        ],
+        "type": "compound",
+        "section": "About Your Friend"
+      },
+      {
+        "label": "Your Friend's Email",
+        "required": true,
+        "type": "email",
+        "section": "About Your Friend"
+      },
+      {
+        "label": "Your Friend's Phone",
+        "required": true,
+        "type": "select",
+        "options": [
+          "Refer us!",
+          "We work hard to earn your recommendation"
+        ],
+        "section": "About Your Friend"
+      }
+    ]
+  },
+  "contactForm": {
+    "title": "Contact ATI Insurance Group, Inc.",
+    "intro": "Call Us Now",
+    "fields": [
+      {
+        "label": "Directions",
+        "required": false,
+        "type": "select",
+        "options": [
+          "Send us a message",
+          "* Indicates required field"
+        ]
+      },
+      {
+        "label": "Name",
+        "required": true,
+        "compound": [
+          "First",
+          "Last"
+        ],
+        "type": "compound"
+      },
+      {
+        "label": "Email",
+        "required": true,
+        "type": "email"
+      },
+      {
+        "label": "Phone Number",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "label": "Comment",
+        "required": true,
+        "type": "textarea"
+      },
+      {
+        "label": "8004 NW 154 St,",
+        "required": false,
+        "type": "select",
+        "options": [
+          "Unit 106",
+          "Miami Lakes, FL 33016"
+        ],
+        "section": "Mailing Address"
+      },
+      {
+        "label": "English, Spanish",
+        "required": false,
+        "type": "text",
+        "section": "Language Spoken"
+      },
+      {
+        "label": "Monday - Friday: 9:30am - 5:00pm",
+        "required": false,
+        "type": "text",
+        "section": "Agency Hours"
+      },
+      {
+        "label": "Saturday: By Appointment Only",
+        "required": false,
+        "type": "text",
+        "section": "Agency Hours"
+      }
+    ]
+  },
+  "newsRaw": "News & Updates\nATI Insurance Group, Inc. News & Updates\n10/27/2015\n0 Comments\nThis is the very first agency update we've published in the News portion of our website.\nThis is the area of the website where we're going to be writing brief updates about important news, updates, and other changes within our agency.\nSome of the things we may share here in the news section are: Hiring New Agency Staff\nWinning Customer Service Awards\nLocal Charity Events We Attend\nBusiness Partnerships We Join\nAnd much more!\nStay tuned!\n0 Comments\nMedia Inquiries\nArchives\nOctober 2015\nCategories\nAll\nAwards\nEvents\nLocal\nPartnerships\nStaff\nRSS Feed"
+}
