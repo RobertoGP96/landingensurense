@@ -3,9 +3,11 @@ import type { Translation } from "../../data/types";
 import Field from "./Field";
 import FormShell from "./FormShell";
 import { useFormSubmit } from "./useFormSubmit";
+import { useBreakpoints } from "../../hooks/useMediaQuery";
 
 export default function ContactForm({ t }: { t: Translation }) {
   const cf = t.contact_form;
+  const { isMobile } = useBreakpoints();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -47,7 +49,10 @@ export default function ContactForm({ t }: { t: Translation }) {
           required
           requiredHint={t.forms.required}
         />
-        <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+        <div
+          className="grid"
+          style={{ gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 24 }}
+        >
           <Field
             label={cf.labels.email}
             value={email}

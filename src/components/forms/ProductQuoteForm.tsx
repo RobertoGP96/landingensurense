@@ -3,6 +3,7 @@ import type { Translation, FieldDef } from "../../data/types";
 import Field from "./Field";
 import FormShell from "./FormShell";
 import { useFormSubmit } from "./useFormSubmit";
+import { useBreakpoints } from "../../hooks/useMediaQuery";
 
 type Props = {
   t: Translation;
@@ -17,6 +18,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
   const initialSlug = productSlug || DEFAULT_PRODUCT;
   const [slug, setSlug] = useState(initialSlug);
   const [step, setStep] = useState(0);
+  const { isMobile } = useBreakpoints();
 
   // Step 1 — basics
   const [name, setName] = useState("");
@@ -78,13 +80,17 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
     <section
       id="quote"
       className="relative overflow-hidden"
-      style={{ padding: "100px 0 120px" }}
+      style={{ padding: isMobile ? "56px 0 72px" : "100px 0 120px" }}
     >
       <div className="wrap">
         {!hideHeader && (
           <div
             className="grid"
-            style={{ gridTemplateColumns: "1fr 2fr", gap: 64, marginBottom: 56 }}
+            style={{
+              gridTemplateColumns: isMobile ? "1fr" : "1fr 2fr",
+              gap: isMobile ? 24 : 64,
+              marginBottom: isMobile ? 32 : 56,
+            }}
           >
             <div className="secnum">
               <b>04 / </b>
@@ -93,7 +99,11 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
             <div>
               <h2
                 className="display"
-                style={{ fontSize: "clamp(40px, 6vw, 84px)", margin: 0, color: "var(--color-ink)" }}
+                style={{
+                  fontSize: isMobile ? "clamp(32px, 8vw, 48px)" : "clamp(40px, 6vw, 84px)",
+                  margin: 0,
+                  color: "var(--color-ink)",
+                }}
               >
                 {t.quote.heading_a}{" "}
                 <span className="serif-it" style={{ color: "var(--color-sky-ink)" }}>
@@ -101,7 +111,13 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
                 </span>
                 {t.quote.heading_b}
               </h2>
-              <p style={{ marginTop: 20, fontSize: 17, color: "var(--color-ink-soft)" }}>
+              <p
+                style={{
+                  marginTop: isMobile ? 14 : 20,
+                  fontSize: isMobile ? 15 : 17,
+                  color: "var(--color-ink-soft)",
+                }}
+              >
                 {t.quote.sub}
               </p>
             </div>
@@ -110,10 +126,13 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
 
         <div
           className="grid items-start"
-          style={{ gridTemplateColumns: "1fr 1.6fr", gap: 48 }}
+          style={{
+            gridTemplateColumns: isMobile ? "1fr" : "1fr 1.6fr",
+            gap: isMobile ? 24 : 48,
+          }}
         >
           {/* Left column: product picker (only when not pre-selected) + summary */}
-          <div className="sticky" style={{ top: 100 }}>
+          <div className={isMobile ? "" : "sticky"} style={isMobile ? {} : { top: 100 }}>
             <div className="mono" style={{ marginBottom: 16, opacity: 0.6 }}>
               {t.quote.labels.type}
             </div>
@@ -215,7 +234,13 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
                   required
                   requiredHint={t.forms.required}
                 />
-                <div className="grid" style={{ gridTemplateColumns: "1.4fr 1fr", gap: 24 }}>
+                <div
+                  className="grid"
+                  style={{
+                    gridTemplateColumns: isMobile ? "1fr" : "1.4fr 1fr",
+                    gap: 24,
+                  }}
+                >
                   <Field
                     label={t.quote.labels.phone}
                     value={phone}
@@ -333,7 +358,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
                     <div
                       key={i}
                       className="flex justify-between"
-                      style={{ gap: 24, fontSize: 14 }}
+                      style={{ gap: 12, fontSize: 14, flexWrap: "wrap" }}
                     >
                       <dt className="mono" style={{ opacity: 0.55, margin: 0 }}>
                         {k}

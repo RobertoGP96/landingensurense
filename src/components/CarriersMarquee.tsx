@@ -1,4 +1,7 @@
+import { useBreakpoints } from "../hooks/useMediaQuery";
+
 export default function CarriersMarquee() {
+  const { isMobile } = useBreakpoints();
   const carriers = [
     "PROGRESSIVE",
     "TRAVELERS",
@@ -19,12 +22,12 @@ export default function CarriersMarquee() {
       style={{
         borderTop: "1px solid var(--color-rule)",
         borderBottom: "1px solid var(--color-rule)",
-        padding: "28px 0",
+        padding: isMobile ? "20px 0" : "28px 0",
       }}
     >
       <div
         className="flex items-center whitespace-nowrap"
-        style={{ gap: 64, animation: "marquee 38s linear infinite" }}
+        style={{ gap: isMobile ? 32 : 64, animation: "marquee 38s linear infinite" }}
       >
         {[...carriers, ...carriers].map((c, i) => (
           <span
@@ -32,14 +35,22 @@ export default function CarriersMarquee() {
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 600,
-              fontSize: 24,
+              fontSize: isMobile ? 16 : 24,
               letterSpacing: "0.02em",
               color: "var(--color-ink)",
               opacity: 0.7,
             }}
           >
             {c}{" "}
-            <span style={{ marginLeft: 64, color: "var(--color-sky-ink)", opacity: 0.5 }}>✦</span>
+            <span
+              style={{
+                marginLeft: isMobile ? 32 : 64,
+                color: "var(--color-sky-ink)",
+                opacity: 0.5,
+              }}
+            >
+              ✦
+            </span>
           </span>
         ))}
       </div>

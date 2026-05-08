@@ -1,9 +1,16 @@
 import type { Translation } from "../data/types";
+import { useBreakpoints } from "../hooks/useMediaQuery";
+
 export default function CtaBanner({ t }: { t: Translation }) {
+  const { isMobile, isSmall } = useBreakpoints();
   return (
     <section
       className="relative overflow-hidden"
-      style={{ padding: "120px 0", background: "var(--color-ink)", color: "var(--color-paper)" }}
+      style={{
+        padding: isMobile ? "64px 0" : "120px 0",
+        background: "var(--color-ink)",
+        color: "var(--color-paper)",
+      }}
     >
       <img
         src="/assets/eagle.png"
@@ -11,7 +18,8 @@ export default function CtaBanner({ t }: { t: Translation }) {
         aria-hidden="true"
         className="absolute pointer-events-none select-none"
         style={{
-          width: 720,
+          width: isMobile ? 360 : 720,
+          maxWidth: "100%",
           height: "auto",
           left: "50%",
           top: "50%",
@@ -21,13 +29,20 @@ export default function CtaBanner({ t }: { t: Translation }) {
         }}
       />
       <div className="wrap relative text-center">
-        <div className="mono" style={{ opacity: 0.5, marginBottom: 32, color: "var(--color-paper)" }}>
+        <div
+          className="mono"
+          style={{
+            opacity: 0.5,
+            marginBottom: isMobile ? 20 : 32,
+            color: "var(--color-paper)",
+          }}
+        >
           — {t.cta.quote} · 47 min avg —
         </div>
         <h2
           className="display"
           style={{
-            fontSize: "clamp(56px, 9vw, 132px)",
+            fontSize: isMobile ? "clamp(40px, 11vw, 72px)" : "clamp(56px, 9vw, 132px)",
             margin: 0,
             color: "var(--color-paper)",
           }}
@@ -38,7 +53,15 @@ export default function CtaBanner({ t }: { t: Translation }) {
           </span>{" "}
           {t.hero.title_c}
         </h2>
-        <div className="flex justify-center" style={{ marginTop: 48, gap: 16 }}>
+        <div
+          className="flex justify-center"
+          style={{
+            marginTop: isMobile ? 32 : 48,
+            gap: isSmall ? 10 : 16,
+            flexDirection: isSmall ? "column" : "row",
+            alignItems: isSmall ? "stretch" : "center",
+          }}
+        >
           <a
             href="#quote"
             className="btn"
@@ -46,6 +69,7 @@ export default function CtaBanner({ t }: { t: Translation }) {
               background: "var(--color-paper)",
               color: "var(--color-ink)",
               borderColor: "var(--color-paper)",
+              justifyContent: isSmall ? "center" : undefined,
             }}
           >
             {t.cta.quote} <span className="arr">→</span>
@@ -53,7 +77,11 @@ export default function CtaBanner({ t }: { t: Translation }) {
           <a
             href={`tel:${t.topbar.phone}`}
             className="btn outline"
-            style={{ color: "var(--color-paper)", borderColor: "var(--color-paper)" }}
+            style={{
+              color: "var(--color-paper)",
+              borderColor: "var(--color-paper)",
+              justifyContent: isSmall ? "center" : undefined,
+            }}
           >
             {t.cta.call} · {t.topbar.phone}
           </a>

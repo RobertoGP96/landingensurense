@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import SuccessState from "./SuccessState";
+import { useBreakpoints } from "../../hooks/useMediaQuery";
 
 type Props = {
   badge?: string;
@@ -32,6 +33,7 @@ export default function FormShell({
   successBody,
   viewTransitionName = "vt-quote-card",
 }: Props) {
+  const { isMobile } = useBreakpoints();
   return (
     <form
       onSubmit={onSubmit}
@@ -39,13 +41,22 @@ export default function FormShell({
       style={{
         background: "var(--color-paper)",
         border: "1px solid var(--color-ink)",
-        padding: 48,
+        padding: isMobile ? 20 : 48,
+        paddingTop: isMobile ? 56 : 48,
         borderRadius: 4,
         viewTransitionName,
       }}
     >
       {badge && (
-        <div className="mono absolute" style={{ top: 20, right: 20, opacity: 0.5 }}>
+        <div
+          className="mono absolute"
+          style={{
+            top: isMobile ? 16 : 20,
+            right: isMobile ? 16 : 20,
+            opacity: 0.5,
+            fontSize: isMobile ? 9 : 11,
+          }}
+        >
           {badge}
         </div>
       )}

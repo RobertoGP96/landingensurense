@@ -1,4 +1,5 @@
 import type { Translation, Lang } from "../data/types";
+import { useBreakpoints } from "../hooks/useMediaQuery";
 
 type LangSwitchProps = { lang: Lang; setLang: (l: Lang) => void };
 function LangSwitch({ lang, setLang }: LangSwitchProps) {
@@ -31,34 +32,51 @@ function LangSwitch({ lang, setLang }: LangSwitchProps) {
 
 type TopbarProps = { t: Translation; lang: Lang; setLang: (l: Lang) => void };
 export default function Topbar({ t, lang, setLang }: TopbarProps) {
+  const { isMobile, isSmall } = useBreakpoints();
   return (
     <div className="bg-ink text-paper text-xs">
       <div
         className="wrap flex items-center justify-between"
         style={{
-          padding: "10px 56px",
+          padding: isMobile ? "8px 0" : "10px 56px",
           fontFamily: "var(--font-mono)",
           letterSpacing: "0.06em",
           textTransform: "uppercase",
-          fontSize: 11,
+          fontSize: isMobile ? 10 : 11,
+          gap: 12,
+          flexWrap: "wrap",
         }}
       >
-        <div className="flex items-center" style={{ gap: 28 }}>
+        <div
+          className="flex items-center"
+          style={{ gap: isMobile ? 12 : 28, flexWrap: "wrap" }}
+        >
           <span>
             <span style={{ opacity: 0.5 }}>↳</span> {t.topbar.hours}
           </span>
-          <span style={{ opacity: 0.4 }}>·</span>
-          <span>{t.topbar.license}</span>
+          {!isSmall && (
+            <>
+              <span style={{ opacity: 0.4 }}>·</span>
+              <span>{t.topbar.license}</span>
+            </>
+          )}
         </div>
-        <div className="flex items-center" style={{ gap: 24 }}>
-          <a href="#" className="inline-flex items-center" style={{ gap: 8 }}>
-            <span
-              className="inline-block"
-              style={{ width: 6, height: 6, borderRadius: 99, background: "#7ed5a4" }}
-            />
-            {t.hero.live}
-          </a>
-          <span style={{ opacity: 0.4 }}>·</span>
+        <div
+          className="flex items-center"
+          style={{ gap: isMobile ? 12 : 24, flexWrap: "wrap" }}
+        >
+          {!isMobile && (
+            <>
+              <a href="#" className="inline-flex items-center" style={{ gap: 8 }}>
+                <span
+                  className="inline-block"
+                  style={{ width: 6, height: 6, borderRadius: 99, background: "#7ed5a4" }}
+                />
+                {t.hero.live}
+              </a>
+              <span style={{ opacity: 0.4 }}>·</span>
+            </>
+          )}
           <a href={`tel:${t.topbar.phone}`}>{t.topbar.phone}</a>
           <span style={{ opacity: 0.4 }}>·</span>
           <LangSwitch lang={lang} setLang={setLang} />

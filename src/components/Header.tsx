@@ -1,6 +1,8 @@
 import type { Translation } from "../data/types";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
+import { useBreakpoints } from "../hooks/useMediaQuery";
+import MobileNav from "./MobileNav";
 
 type NavKind = "anchor" | "page" | "dropdown";
 type DropdownKey = "products" | "services" | null;
@@ -8,6 +10,8 @@ type DropdownKey = "products" | "services" | null;
 export default function Header({ t }: { t: Translation }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState<DropdownKey>(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const { isMobile } = useBreakpoints();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -37,17 +41,21 @@ export default function Header({ t }: { t: Translation }) {
     >
       <div
         className="wrap flex items-center justify-between"
-        style={{ padding: "20px 56px" }}
+        style={{ padding: isMobile ? "14px 0" : "20px 56px" }}
         onMouseLeave={() => setOpen(null)}
       >
-        <Link to="/" className="flex items-center" style={{ gap: 14 }}>
-          <img src="/assets/eagle.png" alt="" style={{ height: 38, width: "auto" }} />
+        <Link to="/" className="flex items-center" style={{ gap: isMobile ? 10 : 14 }}>
+          <img
+            src="/assets/eagle.png"
+            alt=""
+            style={{ height: isMobile ? 30 : 38, width: "auto" }}
+          />
           <div className="grid leading-none" style={{ gap: 4 }}>
             <span
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 700,
-                fontSize: 16,
+                fontSize: isMobile ? 14 : 16,
                 letterSpacing: "-0.02em",
               }}
             >
@@ -59,6 +67,7 @@ export default function Header({ t }: { t: Translation }) {
           </div>
         </Link>
 
+        {!isMobile && (
         <nav className="flex" style={{ gap: 28 }}>
           {items.map((it, i) => {
             const baseStyle = {
@@ -173,13 +182,40 @@ export default function Header({ t }: { t: Translation }) {
             );
           })}
         </nav>
+        )}
 
-        <div className="flex" style={{ gap: 12 }}>
-          <Link className="btn outline" to="/quote" style={{ padding: "10px 18px", fontSize: 13 }}>
-            {t.cta.quote} <span className="arr">→</span>
-          </Link>
+        <div className="flex items-center" style={{ gap: 12 }}>
+          {!isMobile && (
+            <Link className="btn outline" to="/quote" style={{ padding: "10px 18px", fontSize: 13 }}>
+              {t.cta.quote} <span className="arr">→</span>
+            </Link>
+          )}
+          {isMobile && (
+            <button
+              onClick={() => setMobileOpen(true)}
+              aria-label="Open menu"
+              style={{
+                border: "1px solid var(--color-ink)",
+                background: "transparent",
+                borderRadius: 999,
+                width: 40,
+                height: 40,
+                display: "inline-flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 4,
+                padding: 0,
+              }}
+            >
+              <span style={{ width: 16, height: 1.5, background: "var(--color-ink)" }} />
+              <span style={{ width: 16, height: 1.5, background: "var(--color-ink)" }} />
+              <span style={{ width: 16, height: 1.5, background: "var(--color-ink)" }} />
+            </button>
+          )}
         </div>
       </div>
+      <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} t={t} />
     </header>
   );
 }

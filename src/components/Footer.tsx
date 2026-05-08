@@ -1,14 +1,16 @@
 import type { Translation } from "../data/types";
 import { Link } from "react-router";
+import { useBreakpoints } from "../hooks/useMediaQuery";
 
 export default function Footer({ t }: { t: Translation }) {
   const productCols = t.products.items.slice(0, 8);
   const services = t.services.items;
+  const { isMobile, isSmall } = useBreakpoints();
 
   return (
     <footer
       style={{
-        padding: "80px 0 40px",
+        padding: isMobile ? "56px 0 32px" : "80px 0 40px",
         background: "var(--color-bg)",
         borderTop: "1px solid var(--color-rule)",
       }}
@@ -17,9 +19,13 @@ export default function Footer({ t }: { t: Translation }) {
         <div
           className="grid"
           style={{
-            gridTemplateColumns: "2fr 1fr 1fr 1fr",
-            gap: 48,
-            paddingBottom: 56,
+            gridTemplateColumns: isSmall
+              ? "1fr"
+              : isMobile
+              ? "1fr 1fr"
+              : "2fr 1fr 1fr 1fr",
+            gap: isMobile ? 32 : 48,
+            paddingBottom: isMobile ? 32 : 56,
             borderBottom: "1px solid var(--color-rule)",
           }}
         >
