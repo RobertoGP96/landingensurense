@@ -3,6 +3,7 @@ import type { Translation, Lang } from "../data/types";
 import Hero from "../components/Hero";
 import CarriersMarquee from "../components/CarriersMarquee";
 import Intro from "../components/Intro";
+import LifeFocus from "../components/LifeFocus";
 import Coverage from "../components/Coverage";
 import Why from "../components/Why";
 import Process from "../components/Process";
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Hero t={t} />
       <CarriersMarquee />
       <Intro t={t} />
+      <LifeFocus t={t} />
       <Coverage t={t} />
       <Why t={t} />
       <Process t={t} />

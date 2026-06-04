@@ -68,6 +68,15 @@ export type Translation = {
       address: string;
     };
   };
+  lifeFocus: {
+    kicker: string;
+    heading_a: string;
+    heading_it: string;
+    heading_b: string;
+    lead: string;
+    body: string;
+    bullets: string[];
+  };
   coverage: {
     kicker: string;
     heading_a: string;

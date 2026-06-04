@@ -31,6 +31,20 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         address: "3832 Orlando Dr, Sanford, FL",
       },
     },
+    lifeFocus: {
+      kicker: "Especialidad",
+      heading_a: "Especialistas en",
+      heading_it: "seguros de vida",
+      heading_b: ".",
+      lead: "Te asesoramos, educamos y te llevamos de la mano hasta que tu póliza esté activa.",
+      body: "Un equipo dedicado a explicarte cómo funcionan los seguros de vida, identificar la mejor cobertura para la que califiques y acompañarte en todo el proceso de suscripción — desde la aplicación hasta la entrega de la póliza.",
+      bullets: [
+        "Educación clara sobre cómo funciona cada plan",
+        "Identificamos la mejor cobertura para la que calificas",
+        "Sometemos la aplicación y damos seguimiento",
+        "Te acompañamos hasta tener tu póliza en mano",
+      ],
+    },
     coverage: {
       kicker: "Coberturas",
       heading_a: "Cinco frentes,",
@@ -390,6 +404,20 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         email: "catillomaris120@gmail.com",
         address: "3832 Orlando Dr, Sanford, FL",
       },
+    },
+    lifeFocus: {
+      kicker: "Specialty",
+      heading_a: "Life insurance",
+      heading_it: "specialists",
+      heading_b: ".",
+      lead: "We advise, educate and walk you through until your policy is active.",
+      body: "A dedicated team to explain how life insurance works, identify the best coverage you qualify for, and guide you through the full underwriting process — from application to policy delivery.",
+      bullets: [
+        "Clear education on how each plan works",
+        "We find the best coverage you qualify for",
+        "We submit and follow up on the application",
+        "We stay with you until the policy is in hand",
+      ],
     },
     coverage: {
       kicker: "Coverage",
