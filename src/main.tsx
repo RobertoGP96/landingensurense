@@ -13,23 +13,26 @@ import ServicesPage from "./pages/ServicesPage";
 import ServiceDetailPage from "./pages/ServiceDetailPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import { SanityContentProvider } from "./sanity/SanityContentProvider";
 
 createRoot(document.getElementById("root") as HTMLElement).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="coverage/:slug" element={<CoveragePage />} />
-          <Route path="quote" element={<QuotePage />} />
-          <Route path="products" element={<ProductsPage />} />
-          <Route path="products/:slug" element={<ProductDetailPage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="services/:slug" element={<ServiceDetailPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <SanityContentProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="coverage/:slug" element={<CoveragePage />} />
+            <Route path="quote" element={<QuotePage />} />
+            <Route path="products" element={<ProductsPage />} />
+            <Route path="products/:slug" element={<ProductDetailPage />} />
+            <Route path="services" element={<ServicesPage />} />
+            <Route path="services/:slug" element={<ServiceDetailPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </SanityContentProvider>
   </StrictMode>
 );

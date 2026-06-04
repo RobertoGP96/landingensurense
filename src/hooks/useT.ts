@@ -3,6 +3,7 @@ import { flushSync } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { CONTENT } from "../data/content";
 import type { Translation } from "../data/types";
+import { useSanityContent } from "../sanity/SanityContentProvider";
 
 export function withViewTransition(updateFn: () => void): void {
   if (typeof document === "undefined" || typeof document.startViewTransition !== "function") {
@@ -21,6 +22,7 @@ export function useT(): {
 } {
   const { i18n } = useTranslation();
   const lang = (i18n.resolvedLanguage === "en" ? "en" : "es") as "es" | "en";
+  const sanity = useSanityContent();
 
   const setLang = useCallback(
     (next: "es" | "en") => {
@@ -32,5 +34,7 @@ export function useT(): {
     [i18n, lang]
   );
 
-  return { t: CONTENT[lang], lang, setLang };
+  const t = sanity ? sanity.getTranslation(lang) : CONTENT[lang];
+
+  return { t, lang, setLang };
 }
