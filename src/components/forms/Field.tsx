@@ -45,11 +45,20 @@ export default function Field({
   const labelEl = (
     <span
       className="mono"
-      style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 8, opacity: 0.6 }}
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "baseline",
+        gap: 8,
+        marginBottom: 8,
+        opacity: 0.6,
+        minHeight: 16,
+        lineHeight: 1.2,
+      }}
     >
-      <span>{label}</span>
+      <span style={{ flex: 1, minWidth: 0 }}>{label}</span>
       {required && requiredHint && (
-        <span style={{ fontSize: 9, opacity: 0.5 }}>{requiredHint}</span>
+        <span style={{ fontSize: 9, opacity: 0.5, flexShrink: 0 }}>{requiredHint}</span>
       )}
     </span>
   );

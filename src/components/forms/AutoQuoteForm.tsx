@@ -423,12 +423,21 @@ export default function AutoQuoteForm({ t }: Props) {
         </div>
 
         {step === 0 && (
-          <>
+          <div
+            className="grid"
+            style={{
+              gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+              gap: 24,
+              alignItems: "end",
+            }}
+          >
             <div
-              className="grid"
               style={{
-                gridTemplateColumns: isMobile ? "1fr" : "2fr 1fr 2fr",
+                gridColumn: isMobile ? "auto" : "1 / -1",
+                display: "grid",
+                gridTemplateColumns: isMobile ? "1fr" : "1fr 96px 1fr",
                 gap: 24,
+                alignItems: "end",
               }}
             >
               <Field
@@ -440,7 +449,7 @@ export default function AutoQuoteForm({ t }: Props) {
                 requiredHint={t.forms.required}
               />
               <Field
-                label={`${L.middle_initial} (${L.optional})`}
+                label={L.middle_initial}
                 value={middleInitial}
                 onChange={(v) => setMiddleInitial(v.slice(0, 1).toUpperCase())}
                 placeholder="O"
@@ -454,198 +463,191 @@ export default function AutoQuoteForm({ t }: Props) {
                 requiredHint={t.forms.required}
               />
             </div>
-            <div
-              className="grid"
-              style={{
-                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-                gap: 24,
-              }}
-            >
+            <Field
+              label={L.email}
+              value={email}
+              onChange={setEmail}
+              type="email"
+              placeholder="trolbertogp96@gmail.com"
+              required
+              requiredHint={t.forms.required}
+            />
+            <Field
+              label={L.phone}
+              value={phone}
+              onChange={setPhone}
+              type="tel"
+              placeholder="(709) 252-5251"
+              required
+              requiredHint={t.forms.required}
+            />
+            <Field
+              label={L.contact_method}
+              value={contactMethod}
+              onChange={setContactMethod}
+              type="select"
+              options={[...L.contact_options]}
+              required
+              requiredHint={t.forms.required}
+            />
+            <Field
+              label={`${L.best_time} (${L.optional})`}
+              value={bestTime}
+              onChange={setBestTime}
+              type="select"
+              options={[...L.best_time_options]}
+            />
+            <div style={{ gridColumn: isMobile ? "auto" : "1 / -1" }}>
               <Field
-                label={L.email}
-                value={email}
-                onChange={setEmail}
-                type="email"
-                placeholder="trolbertogp96@gmail.com"
-                required
-                requiredHint={t.forms.required}
-              />
-              <Field
-                label={L.phone}
-                value={phone}
-                onChange={setPhone}
-                type="tel"
-                placeholder="(709) 252-5251"
+                label={L.dob}
+                value={dob}
+                onChange={setDob}
+                type="date"
                 required
                 requiredHint={t.forms.required}
               />
             </div>
-            <div
-              className="grid"
-              style={{
-                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-                gap: 24,
-              }}
-            >
+          </div>
+        )}
+
+        {step === 1 && (
+          <div
+            className="grid"
+            style={{
+              gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+              gap: 24,
+              alignItems: "end",
+            }}
+          >
+            <Field
+              label={L.year}
+              value={year}
+              onChange={setYear}
+              type="select"
+              options={YEARS}
+              required
+              requiredHint={t.forms.required}
+            />
+            <Field
+              label={L.make}
+              value={make}
+              onChange={setMake}
+              type="select"
+              options={MAKES}
+              required
+              requiredHint={t.forms.required}
+            />
+            <div style={{ gridColumn: isMobile ? "auto" : "1 / -1" }}>
               <Field
-                label={L.contact_method}
-                value={contactMethod}
-                onChange={setContactMethod}
+                label={L.body_style}
+                value={bodyStyle}
+                onChange={setBodyStyle}
                 type="select"
-                options={[...L.contact_options]}
+                options={BODY_STYLES}
                 required
                 requiredHint={t.forms.required}
               />
+            </div>
+            <div style={{ gridColumn: isMobile ? "auto" : "1 / -1" }}>
               <Field
-                label={`${L.best_time} (${L.optional})`}
-                value={bestTime}
-                onChange={setBestTime}
+                label={L.vin}
+                value={vin}
+                onChange={(v) => setVin(v.toUpperCase().slice(0, 17))}
+                placeholder="1HGCY2F5XXXXXXXXX"
+                required
+                requiredHint={t.forms.required}
+              />
+            </div>
+          </div>
+        )}
+
+        {step === 2 && (
+          <div
+            className="grid"
+            style={{
+              gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+              gap: 24,
+              alignItems: "end",
+            }}
+          >
+            <div style={{ gridColumn: isMobile ? "auto" : "1 / -1" }}>
+              <Field
+                label={L.current_carrier}
+                value={currentCarrier}
+                onChange={setCurrentCarrier}
                 type="select"
-                options={[...L.best_time_options]}
+                options={CURRENT_CARRIERS}
+                required
+                requiredHint={t.forms.required}
               />
             </div>
             <Field
-              label={L.dob}
-              value={dob}
-              onChange={setDob}
+              label={L.current_liability}
+              value={currentLiability}
+              onChange={setCurrentLiability}
+              type="select"
+              options={LIABILITY_LEVELS}
+              required
+              requiredHint={t.forms.required}
+            />
+            <Field
+              label={L.current_expiration}
+              value={currentExpiration}
+              onChange={setCurrentExpiration}
               type="date"
               required
               requiredHint={t.forms.required}
             />
-          </>
-        )}
-
-        {step === 1 && (
-          <>
-            <div
-              className="grid"
-              style={{
-                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-                gap: 24,
-              }}
-            >
+            <div style={{ gridColumn: isMobile ? "auto" : "1 / -1" }}>
               <Field
-                label={L.year}
-                value={year}
-                onChange={setYear}
-                type="select"
-                options={YEARS}
-                required
-                requiredHint={t.forms.required}
-              />
-              <Field
-                label={L.make}
-                value={make}
-                onChange={setMake}
-                type="select"
-                options={MAKES}
-                required
-                requiredHint={t.forms.required}
+                label={`${L.current_premium} ($) (${L.optional})`}
+                value={currentPremium}
+                onChange={setCurrentPremium}
+                type="number"
+                placeholder="12000"
               />
             </div>
-            <Field
-              label={L.body_style}
-              value={bodyStyle}
-              onChange={setBodyStyle}
-              type="select"
-              options={BODY_STYLES}
-              required
-              requiredHint={t.forms.required}
-            />
-            <Field
-              label={L.vin}
-              value={vin}
-              onChange={(v) => setVin(v.toUpperCase().slice(0, 17))}
-              placeholder="1HGCY2F5XXXXXXXXX"
-              required
-              requiredHint={t.forms.required}
-            />
-          </>
+          </div>
         )}
 
-        {step === 2 && (
-          <>
-            <Field
-              label={L.current_carrier}
-              value={currentCarrier}
-              onChange={setCurrentCarrier}
-              type="select"
-              options={CURRENT_CARRIERS}
-              required
-              requiredHint={t.forms.required}
-            />
-            <div
-              className="grid"
-              style={{
-                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-                gap: 24,
-              }}
-            >
+        {step === 3 && (
+          <div
+            className="grid"
+            style={{
+              gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+              gap: 24,
+              alignItems: "end",
+            }}
+          >
+            <div style={{ gridColumn: isMobile ? "auto" : "1 / -1" }}>
               <Field
-                label={L.current_liability}
-                value={currentLiability}
-                onChange={setCurrentLiability}
-                type="select"
-                options={LIABILITY_LEVELS}
-                required
-                requiredHint={t.forms.required}
-              />
-              <Field
-                label={L.current_expiration}
-                value={currentExpiration}
-                onChange={setCurrentExpiration}
+                label={L.policy_start}
+                value={policyStart}
+                onChange={setPolicyStart}
                 type="date"
                 required
                 requiredHint={t.forms.required}
               />
             </div>
             <Field
-              label={`${L.current_premium} ($) (${L.optional})`}
-              value={currentPremium}
-              onChange={setCurrentPremium}
-              type="number"
-              placeholder="12000"
-            />
-          </>
-        )}
-
-        {step === 3 && (
-          <>
-            <Field
-              label={L.policy_start}
-              value={policyStart}
-              onChange={setPolicyStart}
-              type="date"
+              label={L.bundle}
+              value={bundle}
+              onChange={setBundle}
+              type="select"
+              options={yesNo}
               required
               requiredHint={t.forms.required}
             />
-            <div
-              className="grid"
-              style={{
-                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
-                gap: 24,
-              }}
-            >
-              <Field
-                label={L.bundle}
-                value={bundle}
-                onChange={setBundle}
-                type="select"
-                options={yesNo}
-                required
-                requiredHint={t.forms.required}
-              />
-              <Field
-                label={L.paperless}
-                value={paperless}
-                onChange={setPaperless}
-                type="select"
-                options={yesNo}
-                required
-                requiredHint={t.forms.required}
-              />
-            </div>
-          </>
+            <Field
+              label={L.paperless}
+              value={paperless}
+              onChange={setPaperless}
+              type="select"
+              options={yesNo}
+              required
+              requiredHint={t.forms.required}
+            />
+          </div>
         )}
 
         {step === 4 && (
@@ -655,6 +657,7 @@ export default function AutoQuoteForm({ t }: Props) {
               style={{
                 gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
                 gap: 24,
+                alignItems: "end",
               }}
             >
               <Field
@@ -679,11 +682,27 @@ export default function AutoQuoteForm({ t }: Props) {
             <div>
               <span
                 className="mono block"
-                style={{ marginBottom: 12, opacity: 0.6 }}
+                style={{
+                  marginBottom: 12,
+                  opacity: 0.6,
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "baseline",
+                }}
               >
-                {L.coverage_plan}
+                <span>{L.coverage_plan}</span>
+                <span style={{ fontSize: 9, opacity: 0.5 }}>
+                  {t.forms.required}
+                </span>
               </span>
-              <div className="grid" style={{ gap: 12 }}>
+              <div
+                className="grid"
+                style={{
+                  gap: 12,
+                  gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+                  alignItems: "stretch",
+                }}
+              >
                 {PLAN_KEYS.map((key) => {
                   const p = L.plans[key];
                   const active = plan === key;
@@ -694,7 +713,7 @@ export default function AutoQuoteForm({ t }: Props) {
                       onClick={() => setPlan(key)}
                       className="text-left"
                       style={{
-                        padding: "16px 18px",
+                        padding: "18px 20px",
                         border: active
                           ? "1px solid var(--color-ink)"
                           : "1px solid var(--color-rule)",
@@ -707,24 +726,33 @@ export default function AutoQuoteForm({ t }: Props) {
                         borderRadius: 4,
                         cursor: "pointer",
                         transition: "all .2s",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: 10,
                       }}
                     >
                       <div
                         className="flex justify-between items-center"
-                        style={{ gap: 12, marginBottom: 8 }}
+                        style={{ gap: 12 }}
                       >
                         <span
                           style={{
                             fontFamily: "var(--font-display)",
                             fontSize: 18,
                             fontWeight: 500,
+                            letterSpacing: "-0.01em",
                           }}
                         >
                           {p.name}
                         </span>
                         <span
                           className="mono"
-                          style={{ fontSize: 10, opacity: 0.7 }}
+                          style={{
+                            fontSize: 10,
+                            opacity: 0.7,
+                            width: 14,
+                            textAlign: "right",
+                          }}
                         >
                           {active ? "✓" : ""}
                         </span>
@@ -735,13 +763,24 @@ export default function AutoQuoteForm({ t }: Props) {
                           padding: 0,
                           margin: 0,
                           display: "grid",
-                          gap: 4,
+                          gap: 6,
                           fontSize: 13,
+                          lineHeight: 1.45,
                           opacity: active ? 0.9 : 0.75,
                         }}
                       >
                         {p.items.map((it) => (
-                          <li key={it}>· {it}</li>
+                          <li
+                            key={it}
+                            style={{
+                              display: "grid",
+                              gridTemplateColumns: "12px 1fr",
+                              gap: 6,
+                            }}
+                          >
+                            <span style={{ opacity: 0.6 }}>·</span>
+                            <span>{it}</span>
+                          </li>
                         ))}
                       </ul>
                     </button>
@@ -754,63 +793,125 @@ export default function AutoQuoteForm({ t }: Props) {
 
         {step === 5 && (
           <>
-            <dl
-              className="grid"
-              style={{
-                gap: 12,
-                margin: 0,
-                paddingBottom: 16,
-                borderBottom: "1px solid var(--color-rule)",
-              }}
-            >
-              {(
-                [
-                  [
-                    L.first_name + " / " + L.last_name,
-                    `${firstName}${middleInitial ? ` ${middleInitial}.` : ""} ${lastName}`,
+            {(
+              [
+                {
+                  title: L.section_personal,
+                  rows: [
+                    [
+                      L.first_name + " / " + L.last_name,
+                      `${firstName}${middleInitial ? ` ${middleInitial}.` : ""} ${lastName}`,
+                    ],
+                    [L.email, email],
+                    [L.phone, phone],
+                    [L.contact_method, contactMethod],
+                    [L.best_time, bestTime || "—"],
+                    [L.dob, dob],
                   ],
-                  [L.email, email],
-                  [L.phone, phone],
-                  [L.contact_method, contactMethod],
-                  [L.best_time, bestTime || "—"],
-                  [L.dob, dob],
-                  [L.year + " / " + L.make, `${year} ${make}`],
-                  [L.body_style, bodyStyle],
-                  [L.vin, vin],
-                  [L.current_carrier, currentCarrier],
-                  [L.current_liability, currentLiability],
-                  [L.current_expiration, currentExpiration],
-                  [L.current_premium, currentPremium ? `$${currentPremium}` : "—"],
-                  [L.policy_start, policyStart],
-                  [L.bundle, bundle],
-                  [L.paperless, paperless],
-                  [L.comp_deductible, compDeductible],
-                  [L.coll_deductible, collDeductible],
-                  [L.coverage_plan, plan ? L.plans[plan].name : "—"],
-                ] as [string, string][]
-              ).map(([k, v], i) => (
+                },
+                {
+                  title: L.section_vehicle,
+                  rows: [
+                    [L.year + " / " + L.make, `${year} ${make}`],
+                    [L.body_style, bodyStyle],
+                    [L.vin, vin],
+                  ],
+                },
+                {
+                  title: L.section_current,
+                  rows: [
+                    [L.current_carrier, currentCarrier],
+                    [L.current_liability, currentLiability],
+                    [L.current_expiration, currentExpiration],
+                    [L.current_premium, currentPremium ? `$${currentPremium}` : "—"],
+                  ],
+                },
+                {
+                  title: L.section_policy,
+                  rows: [
+                    [L.policy_start, policyStart],
+                    [L.bundle, bundle],
+                    [L.paperless, paperless],
+                  ],
+                },
+                {
+                  title: L.section_coverages,
+                  rows: [
+                    [L.comp_deductible, compDeductible],
+                    [L.coll_deductible, collDeductible],
+                    [L.coverage_plan, plan ? L.plans[plan].name : "—"],
+                  ],
+                },
+              ] as { title: string; rows: [string, string][] }[]
+            ).map((group, gi) => (
+              <div
+                key={gi}
+                style={{
+                  paddingBottom: 16,
+                  borderBottom: "1px solid var(--color-rule)",
+                  display: "grid",
+                  gap: 12,
+                }}
+              >
                 <div
-                  key={i}
-                  className="flex justify-between"
-                  style={{ gap: 12, fontSize: 14, flexWrap: "wrap" }}
+                  className="mono"
+                  style={{
+                    fontSize: 10,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    opacity: 0.5,
+                  }}
                 >
-                  <dt className="mono" style={{ opacity: 0.55, margin: 0 }}>
-                    {k}
-                  </dt>
-                  <dd
-                    className="text-right"
-                    style={{
-                      margin: 0,
-                      color: "var(--color-ink)",
-                      fontFamily: "var(--font-display)",
-                      fontSize: 16,
-                    }}
-                  >
-                    {v}
-                  </dd>
+                  {group.title}
                 </div>
-              ))}
-            </dl>
+                <dl
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: isMobile
+                      ? "1fr"
+                      : "minmax(140px, 220px) 1fr",
+                    columnGap: 24,
+                    rowGap: 10,
+                    margin: 0,
+                  }}
+                >
+                  {group.rows.map(([k, v], i) => (
+                    <div
+                      key={i}
+                      style={{
+                        display: "contents",
+                      }}
+                    >
+                      <dt
+                        className="mono"
+                        style={{
+                          opacity: 0.55,
+                          margin: 0,
+                          fontSize: 12,
+                          alignSelf: "start",
+                          paddingTop: isMobile ? 0 : 4,
+                        }}
+                      >
+                        {k}
+                      </dt>
+                      <dd
+                        style={{
+                          margin: 0,
+                          color: "var(--color-ink)",
+                          fontFamily: "var(--font-display)",
+                          fontSize: 16,
+                          lineHeight: 1.35,
+                          wordBreak: "break-word",
+                          textAlign: isMobile ? "left" : "right",
+                        }}
+                      >
+                        {v || "—"}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            ))}
             <label
               className="flex items-start cursor-pointer"
               style={{
@@ -818,6 +919,7 @@ export default function AutoQuoteForm({ t }: Props) {
                 fontSize: 13,
                 color: "var(--color-ink-soft)",
                 lineHeight: 1.5,
+                marginTop: 8,
               }}
             >
               <input
