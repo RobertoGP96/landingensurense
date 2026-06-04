@@ -14,6 +14,9 @@ type Props = {
 
 const DEFAULT_PRODUCT = "auto";
 
+const DENTAL_QUOTE_URL =
+  "https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33ETiPJXYwnDEfwTcDZ_KntkIEfI7Ah2GHXryGKZpoAHOUPvCnwL-DCnPWlCy2qduCA2g0A&product=dvh";
+
 export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) {
   const initialSlug = productSlug || DEFAULT_PRODUCT;
   const [slug, setSlug] = useState(initialSlug);
@@ -199,7 +202,86 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
             </div>
           </div>
 
-          {/* Right column: form */}
+          {/* Right column: form (or external redirect for dental) */}
+          {slug === "dental" ? (
+            <div
+              style={{
+                border: "1px solid var(--color-ink)",
+                borderRadius: 4,
+                padding: isMobile ? 24 : 40,
+                background: "var(--color-paper)",
+                display: "grid",
+                gap: 20,
+              }}
+            >
+              <div className="mono" style={{ opacity: 0.6, fontSize: 11 }}>
+                FORM · 04 · DENTAL
+              </div>
+              <h3
+                className="display"
+                style={{
+                  fontSize: isMobile ? 28 : 36,
+                  margin: 0,
+                  color: "var(--color-ink)",
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                {productName}
+              </h3>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: isMobile ? 15 : 17,
+                  lineHeight: 1.55,
+                  color: "var(--color-ink-soft)",
+                  maxWidth: 560,
+                }}
+              >
+                {product?.body}
+              </p>
+              <div
+                className="mono"
+                style={{
+                  padding: "14px 16px",
+                  background: "var(--color-sky)",
+                  color: "var(--color-sky-ink)",
+                  borderRadius: 4,
+                  fontSize: 12,
+                  lineHeight: 1.5,
+                }}
+              >
+                Cotización instantánea con nuestro partner National General Health (DVH). Te llevamos directo a su portal para que veas precios en tiempo real.
+              </div>
+              <div className="flex flex-wrap" style={{ gap: 12, marginTop: 4 }}>
+                <a
+                  href={DENTAL_QUOTE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  {t.quote.submit} <span className="arr">↗</span>
+                </a>
+                <a
+                  href={`tel:${t.topbar.phone.replace(/[^0-9+]/g, "")}`}
+                  className="btn outline"
+                >
+                  {t.cta.call}
+                </a>
+              </div>
+              <div
+                className="mono"
+                style={{
+                  marginTop: 8,
+                  paddingTop: 16,
+                  borderTop: "1px solid var(--color-rule)",
+                  opacity: 0.6,
+                  fontSize: 11,
+                }}
+              >
+                {t.quote.note}
+              </div>
+            </div>
+          ) : (
           <FormShell
             badge={`FORM · 04 · ${slug.toUpperCase()}`}
             onSubmit={onSubmit}
@@ -397,6 +479,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
               </div>
             )}
           </FormShell>
+          )}
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ export type CoverageItem = {
   tagline: string;
   body: string;
   bullets: string[];
+  slug?: string;
 };
 
 export type ProductCategory = "personal" | "commercial" | "specialty";

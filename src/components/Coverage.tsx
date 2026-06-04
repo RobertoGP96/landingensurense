@@ -13,7 +13,7 @@ type RowProps = {
 function CoverageRow({ it, hovered, onEnter, onLeave, isMobile }: RowProps) {
   return (
     <Link
-      to={`/coverage/${it.name.toLowerCase()}`}
+      to={`/coverage/${it.slug ?? it.name.toLowerCase()}`}
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
       className="grid items-center relative"

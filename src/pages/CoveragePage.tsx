@@ -7,8 +7,9 @@ export default function CoveragePage() {
   const { t } = useOutletContext<Ctx>();
   const { slug } = useParams();
 
+  const needle = (slug || "").toLowerCase();
   const item = t.coverage.items.find(
-    (i) => i.name.toLowerCase() === (slug || "").toLowerCase()
+    (i) => (i.slug && i.slug.toLowerCase() === needle) || i.name.toLowerCase() === needle
   );
 
   if (!item) {
