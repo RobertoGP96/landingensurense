@@ -1,15 +1,21 @@
 import { useOutletContext } from "react-router";
 import type { Translation, Lang } from "../data/types";
-import Coverage from "../components/Coverage";
+import Intro from "../components/Intro";
+import Why from "../components/Why";
+import Process from "../components/Process";
+import Testimonials from "../components/Testimonials";
 import CtaBanner from "../components/CtaBanner";
 
 type Ctx = { t: Translation; lang: Lang; setLang: (l: Lang) => void };
 
-export default function CoveragePage() {
+export default function AboutPage() {
   const { t } = useOutletContext<Ctx>();
   return (
     <main style={{ paddingTop: 40 }}>
-      <Coverage t={t} />
+      <Intro t={t} />
+      <Why t={t} />
+      <Process t={t} />
+      <Testimonials t={t} />
       <CtaBanner t={t} />
     </main>
   );

@@ -5,7 +5,9 @@ import "./index.css";
 import "./i18n";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 import CoveragePage from "./pages/CoveragePage";
+import CoverageDetailPage from "./pages/CoverageDetailPage";
 import QuotePage from "./pages/QuotePage";
 import ProductsPage from "./pages/ProductsPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
@@ -23,7 +25,9 @@ createRoot(document.getElementById("root") as HTMLElement).render(
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<HomePage />} />
-            <Route path="coverage/:slug" element={<CoveragePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="coverage" element={<CoveragePage />} />
+            <Route path="coverage/:slug" element={<CoverageDetailPage />} />
             <Route path="quote" element={<QuotePage />} />
             <Route path="products" element={<ProductsPage />} />
             <Route path="products/:slug" element={<ProductDetailPage />} />

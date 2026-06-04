@@ -21,11 +21,11 @@ export default function Header({ t }: { t: Translation }) {
 
   // nav: [Coverage, Get a quote, Products, Services, About, Contact]
   const items: { label: string; kind: NavKind; href: string; dropdown?: DropdownKey }[] = [
-    { label: t.nav[0], kind: "anchor", href: "/#coverage" },
+    { label: t.nav[0], kind: "page", href: "/coverage" },
     { label: t.nav[1], kind: "page", href: "/quote" },
     { label: t.nav[2], kind: "dropdown", href: "/products", dropdown: "products" },
     { label: t.nav[3], kind: "dropdown", href: "/services", dropdown: "services" },
-    { label: t.nav[4], kind: "anchor", href: "/#process" },
+    { label: t.nav[4], kind: "page", href: "/about" },
     { label: t.nav[5], kind: "page", href: "/contact" },
   ];
 

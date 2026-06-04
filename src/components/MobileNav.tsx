@@ -26,11 +26,11 @@ export default function MobileNav({ open, onClose, t }: Props) {
   if (!open) return null;
 
   const items: { label: string; href: string; isLink: boolean }[] = [
-    { label: t.nav[0], href: "/#coverage", isLink: false },
+    { label: t.nav[0], href: "/coverage", isLink: true },
     { label: t.nav[1], href: "/quote", isLink: true },
     { label: t.nav[2], href: "/products", isLink: true },
     { label: t.nav[3], href: "/services", isLink: true },
-    { label: t.nav[4], href: "/#process", isLink: false },
+    { label: t.nav[4], href: "/about", isLink: true },
     { label: t.nav[5], href: "/contact", isLink: true },
   ];
 

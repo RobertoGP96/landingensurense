@@ -1,4 +1,5 @@
 import type { Translation } from "../data/types";
+import { Link } from "react-router";
 import { useBreakpoints } from "../hooks/useMediaQuery";
 
 export default function CtaBanner({ t }: { t: Translation }) {
@@ -62,8 +63,8 @@ export default function CtaBanner({ t }: { t: Translation }) {
             alignItems: isSmall ? "stretch" : "center",
           }}
         >
-          <a
-            href="#quote"
+          <Link
+            to="/quote"
             className="btn"
             style={{
               background: "var(--color-paper)",
@@ -73,7 +74,7 @@ export default function CtaBanner({ t }: { t: Translation }) {
             }}
           >
             {t.cta.quote} <span className="arr">→</span>
-          </a>
+          </Link>
           <a
             href={`tel:${t.topbar.phone}`}
             className="btn outline"

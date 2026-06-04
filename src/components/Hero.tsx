@@ -1,4 +1,5 @@
 import type { Translation } from "../data/types";
+import { Link } from "react-router";
 import Eagle from "./Eagle";
 import { useBreakpoints } from "../hooks/useMediaQuery";
 
@@ -80,12 +81,12 @@ export default function Hero({ t }: { t: Translation }) {
               alignItems: isSmall ? "stretch" : "center",
             }}
           >
-            <a href="#quote" className="btn" style={isSmall ? { justifyContent: "center" } : undefined}>
+            <Link to="/quote" className="btn" style={isSmall ? { justifyContent: "center" } : undefined}>
               {t.cta.quote} <span className="arr">→</span>
-            </a>
-            <a href="#contact" className="btn outline" style={isSmall ? { justifyContent: "center" } : undefined}>
+            </Link>
+            <Link to="/contact" className="btn outline" style={isSmall ? { justifyContent: "center" } : undefined}>
               {t.cta.agent}
-            </a>
+            </Link>
           </div>
         </div>
 
