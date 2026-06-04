@@ -275,11 +275,68 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         { key: "currently_insured", label: "¿Actualmente asegurado?", type: "select", options: ["Sí", "No"], required: true },
       ],
       trucking: [
-        { key: "mc_number", label: "Número MC", type: "text", placeholder: "MC-123456", required: false },
-        { key: "dot_number", label: "Número DOT", type: "text", placeholder: "DOT-7654321", required: true },
-        { key: "units_count", label: "Unidades en operación", type: "text", placeholder: "3", required: true },
+        // Información general
+        { key: "insured_name", label: "Nombre del asegurado (incluye DBA)", type: "text", placeholder: "ABC Trucking LLC / DBA Fast Freight", required: true },
+        { key: "mc_number", label: "Número MC", type: "text", placeholder: "MC-123456", required: true },
+        { key: "dot_number", label: "Número US DOT", type: "text", placeholder: "DOT-7654321", required: true },
+        { key: "street_address", label: "Dirección", type: "text", placeholder: "1820 NW 27th Ave", required: true },
+        { key: "fein_ssn", label: "FEIN / SSN", type: "text", placeholder: "12-3456789", required: true },
+        { key: "years_in_business", label: "Años en el negocio", type: "text", placeholder: "5", required: true },
+        { key: "city", label: "Ciudad", type: "text", placeholder: "Miami", required: true },
+        { key: "state", label: "Estado", type: "text", placeholder: "FL", required: true },
+
+        // Vehículo 01 (requerido)
+        { key: "vehicle_1_make", label: "Marca (01)", type: "text", placeholder: "Freightliner", required: true },
+        { key: "vehicle_1_value", label: "Valor (01)", type: "text", placeholder: "$85,000", required: true },
+        { key: "vehicle_1_type", label: "Tipo (01)", type: "text", placeholder: "Tractocamión", required: true },
+        { key: "vehicle_1_vin", label: "Número VIN (01)", type: "text", placeholder: "1FUJA6CV...", required: true },
+        { key: "vehicle_1_gvw", label: "G.V.W. (01)", type: "text", placeholder: "80,000 lbs", required: true },
+
+        // Vehículo 02 (opcional)
+        { key: "vehicle_2_make", label: "Marca (02)", type: "text", placeholder: "Peterbilt", required: false },
+        { key: "vehicle_2_value", label: "Valor (02)", type: "text", placeholder: "$70,000", required: false },
+        { key: "vehicle_2_type", label: "Tipo (02)", type: "text", placeholder: "Tractocamión", required: false },
+        { key: "vehicle_2_vin", label: "Número VIN (02)", type: "text", placeholder: "1XPWD40X...", required: false },
+        { key: "vehicle_2_gvw", label: "G.V.W. (02)", type: "text", placeholder: "80,000 lbs", required: false },
+
+        // Vehículo 03 (opcional)
+        { key: "vehicle_3_make", label: "Marca (03)", type: "text", placeholder: "Kenworth", required: false },
+        { key: "vehicle_3_value", label: "Valor (03)", type: "text", placeholder: "$65,000", required: false },
+        { key: "vehicle_3_type", label: "Tipo (03)", type: "text", placeholder: "Tractocamión", required: false },
+        { key: "vehicle_3_vin", label: "Número VIN (03)", type: "text", placeholder: "1XKWD49X...", required: false },
+        { key: "vehicle_3_gvw", label: "G.V.W. (03)", type: "text", placeholder: "80,000 lbs", required: false },
+
+        // Conductor 01 (requerido)
+        { key: "driver_1_name", label: "Nombre (D1)", type: "text", placeholder: "Juan Pérez", required: true },
+        { key: "driver_1_dob", label: "Fecha de nacimiento (D1)", type: "date", required: true },
+        { key: "driver_1_license", label: "Licencia de conducir (D1)", type: "text", placeholder: "D123-456-78-901-0", required: true },
+        { key: "driver_1_state", label: "Estado (D1)", type: "text", placeholder: "FL", required: true },
+        { key: "driver_1_experience", label: "Años de experiencia (D1)", type: "text", placeholder: "10", required: true },
+
+        // Conductor 02 (opcional)
+        { key: "driver_2_name", label: "Nombre (D2)", type: "text", placeholder: "María Gómez", required: false },
+        { key: "driver_2_dob", label: "Fecha de nacimiento (D2)", type: "date", required: false },
+        { key: "driver_2_license", label: "Licencia de conducir (D2)", type: "text", placeholder: "G987-654-32-109-0", required: false },
+        { key: "driver_2_state", label: "Estado (D2)", type: "text", placeholder: "TX", required: false },
+        { key: "driver_2_experience", label: "Años de experiencia (D2)", type: "text", placeholder: "7", required: false },
+
+        // Conductor 03 (opcional)
+        { key: "driver_3_name", label: "Nombre (D3)", type: "text", placeholder: "Carlos Ruiz", required: false },
+        { key: "driver_3_dob", label: "Fecha de nacimiento (D3)", type: "date", required: false },
+        { key: "driver_3_license", label: "Licencia de conducir (D3)", type: "text", placeholder: "R111-222-33-444-0", required: false },
+        { key: "driver_3_state", label: "Estado (D3)", type: "text", placeholder: "GA", required: false },
+        { key: "driver_3_experience", label: "Años de experiencia (D3)", type: "text", placeholder: "4", required: false },
+
+        // Cobertura deseada
+        { key: "bi_liability_limit", label: "Límite de Bodily Injury Liability", type: "select", options: ["$300,000 CSL", "$500,000 CSL", "$750,000 CSL", "$1,000,000 CSL"], required: true },
+        { key: "collision_deductible", label: "Deducible Comprehensive / Collision", type: "select", options: ["$1,000", "$2,500", "$5,000", "$10,000"], required: true },
         { key: "operation_radius", label: "Radio de operación", type: "select", options: ["Local (<200 mi)", "Intermediate (200-500 mi)", "Long-haul (>500 mi)"], required: true },
-        { key: "cargo_type", label: "Tipo de carga", type: "text", placeholder: "General freight", required: false },
+        { key: "commodity_hauling", label: "Mercancía que transporta", type: "text", placeholder: "General freight, refrigerated, etc.", required: true },
+        { key: "cargo_limit", label: "Límite de Cargo", type: "select", options: ["$50,000", "$100,000", "$250,000", "$500,000"], required: true },
+
+        // Comentarios
+        { key: "garage_address", label: "Dirección del garage", type: "text", placeholder: "Dirección donde se estacionan las unidades", required: false },
+        { key: "comments", label: "Comentarios", type: "text", placeholder: "Información adicional", required: false },
       ],
       medico: [
         { key: "household_size", label: "Personas en el hogar", type: "text", placeholder: "4", required: true },
@@ -578,11 +635,68 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         { key: "currently_insured", label: "Currently insured?", type: "select", options: ["Yes", "No"], required: true },
       ],
       trucking: [
-        { key: "mc_number", label: "MC number", type: "text", placeholder: "MC-123456", required: false },
-        { key: "dot_number", label: "DOT number", type: "text", placeholder: "DOT-7654321", required: true },
-        { key: "units_count", label: "Units in operation", type: "text", placeholder: "3", required: true },
-        { key: "operation_radius", label: "Operating radius", type: "select", options: ["Local (<200 mi)", "Intermediate (200-500 mi)", "Long-haul (>500 mi)"], required: true },
-        { key: "cargo_type", label: "Cargo type", type: "text", placeholder: "General freight", required: false },
+        // General information
+        { key: "insured_name", label: "Insured name (including DBA)", type: "text", placeholder: "ABC Trucking LLC / DBA Fast Freight", required: true },
+        { key: "mc_number", label: "MC number", type: "text", placeholder: "MC-123456", required: true },
+        { key: "dot_number", label: "US DOT number", type: "text", placeholder: "DOT-7654321", required: true },
+        { key: "street_address", label: "Street address", type: "text", placeholder: "1820 NW 27th Ave", required: true },
+        { key: "fein_ssn", label: "FEIN / SSN", type: "text", placeholder: "12-3456789", required: true },
+        { key: "years_in_business", label: "Years in business", type: "text", placeholder: "5", required: true },
+        { key: "city", label: "City", type: "text", placeholder: "Miami", required: true },
+        { key: "state", label: "State", type: "text", placeholder: "FL", required: true },
+
+        // Vehicle 01 (required)
+        { key: "vehicle_1_make", label: "Make (01)", type: "text", placeholder: "Freightliner", required: true },
+        { key: "vehicle_1_value", label: "Value (01)", type: "text", placeholder: "$85,000", required: true },
+        { key: "vehicle_1_type", label: "Type (01)", type: "text", placeholder: "Tractor", required: true },
+        { key: "vehicle_1_vin", label: "VIN number (01)", type: "text", placeholder: "1FUJA6CV...", required: true },
+        { key: "vehicle_1_gvw", label: "G.V.W. (01)", type: "text", placeholder: "80,000 lbs", required: true },
+
+        // Vehicle 02 (optional)
+        { key: "vehicle_2_make", label: "Make (02)", type: "text", placeholder: "Peterbilt", required: false },
+        { key: "vehicle_2_value", label: "Value (02)", type: "text", placeholder: "$70,000", required: false },
+        { key: "vehicle_2_type", label: "Type (02)", type: "text", placeholder: "Tractor", required: false },
+        { key: "vehicle_2_vin", label: "VIN number (02)", type: "text", placeholder: "1XPWD40X...", required: false },
+        { key: "vehicle_2_gvw", label: "G.V.W. (02)", type: "text", placeholder: "80,000 lbs", required: false },
+
+        // Vehicle 03 (optional)
+        { key: "vehicle_3_make", label: "Make (03)", type: "text", placeholder: "Kenworth", required: false },
+        { key: "vehicle_3_value", label: "Value (03)", type: "text", placeholder: "$65,000", required: false },
+        { key: "vehicle_3_type", label: "Type (03)", type: "text", placeholder: "Tractor", required: false },
+        { key: "vehicle_3_vin", label: "VIN number (03)", type: "text", placeholder: "1XKWD49X...", required: false },
+        { key: "vehicle_3_gvw", label: "G.V.W. (03)", type: "text", placeholder: "80,000 lbs", required: false },
+
+        // Driver 01 (required)
+        { key: "driver_1_name", label: "Name (D1)", type: "text", placeholder: "John Smith", required: true },
+        { key: "driver_1_dob", label: "Date of birth (D1)", type: "date", required: true },
+        { key: "driver_1_license", label: "Drivers license (D1)", type: "text", placeholder: "D123-456-78-901-0", required: true },
+        { key: "driver_1_state", label: "State (D1)", type: "text", placeholder: "FL", required: true },
+        { key: "driver_1_experience", label: "Years of experience (D1)", type: "text", placeholder: "10", required: true },
+
+        // Driver 02 (optional)
+        { key: "driver_2_name", label: "Name (D2)", type: "text", placeholder: "Maria Gomez", required: false },
+        { key: "driver_2_dob", label: "Date of birth (D2)", type: "date", required: false },
+        { key: "driver_2_license", label: "Drivers license (D2)", type: "text", placeholder: "G987-654-32-109-0", required: false },
+        { key: "driver_2_state", label: "State (D2)", type: "text", placeholder: "TX", required: false },
+        { key: "driver_2_experience", label: "Years of experience (D2)", type: "text", placeholder: "7", required: false },
+
+        // Driver 03 (optional)
+        { key: "driver_3_name", label: "Name (D3)", type: "text", placeholder: "Carlos Ruiz", required: false },
+        { key: "driver_3_dob", label: "Date of birth (D3)", type: "date", required: false },
+        { key: "driver_3_license", label: "Drivers license (D3)", type: "text", placeholder: "R111-222-33-444-0", required: false },
+        { key: "driver_3_state", label: "State (D3)", type: "text", placeholder: "GA", required: false },
+        { key: "driver_3_experience", label: "Years of experience (D3)", type: "text", placeholder: "4", required: false },
+
+        // Coverage desired
+        { key: "bi_liability_limit", label: "Bodily Injury Liability limit", type: "select", options: ["$300,000 CSL", "$500,000 CSL", "$750,000 CSL", "$1,000,000 CSL"], required: true },
+        { key: "collision_deductible", label: "Comprehensive / Collision deductible", type: "select", options: ["$1,000", "$2,500", "$5,000", "$10,000"], required: true },
+        { key: "operation_radius", label: "Radius", type: "select", options: ["Local (<200 mi)", "Intermediate (200-500 mi)", "Long-haul (>500 mi)"], required: true },
+        { key: "commodity_hauling", label: "Commodity hauling", type: "text", placeholder: "General freight, refrigerated, etc.", required: true },
+        { key: "cargo_limit", label: "Cargo limit", type: "select", options: ["$50,000", "$100,000", "$250,000", "$500,000"], required: true },
+
+        // Comments
+        { key: "garage_address", label: "Garage address", type: "text", placeholder: "Where the units are parked", required: false },
+        { key: "comments", label: "Comment", type: "text", placeholder: "Additional information", required: false },
       ],
       medico: [
         { key: "household_size", label: "People in household", type: "text", placeholder: "4", required: true },
