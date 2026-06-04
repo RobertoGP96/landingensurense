@@ -22,6 +22,14 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       lead_a: "Una agencia independiente que",
       lead_it: "elige por ti",
       lead_b: " — comparamos más de 30 aseguradoras para encontrar la cobertura correcta al precio justo. Sin paquetes inflados ni letras pequeñas.",
+      agent: {
+        label: "Tu agente",
+        name: "Marisnelis Castillo",
+        role: "Agente licenciada",
+        phone: "(580) 754-1911",
+        email: "catillomaris120@gmail.com",
+        address: "3832 Orlando Dr, Sanford, FL",
+      },
     },
     coverage: {
       kicker: "Coberturas",
@@ -33,7 +41,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         { num: "02", slug: "trucking", name: "Camiones", tagline: "MC, DOT y todo el camino.", body: "Seguro comercial para motor carriers. Liability primaria en cada unidad y trailer, physical damage para tu equipo, motor truck cargo, non-trucking liability (bob-tail), occupational accident y filings federales BMC-91X y BMC-34 incluidos.", bullets: ["Primary Liability", "Physical Damage", "Motor Truck Cargo", "Non-Trucking Liability (Bob-Tail)", "Filings BMC-91X / BMC-34"] },
         { num: "03", slug: "medico", name: "Médico", tagline: "Cobertura cuando más importa.", body: "Pago de beneficios por enfermedad o lesión: gastos médicos, accidentes, discapacidad y muerte accidental. Planes HMO, EPO, PPO, POS, alto deducible (HDHP) con HSA y catastróficos.", bullets: ["HMOs & EPOs", "PPOs & POS", "HDHP con HSA", "Catastrophic"] },
         { num: "04", slug: "dental", name: "Dental", tagline: "Sonrisa cubierta, sin sorpresas.", body: "Plan dental con cobertura preventiva, básica y mayor. Limpiezas, exámenes y radiografías sin período de espera. Restauraciones, endodoncia, periodoncia y prótesis con tablas claras de copago.", bullets: ["Preventivo (limpiezas, exámenes)", "Básico (restauraciones)", "Mayor (coronas, prótesis)", "Sin espera preventiva"] },
-        { num: "05", slug: "vida", name: "Vida", tagline: "Lo que dejas, lo que cuidas.", body: "Term, Whole y IUL. Cobertura sin examen médico hasta $500,000 según carrier y edad. Beneficio libre de impuestos al beneficiario; opciones permanentes con valor en efectivo acumulado.", bullets: ["Term 10/20/30", "Whole Life", "IUL", "Final Expense"] },
+        { num: "05", slug: "vida", name: "Vida", tagline: "Lo que dejas, lo que cuidas.", body: "Term, Whole y IUL. Cobertura: 10, 15, 20, 25 o 35 años. Sin examen médico hasta $500,000 según carrier y edad. Beneficio libre de impuestos al beneficiario; opciones permanentes con valor en efectivo acumulado.", bullets: ["Term 10 / 15 / 20 / 25 / 35", "Whole Life", "IUL", "Final Expense"] },
       ],
     },
     why: {
@@ -66,7 +74,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       heading_b: ", no un estimado.",
       sub: "Sin compromiso. Sin pull de crédito hasta que tú lo autorices.",
       labels: { type: "Tipo de seguro", name: "Nombre completo", phone: "Teléfono", zip: "ZIP code", lang_pref: "Idioma de preferencia", consent: "Acepto que me contacten por teléfono o SMS sobre esta cotización." },
-      placeholders: { name: "María Castaño", phone: "(305) 555-0123", zip: "33125" },
+      placeholders: { name: "Nombre y apellido", phone: "(305) 555-0123", zip: "33125" },
       submit: "Solicitar cotización",
       types: ["Auto", "Camiones", "Médico", "Dental", "Vida"],
       note: "Promedio de respuesta · 47 minutos en horario hábil",
@@ -108,7 +116,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         { slug: "trucking", num: "02", name: "Camiones", tagline: "MC, DOT y todo el camino.", body: "Todo motor carrier debe llevar liability en cada unidad y trailer. Cobertura completa para owner-operators y flotas: liability primaria, physical damage (valor de efectivo real), motor truck cargo, non-trucking liability (bob-tail), occupational accident, general liability, garage liability, trailer interchange y filings federales BMC-91X / BMC-34.", bullets: ["Primary Liability", "Physical Damage", "Motor Truck Cargo", "Non-Trucking Liability (Bob-Tail)", "Occupational Accident", "Filings BMC-91X / BMC-34"], category: "specialty" },
         { slug: "medico", num: "03", name: "Médico", tagline: "Para ti y para tu familia.", body: "Cobertura que provee el pago de beneficios por enfermedad o lesión. Incluye seguro por accidentes, gastos médicos, discapacidad y muerte accidental o desmembramiento. Trabajamos con HMOs/EPOs (red restringida con médico de cabecera), PPOs/POS (flexibilidad dentro y fuera de red), planes de alto deducible (HDHP) compatibles con HSA, y planes catastróficos como red de seguridad.", bullets: ["HMOs & EPOs", "PPOs & POS", "High Deductible Health Plans (HDHP)", "Catastrophic Plans"], category: "personal" },
         { slug: "dental", num: "04", name: "Dental", tagline: "Sonrisa cubierta, sin sorpresas.", body: "Plan dental con cobertura preventiva, básica y mayor. Limpiezas, exámenes y radiografías sin período de espera. Restauraciones, endodoncia, periodoncia y prótesis con tablas claras de copago. Cotización inmediata en línea con nuestro partner National General Health.", bullets: ["Preventivo: limpiezas y exámenes", "Básico: empastes y extracciones", "Mayor: coronas, puentes, prótesis", "Sin espera preventiva", "Cotización inmediata en línea"], category: "personal" },
-        { slug: "vida", num: "05", name: "Vida", tagline: "Lo que dejas, lo que cuidas.", body: "Term, Whole y IUL. Sin examen médico para coberturas hasta $500,000 dependiendo del carrier y edad. Aprobación en horas, no semanas. Beneficio libre de impuestos al beneficiario; opciones permanentes que acumulan valor en efectivo.", bullets: ["Term 10 / 20 / 30", "Whole Life", "IUL (Indexed Universal Life)", "Final Expense"], category: "personal" },
+        { slug: "vida", num: "05", name: "Vida", tagline: "Lo que dejas, lo que cuidas.", body: "Term, Whole y IUL. Cobertura: 10, 15, 20, 25 o 35 años. Sin examen médico para coberturas hasta $500,000 dependiendo del carrier y edad. Aprobación en horas, no semanas. Beneficio libre de impuestos al beneficiario; opciones permanentes que acumulan valor en efectivo.", bullets: ["Term 10 / 15 / 20 / 25 / 35 años", "Whole Life", "IUL (Indexed Universal Life)", "Final Expense"], category: "personal" },
       ],
     },
     services: {
@@ -126,7 +134,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "Para tu cliente, tu landlord o tu broker.",
           body: "Emitimos certificados COI (Certificate of Insurance) en el mismo día hábil. Indícanos el certificate holder y te lo enviamos por email.",
           formFields: [
-            { key: "name", label: "Tu nombre", type: "text", placeholder: "María Castaño", required: true },
+            { key: "name", label: "Tu nombre", type: "text", placeholder: "Nombre y apellido", required: true },
             { key: "email", label: "Email", type: "email", placeholder: "tu@email.com", required: true },
             { key: "policy", label: "Número de póliza", type: "text", placeholder: "POL-12345678", required: true },
             { key: "holder_name", label: "Nombre del certificate holder", type: "text", placeholder: "Acme Corp.", required: true },
@@ -141,7 +149,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "Cambio de teléfono, email o dirección.",
           body: "Mantén tu información al día para que las renovaciones y avisos lleguen sin retrasos. Cambios procesados en 24 horas hábiles.",
           formFields: [
-            { key: "name", label: "Nombre completo", type: "text", placeholder: "María Castaño", required: true },
+            { key: "name", label: "Nombre completo", type: "text", placeholder: "Nombre y apellido", required: true },
             { key: "policy", label: "Número de póliza", type: "text", placeholder: "POL-12345678", required: true },
             { key: "new_phone", label: "Nuevo teléfono", type: "tel", placeholder: "(305) 555-0123", required: false },
             { key: "new_email", label: "Nuevo email", type: "email", placeholder: "nuevo@email.com", required: false },
@@ -155,7 +163,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "Cambios en tu auto policy.",
           body: "Para añadir un conductor adicional o remover uno existente de tu póliza de auto. Indícanos los datos básicos y procesamos el endoso.",
           formFields: [
-            { key: "name", label: "Tu nombre", type: "text", placeholder: "María Castaño", required: true },
+            { key: "name", label: "Tu nombre", type: "text", placeholder: "Nombre y apellido", required: true },
             { key: "policy", label: "Número de póliza", type: "text", placeholder: "POL-12345678", required: true },
             { key: "action", label: "Acción", type: "select", options: ["Agregar conductor", "Quitar conductor"], required: true },
             { key: "driver_name", label: "Nombre del conductor", type: "text", placeholder: "Carlos Pérez", required: true },
@@ -171,7 +179,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "Vehículo nuevo o vendido.",
           body: "Compraste un vehículo nuevo o vendiste el viejo. Procesamos el endoso para añadirlo o removerlo de tu póliza.",
           formFields: [
-            { key: "name", label: "Tu nombre", type: "text", placeholder: "María Castaño", required: true },
+            { key: "name", label: "Tu nombre", type: "text", placeholder: "Nombre y apellido", required: true },
             { key: "policy", label: "Número de póliza", type: "text", placeholder: "POL-12345678", required: true },
             { key: "action", label: "Acción", type: "select", options: ["Agregar vehículo", "Quitar vehículo"], required: true },
             { key: "vin", label: "VIN", type: "text", placeholder: "1HGBH41JXMN109186", required: true },
@@ -186,7 +194,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "ID card o declaration page.",
           body: "Necesitas una copia de tu ID card de auto o de la declaration page de tu póliza para presentarla. Te la enviamos al email en minutos.",
           formFields: [
-            { key: "name", label: "Tu nombre", type: "text", placeholder: "María Castaño", required: true },
+            { key: "name", label: "Tu nombre", type: "text", placeholder: "Nombre y apellido", required: true },
             { key: "email", label: "Email", type: "email", placeholder: "tu@email.com", required: true },
             { key: "policy", label: "Número de póliza", type: "text", placeholder: "POL-12345678", required: true },
             { key: "doc_type", label: "Tipo de documento", type: "select", options: ["ID card de auto", "Declaration page", "Evidence of insurance"], required: true },
@@ -199,7 +207,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "Modificación a tu cobertura.",
           body: "Quieres ajustar límites, agregar un endoso (joyería, equipos, scheduled property) o cambiar deducibles. Cuéntanos qué necesitas modificar.",
           formFields: [
-            { key: "name", label: "Tu nombre", type: "text", placeholder: "María Castaño", required: true },
+            { key: "name", label: "Tu nombre", type: "text", placeholder: "Nombre y apellido", required: true },
             { key: "email", label: "Email", type: "email", placeholder: "tu@email.com", required: true },
             { key: "policy", label: "Número de póliza", type: "text", placeholder: "POL-12345678", required: true },
             { key: "change_type", label: "Tipo de cambio", type: "select", options: ["Subir / bajar límites", "Agregar endoso (joyería, equipo)", "Cambiar deducible", "Otro"], required: true },
@@ -213,7 +221,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "30 minutos con un agente.",
           body: "Revisión sin costo de tu portafolio actual. Identificamos brechas, sobre-coberturas y oportunidades de ahorro. Cero compromiso.",
           formFields: [
-            { key: "name", label: "Tu nombre", type: "text", placeholder: "María Castaño", required: true },
+            { key: "name", label: "Tu nombre", type: "text", placeholder: "Nombre y apellido", required: true },
             { key: "email", label: "Email", type: "email", placeholder: "tu@email.com", required: true },
             { key: "phone", label: "Teléfono", type: "tel", placeholder: "(305) 555-0123", required: true },
             { key: "topic", label: "Tema principal", type: "select", options: ["Auto", "Camiones", "Médico", "Dental", "Vida", "Otro"], required: true },
@@ -238,7 +246,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         consent: "Acepto que me contacten por email, teléfono o SMS sobre mi consulta.",
       },
       placeholders: {
-        name: "María Castaño",
+        name: "Nombre y apellido",
         email: "tu@email.com",
         phone: "(305) 555-0123",
         message: "Cuéntanos en qué te podemos ayudar...",
@@ -283,7 +291,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       vida: [
         { key: "dob", label: "Fecha de nacimiento", type: "date", required: true },
         { key: "coverage_amount", label: "Monto de cobertura ($)", type: "text", placeholder: "500,000", required: true },
-        { key: "term_years", label: "Plazo (años)", type: "select", options: ["10", "20", "30", "Whole Life", "IUL"], required: false },
+        { key: "term_years", label: "Plazo (años)", type: "select", options: ["10", "15", "20", "25", "35", "Whole Life", "IUL"], required: false },
         { key: "tobacco", label: "¿Uso de tabaco?", type: "select", options: ["No", "Sí"], required: true },
       ],
     },
@@ -317,6 +325,14 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       lead_a: "An independent agency that",
       lead_it: "shops for you",
       lead_b: " — we compare 30+ carriers to land the right coverage at the right price. No bundled fluff, no fine-print surprises.",
+      agent: {
+        label: "Your agent",
+        name: "Marisnelis Castillo",
+        role: "Licensed agent",
+        phone: "(580) 754-1911",
+        email: "catillomaris120@gmail.com",
+        address: "3832 Orlando Dr, Sanford, FL",
+      },
     },
     coverage: {
       kicker: "Coverage",
@@ -328,7 +344,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         { num: "02", slug: "trucking", name: "Trucks", tagline: "MC, DOT and the whole road.", body: "Commercial coverage for motor carriers. Primary liability on every unit and trailer, physical damage for your equipment, motor truck cargo, non-trucking liability (bob-tail), occupational accident and federal filings BMC-91X / BMC-34.", bullets: ["Primary Liability", "Physical Damage", "Motor Truck Cargo", "Non-Trucking Liability (Bob-Tail)", "BMC-91X / BMC-34 Filings"] },
         { num: "03", slug: "medico", name: "Medical", tagline: "Coverage when it matters most.", body: "Payment of benefits for sickness or injury: medical expense, accident, disability and accidental death. HMO, EPO, PPO, POS, high-deductible (HDHP) with HSA, and catastrophic plans.", bullets: ["HMOs & EPOs", "PPOs & POS", "HDHP with HSA", "Catastrophic"] },
         { num: "04", slug: "dental", name: "Dental", tagline: "Smile covered, no surprises.", body: "Dental plan with preventive, basic and major coverage. Cleanings, exams and X-rays with no waiting period. Restorations, endodontics, periodontics and prosthetics with clear copay tables.", bullets: ["Preventive (cleanings, exams)", "Basic (fillings, extractions)", "Major (crowns, prosthetics)", "No preventive waiting"] },
-        { num: "05", slug: "vida", name: "Life", tagline: "What you leave, what you guard.", body: "Term, Whole and IUL. No-exam coverage up to $500,000 depending on carrier and age. Tax-free death benefit to beneficiary; permanent options that accumulate cash value.", bullets: ["Term 10/20/30", "Whole Life", "IUL", "Final Expense"] },
+        { num: "05", slug: "vida", name: "Life", tagline: "What you leave, what you guard.", body: "Term, Whole and IUL. Coverage: 10, 15, 20, 25 or 35 years. No-exam coverage up to $500,000 depending on carrier and age. Tax-free death benefit to beneficiary; permanent options that accumulate cash value.", bullets: ["Term 10 / 15 / 20 / 25 / 35", "Whole Life", "IUL", "Final Expense"] },
       ],
     },
     why: {
@@ -361,7 +377,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       heading_b: ", not an estimate.",
       sub: "No commitment. No credit pull until you authorize it.",
       labels: { type: "Insurance type", name: "Full name", phone: "Phone", zip: "ZIP code", lang_pref: "Preferred language", consent: "I agree to be contacted by phone or SMS about this quote." },
-      placeholders: { name: "Maria Castaño", phone: "(305) 555-0123", zip: "33125" },
+      placeholders: { name: "First and last name", phone: "(305) 555-0123", zip: "33125" },
       submit: "Request quote",
       types: ["Auto", "Trucks", "Medical", "Dental", "Life"],
       note: "Average response · 47 minutes during business hours",
@@ -403,7 +419,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         { slug: "trucking", num: "02", name: "Trucks", tagline: "MC, DOT and the whole road.", body: "Every motor carrier must carry liability on each unit and trailer. Full coverage for owner-operators and fleets: primary liability, physical damage (actual cash value), motor truck cargo, non-trucking liability (bob-tail), occupational accident, general liability, garage liability, trailer interchange and federal BMC-91X / BMC-34 filings.", bullets: ["Primary Liability", "Physical Damage", "Motor Truck Cargo", "Non-Trucking Liability (Bob-Tail)", "Occupational Accident", "BMC-91X / BMC-34 Filings"], category: "specialty" },
         { slug: "medico", num: "03", name: "Medical", tagline: "For you and your family.", body: "Coverage that provides the payment of benefits as a result of sickness or injury. Includes insurance for accident, medical expense, disability, or accidental death and dismemberment. We work with HMOs/EPOs (network-restricted with primary care physician), PPOs/POS (in-network and out-of-network flexibility), high-deductible plans (HDHP) compatible with HSA, and catastrophic safety-net plans.", bullets: ["HMOs & EPOs", "PPOs & POS", "High Deductible Health Plans (HDHP)", "Catastrophic Plans"], category: "personal" },
         { slug: "dental", num: "04", name: "Dental", tagline: "Smile covered, no surprises.", body: "Dental plan with preventive, basic and major coverage. Cleanings, exams and X-rays with no waiting period. Restorations, endodontics, periodontics and prosthetics with clear copay tables. Instant online quote through our partner National General Health.", bullets: ["Preventive: cleanings and exams", "Basic: fillings and extractions", "Major: crowns, bridges, prosthetics", "No preventive waiting", "Instant online quote"], category: "personal" },
-        { slug: "vida", num: "05", name: "Life", tagline: "What you leave, what you guard.", body: "Term, Whole and IUL. No-exam coverage up to $500,000 depending on carrier and age. Approval in hours, not weeks. Tax-free death benefit to beneficiary; permanent options that accumulate cash value.", bullets: ["Term 10 / 20 / 30", "Whole Life", "IUL (Indexed Universal Life)", "Final Expense"], category: "personal" },
+        { slug: "vida", num: "05", name: "Life", tagline: "What you leave, what you guard.", body: "Term, Whole and IUL. Coverage: 10, 15, 20, 25 or 35 years. No-exam coverage up to $500,000 depending on carrier and age. Approval in hours, not weeks. Tax-free death benefit to beneficiary; permanent options that accumulate cash value.", bullets: ["Term 10 / 15 / 20 / 25 / 35 years", "Whole Life", "IUL (Indexed Universal Life)", "Final Expense"], category: "personal" },
       ],
     },
     services: {
@@ -421,7 +437,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "For your client, landlord, or broker.",
           body: "We issue COI (Certificate of Insurance) the same business day. Tell us the certificate holder and we'll email it to you.",
           formFields: [
-            { key: "name", label: "Your name", type: "text", placeholder: "Maria Castaño", required: true },
+            { key: "name", label: "Your name", type: "text", placeholder: "First and last name", required: true },
             { key: "email", label: "Email", type: "email", placeholder: "you@email.com", required: true },
             { key: "policy", label: "Policy number", type: "text", placeholder: "POL-12345678", required: true },
             { key: "holder_name", label: "Certificate holder name", type: "text", placeholder: "Acme Corp.", required: true },
@@ -436,7 +452,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "Phone, email, or address change.",
           body: "Keep your information current so renewals and notices arrive on time. Changes processed within 24 business hours.",
           formFields: [
-            { key: "name", label: "Full name", type: "text", placeholder: "Maria Castaño", required: true },
+            { key: "name", label: "Full name", type: "text", placeholder: "First and last name", required: true },
             { key: "policy", label: "Policy number", type: "text", placeholder: "POL-12345678", required: true },
             { key: "new_phone", label: "New phone", type: "tel", placeholder: "(305) 555-0123", required: false },
             { key: "new_email", label: "New email", type: "email", placeholder: "new@email.com", required: false },
@@ -450,7 +466,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "Changes to your auto policy.",
           body: "To add an additional driver or remove an existing one from your auto policy. Send us the basic info and we'll process the endorsement.",
           formFields: [
-            { key: "name", label: "Your name", type: "text", placeholder: "Maria Castaño", required: true },
+            { key: "name", label: "Your name", type: "text", placeholder: "First and last name", required: true },
             { key: "policy", label: "Policy number", type: "text", placeholder: "POL-12345678", required: true },
             { key: "action", label: "Action", type: "select", options: ["Add driver", "Remove driver"], required: true },
             { key: "driver_name", label: "Driver name", type: "text", placeholder: "Carlos Pérez", required: true },
@@ -466,7 +482,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "New vehicle or sold one.",
           body: "Bought a new vehicle or sold the old one. We'll process the endorsement to add or remove it from your policy.",
           formFields: [
-            { key: "name", label: "Your name", type: "text", placeholder: "Maria Castaño", required: true },
+            { key: "name", label: "Your name", type: "text", placeholder: "First and last name", required: true },
             { key: "policy", label: "Policy number", type: "text", placeholder: "POL-12345678", required: true },
             { key: "action", label: "Action", type: "select", options: ["Add vehicle", "Remove vehicle"], required: true },
             { key: "vin", label: "VIN", type: "text", placeholder: "1HGBH41JXMN109186", required: true },
@@ -481,7 +497,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "ID card or declaration page.",
           body: "Need a copy of your auto ID card or your policy declaration page. We'll email it to you within minutes.",
           formFields: [
-            { key: "name", label: "Your name", type: "text", placeholder: "Maria Castaño", required: true },
+            { key: "name", label: "Your name", type: "text", placeholder: "First and last name", required: true },
             { key: "email", label: "Email", type: "email", placeholder: "you@email.com", required: true },
             { key: "policy", label: "Policy number", type: "text", placeholder: "POL-12345678", required: true },
             { key: "doc_type", label: "Document type", type: "select", options: ["Auto ID card", "Declaration page", "Evidence of insurance"], required: true },
@@ -494,7 +510,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "Modify your coverage.",
           body: "Want to adjust limits, add an endorsement (jewelry, equipment, scheduled property) or change deductibles. Tell us what you need to change.",
           formFields: [
-            { key: "name", label: "Your name", type: "text", placeholder: "Maria Castaño", required: true },
+            { key: "name", label: "Your name", type: "text", placeholder: "First and last name", required: true },
             { key: "email", label: "Email", type: "email", placeholder: "you@email.com", required: true },
             { key: "policy", label: "Policy number", type: "text", placeholder: "POL-12345678", required: true },
             { key: "change_type", label: "Type of change", type: "select", options: ["Increase / decrease limits", "Add endorsement (jewelry, equipment)", "Change deductible", "Other"], required: true },
@@ -508,7 +524,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
           tagline: "30 minutes with an agent.",
           body: "Free review of your current portfolio. We identify gaps, over-coverage, and savings opportunities. Zero commitment.",
           formFields: [
-            { key: "name", label: "Your name", type: "text", placeholder: "Maria Castaño", required: true },
+            { key: "name", label: "Your name", type: "text", placeholder: "First and last name", required: true },
             { key: "email", label: "Email", type: "email", placeholder: "you@email.com", required: true },
             { key: "phone", label: "Phone", type: "tel", placeholder: "(305) 555-0123", required: true },
             { key: "topic", label: "Main topic", type: "select", options: ["Auto", "Trucks", "Medical", "Dental", "Life", "Other"], required: true },
@@ -533,7 +549,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         consent: "I agree to be contacted by email, phone, or SMS about my inquiry.",
       },
       placeholders: {
-        name: "Maria Castaño",
+        name: "First and last name",
         email: "you@email.com",
         phone: "(305) 555-0123",
         message: "Tell us how we can help...",
@@ -578,7 +594,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       vida: [
         { key: "dob", label: "Date of birth", type: "date", required: true },
         { key: "coverage_amount", label: "Coverage amount ($)", type: "text", placeholder: "500,000", required: true },
-        { key: "term_years", label: "Term (years)", type: "select", options: ["10", "20", "30", "Whole Life", "IUL"], required: false },
+        { key: "term_years", label: "Term (years)", type: "select", options: ["10", "15", "20", "25", "35", "Whole Life", "IUL"], required: false },
         { key: "tobacco", label: "Tobacco use?", type: "select", options: ["No", "Yes"], required: true },
       ],
     },

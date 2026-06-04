@@ -101,6 +101,7 @@ const LABELS = {
     coll_deductible: "Deducible de colisión",
     coverage_plan: "Plan de cobertura",
     contact_options: ["Teléfono", "Email", "SMS"],
+    other_option: "Otro / escribir manualmente",
     best_time_options: [
       "Mañana (9:00–12:00)",
       "Mediodía (12:00–14:00)",
@@ -189,6 +190,7 @@ const LABELS = {
     coll_deductible: "Collision deductible",
     coverage_plan: "Coverage plan",
     contact_options: ["Phone", "Email", "SMS"],
+    other_option: "Other / type manually",
     best_time_options: [
       "Morning (9:00–12:00)",
       "Midday (12:00–14:00)",
@@ -444,7 +446,7 @@ export default function AutoQuoteForm({ t }: Props) {
                 label={L.first_name}
                 value={firstName}
                 onChange={setFirstName}
-                placeholder="ROBERTO ORLANDO"
+                placeholder="Nombre"
                 required
                 requiredHint={t.forms.required}
               />
@@ -458,7 +460,7 @@ export default function AutoQuoteForm({ t }: Props) {
                 label={L.last_name}
                 value={lastName}
                 onChange={setLastName}
-                placeholder="GONZALEZ DE LA PENA"
+                placeholder="Apellidos"
                 required
                 requiredHint={t.forms.required}
               />
@@ -468,7 +470,7 @@ export default function AutoQuoteForm({ t }: Props) {
               value={email}
               onChange={setEmail}
               type="email"
-              placeholder="trolbertogp96@gmail.com"
+              placeholder="email@ejemplo.com"
               required
               requiredHint={t.forms.required}
             />
@@ -477,7 +479,7 @@ export default function AutoQuoteForm({ t }: Props) {
               value={phone}
               onChange={setPhone}
               type="tel"
-              placeholder="(709) 252-5251"
+              placeholder="(305) 555-0123"
               required
               requiredHint={t.forms.required}
             />
@@ -525,6 +527,8 @@ export default function AutoQuoteForm({ t }: Props) {
               onChange={setYear}
               type="select"
               options={YEARS}
+              allowOther
+              otherLabel={L.other_option}
               required
               requiredHint={t.forms.required}
             />
@@ -534,6 +538,8 @@ export default function AutoQuoteForm({ t }: Props) {
               onChange={setMake}
               type="select"
               options={MAKES}
+              allowOther
+              otherLabel={L.other_option}
               required
               requiredHint={t.forms.required}
             />
@@ -544,6 +550,8 @@ export default function AutoQuoteForm({ t }: Props) {
                 onChange={setBodyStyle}
                 type="select"
                 options={BODY_STYLES}
+                allowOther
+                otherLabel={L.other_option}
                 required
                 requiredHint={t.forms.required}
               />
@@ -577,6 +585,8 @@ export default function AutoQuoteForm({ t }: Props) {
                 onChange={setCurrentCarrier}
                 type="select"
                 options={CURRENT_CARRIERS}
+                allowOther
+                otherLabel={L.other_option}
                 required
                 requiredHint={t.forms.required}
               />
@@ -587,6 +597,8 @@ export default function AutoQuoteForm({ t }: Props) {
               onChange={setCurrentLiability}
               type="select"
               options={LIABILITY_LEVELS}
+              allowOther
+              otherLabel={L.other_option}
               required
               requiredHint={t.forms.required}
             />
@@ -666,6 +678,8 @@ export default function AutoQuoteForm({ t }: Props) {
                 onChange={setCompDeductible}
                 type="select"
                 options={DEDUCTIBLES}
+                allowOther
+                otherLabel={L.other_option}
                 required
                 requiredHint={t.forms.required}
               />
@@ -675,6 +689,8 @@ export default function AutoQuoteForm({ t }: Props) {
                 onChange={setCollDeductible}
                 type="select"
                 options={DEDUCTIBLES}
+                allowOther
+                otherLabel={L.other_option}
                 required
                 requiredHint={t.forms.required}
               />

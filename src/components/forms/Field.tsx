@@ -1,4 +1,4 @@
-import type { CSSProperties } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import type { FieldType } from "../../data/types";
 
 export type FieldProps = {
@@ -10,6 +10,12 @@ export type FieldProps = {
   required?: boolean;
   options?: string[];
   requiredHint?: string;
+  /** When true and type is "select", appends an "Other" option that reveals a free-text input. */
+  allowOther?: boolean;
+  /** Label for the "other" option in the select dropdown. */
+  otherLabel?: string;
+  /** Placeholder for the manual-entry input that shows after picking "other". */
+  otherPlaceholder?: string;
 };
 
 const baseInput: CSSProperties = {
@@ -25,6 +31,8 @@ const baseInput: CSSProperties = {
   outline: "none",
 };
 
+const OTHER_SENTINEL = "__other__";
+
 export default function Field({
   label,
   value,
@@ -34,7 +42,19 @@ export default function Field({
   required,
   options,
   requiredHint,
+  allowOther,
+  otherLabel = "Otro / escribir manualmente",
+  otherPlaceholder,
 }: FieldProps) {
+  const isInOptions = !!options && options.includes(value);
+  const [otherMode, setOtherMode] = useState<boolean>(
+    !!allowOther && value !== "" && !isInOptions
+  );
+
+  useEffect(() => {
+    if (allowOther && value !== "" && !isInOptions) setOtherMode(true);
+  }, [allowOther, value, isInOptions]);
+
   const onFocus = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     e.target.style.borderColor = "var(--color-ink)";
   };
@@ -88,12 +108,22 @@ export default function Field({
   }
 
   if (type === "select" && options && options.length > 0) {
+    const selectValue = otherMode ? OTHER_SENTINEL : value;
     return (
       <label className="block">
         {labelEl}
         <select
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
+          value={selectValue}
+          onChange={(e) => {
+            const v = e.target.value;
+            if (v === OTHER_SENTINEL) {
+              setOtherMode(true);
+              onChange("");
+            } else {
+              setOtherMode(false);
+              onChange(v);
+            }
+          }}
           onFocus={onFocus}
           onBlur={onBlur}
           style={{
@@ -114,7 +144,20 @@ export default function Field({
               {o}
             </option>
           ))}
+          {allowOther && <option value={OTHER_SENTINEL}>{otherLabel}</option>}
         </select>
+        {allowOther && otherMode && (
+          <input
+            type="text"
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            placeholder={otherPlaceholder || placeholder || ""}
+            onFocus={onFocus}
+            onBlur={onBlur}
+            autoFocus
+            style={{ ...baseInput, marginTop: 8, fontSize: 18 }}
+          />
+        )}
       </label>
     );
   }

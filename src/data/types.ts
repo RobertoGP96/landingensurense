@@ -54,7 +54,20 @@ export type Translation = {
     stat3: { k: string; v: string };
     live: string;
   };
-  intro: { kicker: string; lead_a: string; lead_it: string; lead_b: string };
+  intro: {
+    kicker: string;
+    lead_a: string;
+    lead_it: string;
+    lead_b: string;
+    agent?: {
+      label: string;
+      name: string;
+      role: string;
+      phone: string;
+      email: string;
+      address: string;
+    };
+  };
   coverage: {
     kicker: string;
     heading_a: string;

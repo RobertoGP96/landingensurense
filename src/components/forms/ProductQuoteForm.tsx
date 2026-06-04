@@ -15,8 +15,12 @@ type Props = {
 
 const DEFAULT_PRODUCT = "auto";
 
-const DENTAL_QUOTE_URL =
-  "https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33ETiPJXYwnDEfwTcDZ_KntkIEfI7Ah2GHXryGKZpoAHOUPvCnwL-DCnPWlCy2qduCA2g0A&product=dvh";
+const EXTERNAL_QUOTE_URLS: Record<string, string> = {
+  dental:
+    "https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33ETiPJXYwnDEfwTcDZ_KntkIEfI7Ah2GHXryGKZpoAHOUPvCnwL-DCnPWlCy2qduCA2g0A&product=dvh",
+  medico:
+    "https://customer.enroll.natgenhealth.com/quick-quote/?agent=CfDJ8HnG7iviitJBoT9st8R33ETiPJXYwnDEfwTcDZ_KntkIEfI7Ah2GHXryGKZpoAHOUPvCnwL-DCnPWlCy2qduCA2g0A&product=dvh",
+};
 
 export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) {
   const initialSlug = productSlug || DEFAULT_PRODUCT;
@@ -203,10 +207,10 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
             </div>
           </div>
 
-          {/* Right column: form (or external redirect for dental, dedicated auto form) */}
+          {/* Right column: form (or external redirect for dental/medico, dedicated auto form) */}
           {slug === "auto" ? (
             <AutoQuoteForm t={t} />
-          ) : slug === "dental" ? (
+          ) : EXTERNAL_QUOTE_URLS[slug] ? (
             <div
               style={{
                 border: "1px solid var(--color-ink)",
@@ -218,7 +222,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
               }}
             >
               <div className="mono" style={{ opacity: 0.6, fontSize: 11 }}>
-                FORM · 04 · DENTAL
+                FORM · 04 · {slug.toUpperCase()}
               </div>
               <h3
                 className="display"
@@ -253,11 +257,11 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
                   lineHeight: 1.5,
                 }}
               >
-                Cotización instantánea con nuestro partner National General Health (DVH). Te llevamos directo a su portal para que veas precios en tiempo real.
+                Cotización instantánea con nuestro partner National General Health. Te llevamos directo a su portal para que veas precios en tiempo real.
               </div>
               <div className="flex flex-wrap" style={{ gap: 12, marginTop: 4 }}>
                 <a
-                  href={DENTAL_QUOTE_URL}
+                  href={EXTERNAL_QUOTE_URLS[slug]}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn"

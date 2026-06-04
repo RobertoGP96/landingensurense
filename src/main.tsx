@@ -12,6 +12,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import ServicesPage from "./pages/ServicesPage";
 import ServiceDetailPage from "./pages/ServiceDetailPage";
 import ContactPage from "./pages/ContactPage";
+import AgentAdminPage from "./pages/AgentAdminPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import { SanityContentProvider } from "./sanity/SanityContentProvider";
 
@@ -29,6 +30,7 @@ createRoot(document.getElementById("root") as HTMLElement).render(
             <Route path="services" element={<ServicesPage />} />
             <Route path="services/:slug" element={<ServiceDetailPage />} />
             <Route path="contact" element={<ContactPage />} />
+            <Route path="admin/agent" element={<AgentAdminPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
