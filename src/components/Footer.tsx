@@ -99,7 +99,7 @@ export default function Footer({ t }: { t: Translation }) {
               </li>
               <li style={{ fontSize: 14, color: "var(--color-ink-soft)" }}>{t.topbar.phone}</li>
               <li style={{ fontSize: 14, color: "var(--color-ink-soft)" }}>
-                hola@mcsolutionsins.com
+                catillomaris120@gmail.com
               </li>
               <li style={{ fontSize: 13, color: "var(--color-ink-soft)" }}>{t.footer.states}</li>
             </ul>
