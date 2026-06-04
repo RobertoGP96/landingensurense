@@ -4,6 +4,7 @@ import Field from "./Field";
 import FormShell from "./FormShell";
 import { useFormSubmit } from "./useFormSubmit";
 import { useBreakpoints } from "../../hooks/useMediaQuery";
+import AutoQuoteForm from "./AutoQuoteForm";
 
 type Props = {
   t: Translation;
@@ -202,8 +203,10 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
             </div>
           </div>
 
-          {/* Right column: form (or external redirect for dental) */}
-          {slug === "dental" ? (
+          {/* Right column: form (or external redirect for dental, dedicated auto form) */}
+          {slug === "auto" ? (
+            <AutoQuoteForm t={t} />
+          ) : slug === "dental" ? (
             <div
               style={{
                 border: "1px solid var(--color-ink)",
