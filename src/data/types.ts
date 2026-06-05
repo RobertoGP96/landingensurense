@@ -1,9 +1,12 @@
+export type CoverageDetail = { label: string; desc: string };
+
 export type CoverageItem = {
   num: string;
   name: string;
   tagline: string;
   body: string;
   bullets: string[];
+  details?: CoverageDetail[];
   slug?: string;
 };
 
@@ -16,6 +19,7 @@ export type ProductItem = {
   tagline: string;
   body: string;
   bullets: string[];
+  details?: CoverageDetail[];
   category: ProductCategory;
 };
 

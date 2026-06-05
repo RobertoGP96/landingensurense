@@ -65,16 +65,35 @@ export default function ProductDetailPage() {
             <div className="mono" style={{ marginBottom: 16, opacity: 0.6 }}>
               {t.products.detail.coverage}
             </div>
-            <ul className="grid" style={{ listStyle: "none", padding: 0, margin: 0, gap: 12 }}>
-              {item.bullets.map((b, i) => (
-                <li
-                  key={i}
-                  className="display"
-                  style={{ fontSize: 22, color: "var(--color-ink)" }}
-                >
-                  · {b}
-                </li>
-              ))}
+            <ul className="grid" style={{ listStyle: "none", padding: 0, margin: 0, gap: item.details?.length ? 20 : 12 }}>
+              {item.details?.length
+                ? item.details.map((d, i) => (
+                    <li key={i}>
+                      <span className="display" style={{ fontSize: 22, color: "var(--color-ink)" }}>
+                        {d.label}
+                      </span>
+                      <span
+                        style={{
+                          display: "block",
+                          marginTop: 4,
+                          fontSize: 14,
+                          lineHeight: 1.5,
+                          color: "var(--color-ink-soft)",
+                        }}
+                      >
+                        {d.desc}
+                      </span>
+                    </li>
+                  ))
+                : item.bullets.map((b, i) => (
+                    <li
+                      key={i}
+                      className="display"
+                      style={{ fontSize: 22, color: "var(--color-ink)" }}
+                    >
+                      · {b}
+                    </li>
+                  ))}
             </ul>
             <div
               className="tag"

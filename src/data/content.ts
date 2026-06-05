@@ -52,11 +52,21 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       heading_it: "una cobertura tranquila.",
       lede: "Auto, camiones, médico, dental y vida. Trabajamos con carriers admitidos y excedentarios para encajar el riesgo correcto.",
       items: [
-        { num: "01", slug: "auto", name: "Auto", tagline: "Tu vehículo, tu día a día.", body: "Protección financiera contra daños físicos y/o lesiones corporales resultantes de colisiones de tráfico y la responsabilidad civil que derive. Cobertura para robo y daños no relacionados con colisión: incendio, explosiones, inundaciones, terremotos y disturbios.", bullets: ["Bodily Injury Liability", "Medical Payments / PIP", "Collision & Comprehensive", "Uninsured Motorist"] },
+        { num: "01", slug: "auto", name: "Auto", tagline: "Tu vehículo, tu día a día.", body: "Protección financiera contra daños físicos y/o lesiones corporales resultantes de colisiones de tráfico y la responsabilidad civil que derive. Cobertura para robo y daños no relacionados con colisión: incendio, explosiones, inundaciones, terremotos y disturbios.", bullets: ["Bodily Injury Liability", "Medical Payments / PIP", "Collision & Comprehensive", "Uninsured Motorist"], details: [
+          { label: "Bodily Injury Liability", desc: "Lesiones corporales que le causas a otra persona." },
+          { label: "Medical Payments / PIP", desc: "Tratamiento de lesiones del conductor y pasajeros de tu auto." },
+          { label: "Property Damage Liability", desc: "Daños que causas a la propiedad de otra persona." },
+          { label: "Collision", desc: "Daños a tu auto a causa de una colisión." },
+          { label: "Comprehensive", desc: "Daños a tu auto no relacionados con una colisión (incendio, explosión, terremoto, inundación, disturbios) y robo." },
+          { label: "Uninsured Motorist", desc: "Costos por un accidente con un conductor sin seguro o que se da a la fuga (hit-and-run)." },
+        ] },
         { num: "02", slug: "trucking", name: "Camiones", tagline: "MC, DOT y todo el camino.", body: "Seguro comercial para motor carriers. Liability primaria en cada unidad y trailer, physical damage para tu equipo, motor truck cargo, non-trucking liability (bob-tail), occupational accident y filings federales BMC-91X y BMC-34 incluidos.", bullets: ["Primary Liability", "Physical Damage", "Motor Truck Cargo", "Non-Trucking Liability (Bob-Tail)", "Filings BMC-91X / BMC-34"] },
         { num: "03", slug: "medico", name: "Médico", tagline: "Cobertura cuando más importa.", body: "Pago de beneficios por enfermedad o lesión: gastos médicos, accidentes, discapacidad y muerte accidental. Planes HMO, EPO, PPO, POS, alto deducible (HDHP) con HSA y catastróficos.", bullets: ["HMOs & EPOs", "PPOs & POS", "HDHP con HSA", "Catastrophic"] },
         { num: "04", slug: "dental", name: "Dental", tagline: "Sonrisa cubierta, sin sorpresas.", body: "Plan dental con cobertura preventiva, básica y mayor. Limpiezas, exámenes y radiografías sin período de espera. Restauraciones, endodoncia, periodoncia y prótesis con tablas claras de copago.", bullets: ["Preventivo (limpiezas, exámenes)", "Básico (restauraciones)", "Mayor (coronas, prótesis)", "Sin espera preventiva"] },
-        { num: "05", slug: "vida", name: "Vida", tagline: "Lo que dejas, lo que cuidas.", body: "Term, Whole y IUL. Cobertura: 10, 15, 20, 25 o 35 años. Sin examen médico hasta $500,000 según carrier y edad. Beneficio libre de impuestos al beneficiario; opciones permanentes con valor en efectivo acumulado.", bullets: ["Term 10 / 15 / 20 / 25 / 35", "Whole Life", "IUL", "Final Expense"] },
+        { num: "05", slug: "vida", name: "Vida", tagline: "Lo que dejas, lo que cuidas.", body: "Term, Whole y IUL. Cobertura: 10, 15, 20, 25 o 30 años. Sin examen médico hasta $500,000 según carrier y edad. Beneficio libre de impuestos al beneficiario; opciones permanentes con valor en efectivo acumulado.", bullets: ["Term 10 / 15 / 20 / 25 / 30", "Whole Life", "IUL", "Final Expense"], details: [
+          { label: "Vida Completa (Whole Life)", desc: "Cobertura permanente que acumula \"Cash Value\" (valor en efectivo) y permite obtener beneficios de dinero en vida si sufres una condición crónica, crítica o terminal." },
+          { label: "Vida a Término (Term Life)", desc: "Cobertura a 10, 15, 20, 25 o 30 años, con beneficios de dinero en vida ante una condición crónica, crítica o terminal. Al expirar puede renovarse por otro término o convertirse a un seguro permanente; no acumula \"Cash Value\"." },
+        ] },
       ],
     },
     why: {
@@ -127,11 +137,21 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       categories: { personal: "Personal", commercial: "Comercial", specialty: "Comercial pesado" },
       detail: { overview: "Descripción", coverage: "Lo que incluye", quote_cta: "Cotizar este producto", back: "Volver a productos" },
       items: [
-        { slug: "auto", num: "01", name: "Auto", tagline: "Tu vehículo, tu día a día.", body: "Protección financiera contra daños físicos y/o lesiones corporales resultantes de colisiones de tráfico y la responsabilidad civil que derive. La cobertura también se extiende a robo y daños no relacionados con colisión: incendios, explosiones, terremotos, inundaciones y disturbios.", bullets: ["Bodily Injury Liability", "Medical Payments / PIP", "Property Damage Liability", "Collision", "Comprehensive", "Uninsured Motorist"], category: "personal" },
+        { slug: "auto", num: "01", name: "Auto", tagline: "Tu vehículo, tu día a día.", body: "Protección financiera contra daños físicos y/o lesiones corporales resultantes de colisiones de tráfico y la responsabilidad civil que derive. La cobertura también se extiende a robo y daños no relacionados con colisión: incendios, explosiones, terremotos, inundaciones y disturbios.", bullets: ["Bodily Injury Liability", "Medical Payments / PIP", "Property Damage Liability", "Collision", "Comprehensive", "Uninsured Motorist"], details: [
+          { label: "Bodily Injury Liability", desc: "Lesiones corporales que le causas a otra persona." },
+          { label: "Medical Payments / PIP", desc: "Tratamiento de lesiones del conductor y pasajeros de tu auto." },
+          { label: "Property Damage Liability", desc: "Daños que causas a la propiedad de otra persona." },
+          { label: "Collision", desc: "Daños a tu auto a causa de una colisión." },
+          { label: "Comprehensive", desc: "Daños a tu auto no relacionados con una colisión (incendio, explosión, terremoto, inundación, disturbios) y robo." },
+          { label: "Uninsured Motorist", desc: "Costos por un accidente con un conductor sin seguro o que se da a la fuga (hit-and-run)." },
+        ], category: "personal" },
         { slug: "trucking", num: "02", name: "Camiones", tagline: "MC, DOT y todo el camino.", body: "Todo motor carrier debe llevar liability en cada unidad y trailer. Cobertura completa para owner-operators y flotas: liability primaria, physical damage (valor de efectivo real), motor truck cargo, non-trucking liability (bob-tail), occupational accident, general liability, garage liability, trailer interchange y filings federales BMC-91X / BMC-34.", bullets: ["Primary Liability", "Physical Damage", "Motor Truck Cargo", "Non-Trucking Liability (Bob-Tail)", "Occupational Accident", "Filings BMC-91X / BMC-34"], category: "specialty" },
         { slug: "medico", num: "03", name: "Médico", tagline: "Para ti y para tu familia.", body: "Cobertura que provee el pago de beneficios por enfermedad o lesión. Incluye seguro por accidentes, gastos médicos, discapacidad y muerte accidental o desmembramiento. Trabajamos con HMOs/EPOs (red restringida con médico de cabecera), PPOs/POS (flexibilidad dentro y fuera de red), planes de alto deducible (HDHP) compatibles con HSA, y planes catastróficos como red de seguridad.", bullets: ["HMOs & EPOs", "PPOs & POS", "High Deductible Health Plans (HDHP)", "Catastrophic Plans"], category: "personal" },
         { slug: "dental", num: "04", name: "Dental", tagline: "Sonrisa cubierta, sin sorpresas.", body: "Plan dental con cobertura preventiva, básica y mayor. Limpiezas, exámenes y radiografías sin período de espera. Restauraciones, endodoncia, periodoncia y prótesis con tablas claras de copago. Cotización inmediata en línea con nuestro partner National General Health.", bullets: ["Preventivo: limpiezas y exámenes", "Básico: empastes y extracciones", "Mayor: coronas, puentes, prótesis", "Sin espera preventiva", "Cotización inmediata en línea"], category: "personal" },
-        { slug: "vida", num: "05", name: "Vida", tagline: "Lo que dejas, lo que cuidas.", body: "Term, Whole y IUL. Cobertura: 10, 15, 20, 25 o 35 años. Sin examen médico para coberturas hasta $500,000 dependiendo del carrier y edad. Aprobación en horas, no semanas. Beneficio libre de impuestos al beneficiario; opciones permanentes que acumulan valor en efectivo.", bullets: ["Term 10 / 15 / 20 / 25 / 35 años", "Whole Life", "IUL (Indexed Universal Life)", "Final Expense"], category: "personal" },
+        { slug: "vida", num: "05", name: "Vida", tagline: "Lo que dejas, lo que cuidas.", body: "Term, Whole y IUL. Cobertura: 10, 15, 20, 25 o 30 años. Sin examen médico para coberturas hasta $500,000 dependiendo del carrier y edad. Aprobación en horas, no semanas. Beneficio libre de impuestos al beneficiario; opciones permanentes que acumulan valor en efectivo.", bullets: ["Term 10 / 15 / 20 / 25 / 30 años", "Whole Life", "IUL (Indexed Universal Life)", "Final Expense"], details: [
+          { label: "Vida Completa (Whole Life)", desc: "Cobertura permanente que acumula \"Cash Value\" (valor en efectivo) y permite obtener beneficios de dinero en vida si sufres una condición crónica, crítica o terminal." },
+          { label: "Vida a Término (Term Life)", desc: "Cobertura a 10, 15, 20, 25 o 30 años, con beneficios de dinero en vida ante una condición crónica, crítica o terminal. Al expirar puede renovarse por otro término o convertirse a un seguro permanente; no acumula \"Cash Value\"." },
+        ], category: "personal" },
       ],
     },
     services: {
@@ -363,7 +383,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       vida: [
         { key: "dob", label: "Fecha de nacimiento", type: "date", required: true },
         { key: "coverage_amount", label: "Monto de cobertura ($)", type: "text", placeholder: "500,000", required: true },
-        { key: "term_years", label: "Plazo (años)", type: "select", options: ["10", "15", "20", "25", "35", "Whole Life", "IUL"], required: false },
+        { key: "term_years", label: "Plazo (años)", type: "select", options: ["10", "15", "20", "25", "30", "Whole Life", "IUL"], required: false },
         { key: "tobacco", label: "¿Uso de tabaco?", type: "select", options: ["No", "Sí"], required: true },
       ],
     },
@@ -427,11 +447,21 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       heading_it: "one quiet coverage.",
       lede: "Auto, trucking, medical, dental and life. Admitted and surplus markets to match the right risk.",
       items: [
-        { num: "01", slug: "auto", name: "Auto", tagline: "Your vehicle, your daily life.", body: "Financial protection against physical damage and/or bodily injury resulting from traffic collisions and against the liability that may also arise. Coverage extends to theft and non-collision damage including fire, explosions, earthquakes, floods and riots.", bullets: ["Bodily Injury Liability", "Medical Payments / PIP", "Collision & Comprehensive", "Uninsured Motorist"] },
+        { num: "01", slug: "auto", name: "Auto", tagline: "Your vehicle, your daily life.", body: "Financial protection against physical damage and/or bodily injury resulting from traffic collisions and against the liability that may also arise. Coverage extends to theft and non-collision damage including fire, explosions, earthquakes, floods and riots.", bullets: ["Bodily Injury Liability", "Medical Payments / PIP", "Collision & Comprehensive", "Uninsured Motorist"], details: [
+          { label: "Bodily Injury Liability", desc: "For injuries the policyholder causes to someone else." },
+          { label: "Medical Payments / PIP", desc: "For treatment of injuries to the driver and passengers of the policyholder's car." },
+          { label: "Property Damage Liability", desc: "For damage the policyholder causes to someone else's property." },
+          { label: "Collision", desc: "For damage to the policyholder's car from a collision." },
+          { label: "Comprehensive", desc: "For non-collision damage (fire, explosions, earthquakes, floods, riots) and theft." },
+          { label: "Uninsured Motorist", desc: "For costs from an accident with a hit-and-run or uninsured driver." },
+        ] },
         { num: "02", slug: "trucking", name: "Trucks", tagline: "MC, DOT and the whole road.", body: "Commercial coverage for motor carriers. Primary liability on every unit and trailer, physical damage for your equipment, motor truck cargo, non-trucking liability (bob-tail), occupational accident and federal filings BMC-91X / BMC-34.", bullets: ["Primary Liability", "Physical Damage", "Motor Truck Cargo", "Non-Trucking Liability (Bob-Tail)", "BMC-91X / BMC-34 Filings"] },
         { num: "03", slug: "medico", name: "Medical", tagline: "Coverage when it matters most.", body: "Payment of benefits for sickness or injury: medical expense, accident, disability and accidental death. HMO, EPO, PPO, POS, high-deductible (HDHP) with HSA, and catastrophic plans.", bullets: ["HMOs & EPOs", "PPOs & POS", "HDHP with HSA", "Catastrophic"] },
         { num: "04", slug: "dental", name: "Dental", tagline: "Smile covered, no surprises.", body: "Dental plan with preventive, basic and major coverage. Cleanings, exams and X-rays with no waiting period. Restorations, endodontics, periodontics and prosthetics with clear copay tables.", bullets: ["Preventive (cleanings, exams)", "Basic (fillings, extractions)", "Major (crowns, prosthetics)", "No preventive waiting"] },
-        { num: "05", slug: "vida", name: "Life", tagline: "What you leave, what you guard.", body: "Term, Whole and IUL. Coverage: 10, 15, 20, 25 or 35 years. No-exam coverage up to $500,000 depending on carrier and age. Tax-free death benefit to beneficiary; permanent options that accumulate cash value.", bullets: ["Term 10 / 15 / 20 / 25 / 35", "Whole Life", "IUL", "Final Expense"] },
+        { num: "05", slug: "vida", name: "Life", tagline: "What you leave, what you guard.", body: "Term, Whole and IUL. Coverage: 10, 15, 20, 25 or 30 years. No-exam coverage up to $500,000 depending on carrier and age. Tax-free death benefit to beneficiary; permanent options that accumulate cash value.", bullets: ["Term 10 / 15 / 20 / 25 / 30", "Whole Life", "IUL", "Final Expense"], details: [
+          { label: "Whole Life", desc: "Permanent coverage that builds cash value and gives you living benefits if you suffer a chronic, critical, or terminal condition." },
+          { label: "Term Life", desc: "Coverage for 10, 15, 20, 25, or 30 years, with living benefits for a chronic, critical, or terminal condition. At expiration it can renew for another term or convert to permanent coverage; it does not build cash value." },
+        ] },
       ],
     },
     why: {
@@ -502,11 +532,21 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       categories: { personal: "Personal", commercial: "Commercial", specialty: "Heavy commercial" },
       detail: { overview: "Overview", coverage: "What's included", quote_cta: "Quote this product", back: "Back to products" },
       items: [
-        { slug: "auto", num: "01", name: "Auto", tagline: "Your vehicle, your daily life.", body: "Financial protection against physical damage and/or bodily injury resulting from traffic collisions and the liability that may arise. Coverage extends to theft and non-collision damage including fire, explosions, earthquakes, floods and riots.", bullets: ["Bodily Injury Liability", "Medical Payments / PIP", "Property Damage Liability", "Collision", "Comprehensive", "Uninsured Motorist"], category: "personal" },
+        { slug: "auto", num: "01", name: "Auto", tagline: "Your vehicle, your daily life.", body: "Financial protection against physical damage and/or bodily injury resulting from traffic collisions and the liability that may arise. Coverage extends to theft and non-collision damage including fire, explosions, earthquakes, floods and riots.", bullets: ["Bodily Injury Liability", "Medical Payments / PIP", "Property Damage Liability", "Collision", "Comprehensive", "Uninsured Motorist"], details: [
+          { label: "Bodily Injury Liability", desc: "For injuries the policyholder causes to someone else." },
+          { label: "Medical Payments / PIP", desc: "For treatment of injuries to the driver and passengers of the policyholder's car." },
+          { label: "Property Damage Liability", desc: "For damage the policyholder causes to someone else's property." },
+          { label: "Collision", desc: "For damage to the policyholder's car from a collision." },
+          { label: "Comprehensive", desc: "For non-collision damage (fire, explosions, earthquakes, floods, riots) and theft." },
+          { label: "Uninsured Motorist", desc: "For costs from an accident with a hit-and-run or uninsured driver." },
+        ], category: "personal" },
         { slug: "trucking", num: "02", name: "Trucks", tagline: "MC, DOT and the whole road.", body: "Every motor carrier must carry liability on each unit and trailer. Full coverage for owner-operators and fleets: primary liability, physical damage (actual cash value), motor truck cargo, non-trucking liability (bob-tail), occupational accident, general liability, garage liability, trailer interchange and federal BMC-91X / BMC-34 filings.", bullets: ["Primary Liability", "Physical Damage", "Motor Truck Cargo", "Non-Trucking Liability (Bob-Tail)", "Occupational Accident", "BMC-91X / BMC-34 Filings"], category: "specialty" },
         { slug: "medico", num: "03", name: "Medical", tagline: "For you and your family.", body: "Coverage that provides the payment of benefits as a result of sickness or injury. Includes insurance for accident, medical expense, disability, or accidental death and dismemberment. We work with HMOs/EPOs (network-restricted with primary care physician), PPOs/POS (in-network and out-of-network flexibility), high-deductible plans (HDHP) compatible with HSA, and catastrophic safety-net plans.", bullets: ["HMOs & EPOs", "PPOs & POS", "High Deductible Health Plans (HDHP)", "Catastrophic Plans"], category: "personal" },
         { slug: "dental", num: "04", name: "Dental", tagline: "Smile covered, no surprises.", body: "Dental plan with preventive, basic and major coverage. Cleanings, exams and X-rays with no waiting period. Restorations, endodontics, periodontics and prosthetics with clear copay tables. Instant online quote through our partner National General Health.", bullets: ["Preventive: cleanings and exams", "Basic: fillings and extractions", "Major: crowns, bridges, prosthetics", "No preventive waiting", "Instant online quote"], category: "personal" },
-        { slug: "vida", num: "05", name: "Life", tagline: "What you leave, what you guard.", body: "Term, Whole and IUL. Coverage: 10, 15, 20, 25 or 35 years. No-exam coverage up to $500,000 depending on carrier and age. Approval in hours, not weeks. Tax-free death benefit to beneficiary; permanent options that accumulate cash value.", bullets: ["Term 10 / 15 / 20 / 25 / 35 years", "Whole Life", "IUL (Indexed Universal Life)", "Final Expense"], category: "personal" },
+        { slug: "vida", num: "05", name: "Life", tagline: "What you leave, what you guard.", body: "Term, Whole and IUL. Coverage: 10, 15, 20, 25 or 30 years. No-exam coverage up to $500,000 depending on carrier and age. Approval in hours, not weeks. Tax-free death benefit to beneficiary; permanent options that accumulate cash value.", bullets: ["Term 10 / 15 / 20 / 25 / 30 years", "Whole Life", "IUL (Indexed Universal Life)", "Final Expense"], details: [
+          { label: "Whole Life", desc: "Permanent coverage that builds cash value and gives you living benefits if you suffer a chronic, critical, or terminal condition." },
+          { label: "Term Life", desc: "Coverage for 10, 15, 20, 25, or 30 years, with living benefits for a chronic, critical, or terminal condition. At expiration it can renew for another term or convert to permanent coverage; it does not build cash value." },
+        ], category: "personal" },
       ],
     },
     services: {
@@ -738,7 +778,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       vida: [
         { key: "dob", label: "Date of birth", type: "date", required: true },
         { key: "coverage_amount", label: "Coverage amount ($)", type: "text", placeholder: "500,000", required: true },
-        { key: "term_years", label: "Term (years)", type: "select", options: ["10", "15", "20", "25", "35", "Whole Life", "IUL"], required: false },
+        { key: "term_years", label: "Term (years)", type: "select", options: ["10", "15", "20", "25", "30", "Whole Life", "IUL"], required: false },
         { key: "tobacco", label: "Tobacco use?", type: "select", options: ["No", "Yes"], required: true },
       ],
     },

@@ -26,6 +26,7 @@ function mapCoverage(items: SanityCoverageItem[], lang: Lang): CoverageItem[] {
       tagline: pick(it.tagline, lang, fb?.tagline ?? ''),
       body: pick(it.body, lang, fb?.body ?? ''),
       bullets: (lang === 'es' ? it.bulletsEs : it.bulletsEn) ?? fb?.bullets ?? [],
+      details: fb?.details,
     }
   })
 }
@@ -42,6 +43,7 @@ function mapProducts(items: SanityProduct[], lang: Lang): ProductItem[] {
       tagline: pick(it.tagline, lang, fb?.tagline ?? ''),
       body: pick(it.body, lang, fb?.body ?? ''),
       bullets: (lang === 'es' ? it.bulletsEs : it.bulletsEn) ?? fb?.bullets ?? [],
+      details: fb?.details,
       category: it.category ?? fb?.category ?? 'personal',
     }
   })
