@@ -79,7 +79,6 @@ const LABELS = {
     section_coverages: "Coberturas y deducibles",
     section_review: "Resumen",
     first_name: "Nombre",
-    middle_initial: "Inicial del segundo nombre",
     last_name: "Apellido",
     email: "Email",
     phone: "Teléfono",
@@ -168,7 +167,6 @@ const LABELS = {
     section_coverages: "Coverages and deductibles",
     section_review: "Summary",
     first_name: "First name",
-    middle_initial: "Middle initial",
     last_name: "Last name",
     email: "Email",
     phone: "Phone",
@@ -260,7 +258,6 @@ export default function AutoQuoteForm({ t }: Props) {
 
   // Personal
   const [firstName, setFirstName] = useState("");
-  const [middleInitial, setMiddleInitial] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -293,7 +290,7 @@ export default function AutoQuoteForm({ t }: Props) {
   // Consent
   const [consent, setConsent] = useState(true);
 
-  const { submit, sent, submitting } = useFormSubmit("auto-quote");
+  const { submit, sent, submitting } = useFormSubmit("auto-quote", lang);
 
   const yesNo = useMemo(() => [L.yes, L.no], [L.yes, L.no]);
 
@@ -357,32 +354,29 @@ export default function AutoQuoteForm({ t }: Props) {
       return;
     }
     if (!stepValid) return;
-    void submit({
-      product: "auto",
-      first_name: firstName,
-      middle_initial: middleInitial,
-      last_name: lastName,
-      email,
-      phone,
-      preferred_contact_method: contactMethod,
-      best_time_to_contact: bestTime,
-      date_of_birth: dob,
-      vehicle_year: year,
-      vehicle_make: make,
-      body_style: bodyStyle,
-      vin,
-      current_insurance_company: currentCarrier,
-      current_liability_level: currentLiability,
-      current_policy_expiration: currentExpiration,
-      current_annual_premium: currentPremium,
-      policy_start_date: policyStart,
-      bundle_auto_home: bundle,
-      paperless,
-      comprehensive_deductible: compDeductible,
-      collision_deductible: collDeductible,
-      coverage_plan: plan,
-      consent,
-    });
+    void submit([
+      { label: L.first_name, value: firstName },
+      { label: L.last_name, value: lastName },
+      { label: L.email, value: email },
+      { label: L.phone, value: phone },
+      { label: L.contact_method, value: contactMethod },
+      { label: L.best_time, value: bestTime },
+      { label: L.dob, value: dob },
+      { label: L.year, value: year },
+      { label: L.make, value: make },
+      { label: L.body_style, value: bodyStyle },
+      { label: L.vin, value: vin },
+      { label: L.current_carrier, value: currentCarrier },
+      { label: L.current_liability, value: currentLiability },
+      { label: L.current_expiration, value: currentExpiration },
+      { label: L.current_premium, value: currentPremium },
+      { label: L.policy_start, value: policyStart },
+      { label: L.bundle, value: bundle },
+      { label: L.paperless, value: paperless },
+      { label: L.comp_deductible, value: compDeductible },
+      { label: L.coll_deductible, value: collDeductible },
+      { label: L.coverage_plan, value: plan ? L.plans[plan].name : "" },
+    ]);
   };
 
   const sectionTitle = [
@@ -437,7 +431,7 @@ export default function AutoQuoteForm({ t }: Props) {
               style={{
                 gridColumn: isMobile ? "auto" : "1 / -1",
                 display: "grid",
-                gridTemplateColumns: isMobile ? "1fr" : "1fr 96px 1fr",
+                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
                 gap: 24,
                 alignItems: "end",
               }}
@@ -449,12 +443,6 @@ export default function AutoQuoteForm({ t }: Props) {
                 placeholder="Nombre"
                 required
                 requiredHint={t.forms.required}
-              />
-              <Field
-                label={L.middle_initial}
-                value={middleInitial}
-                onChange={(v) => setMiddleInitial(v.slice(0, 1).toUpperCase())}
-                placeholder="O"
               />
               <Field
                 label={L.last_name}
@@ -816,7 +804,7 @@ export default function AutoQuoteForm({ t }: Props) {
                   rows: [
                     [
                       L.first_name + " / " + L.last_name,
-                      `${firstName}${middleInitial ? ` ${middleInitial}.` : ""} ${lastName}`,
+                      `${firstName} ${lastName}`,
                     ],
                     [L.email, email],
                     [L.phone, phone],
