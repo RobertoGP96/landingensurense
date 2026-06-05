@@ -66,6 +66,7 @@ export type Translation = {
       phone: string;
       email: string;
       address: string;
+      photo?: string;
     };
   };
   lifeFocus: {

@@ -29,6 +29,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         phone: "(580) 754-1911",
         email: "catillomaris120@gmail.com",
         address: "3832 Orlando Dr, Sanford, FL",
+        photo: "/assets/agent.png",
       },
     },
     lifeFocus: {
@@ -403,6 +404,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         phone: "(580) 754-1911",
         email: "catillomaris120@gmail.com",
         address: "3832 Orlando Dr, Sanford, FL",
+        photo: "/assets/agent.png",
       },
     },
     lifeFocus: {

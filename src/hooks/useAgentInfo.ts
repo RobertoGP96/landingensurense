@@ -7,6 +7,7 @@ export type AgentInfo = {
   phone: string;
   email: string;
   address: string;
+  photo?: string;
 };
 
 const STORAGE_KEY = "mcs.agentInfo.v1";

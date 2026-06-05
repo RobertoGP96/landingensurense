@@ -48,24 +48,43 @@ export default function Intro({ t }: { t: Translation }) {
                   gap: 14,
                 }}
               >
-                <div
-                  className="mono"
-                  style={{ fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.6 }}
-                >
-                  {agent.label}
+                <div className="flex items-center" style={{ gap: isMobile ? 16 : 20 }}>
+                  {agent.photo && (
+                    <img
+                      src={agent.photo}
+                      alt={agent.name}
+                      style={{
+                        width: isMobile ? 72 : 96,
+                        height: isMobile ? 72 : 96,
+                        borderRadius: 6,
+                        objectFit: "cover",
+                        objectPosition: "center top",
+                        flexShrink: 0,
+                        border: "1px solid var(--color-rule)",
+                      }}
+                    />
+                  )}
+                  <div className="grid" style={{ gap: 6 }}>
+                    <div
+                      className="mono"
+                      style={{ fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.6 }}
+                    >
+                      {agent.label}
+                    </div>
+                    <div
+                      style={{
+                        fontFamily: "var(--font-display)",
+                        fontSize: isMobile ? 22 : 28,
+                        fontWeight: 600,
+                        letterSpacing: "-0.02em",
+                        color: "var(--color-ink)",
+                      }}
+                    >
+                      {agent.name}
+                    </div>
+                    <div style={{ fontSize: 14, opacity: 0.7 }}>{agent.role}</div>
+                  </div>
                 </div>
-                <div
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: isMobile ? 22 : 28,
-                    fontWeight: 600,
-                    letterSpacing: "-0.02em",
-                    color: "var(--color-ink)",
-                  }}
-                >
-                  {agent.name}
-                </div>
-                <div style={{ fontSize: 14, opacity: 0.7 }}>{agent.role}</div>
                 <div
                   className="grid"
                   style={{
