@@ -11,7 +11,7 @@ import {
 
 type Ctx = { t: Translation; lang: Lang; setLang: (l: Lang) => void };
 
-const EMPTY: AgentInfo = { label: "", name: "", role: "", phone: "", email: "", address: "" };
+const EMPTY: AgentInfo = { label: "", name: "", role: "", phone: "", email: "", address: "", photo: "" };
 
 export default function AgentAdminPage() {
   const { t, lang } = useOutletContext<Ctx>();
@@ -60,6 +60,7 @@ export default function AgentAdminPage() {
           phone: "Teléfono",
           email: "Email",
           address: "Dirección",
+          photo: "Foto (URL)",
         }
       : {
           label: "Label",
@@ -68,6 +69,7 @@ export default function AgentAdminPage() {
           phone: "Phone",
           email: "Email",
           address: "Address",
+          photo: "Photo (URL)",
         };
 
   return (
@@ -137,6 +139,7 @@ export default function AgentAdminPage() {
               <TextField label={labels.email} value={form.email} onChange={set("email")} type="email" />
             </div>
             <TextAreaField label={labels.address} value={form.address} onChange={set("address")} />
+            <TextField label={labels.photo} value={form.photo ?? ""} onChange={set("photo")} />
 
             <div className="flex flex-wrap items-center" style={{ gap: 12, marginTop: 8 }}>
               <button type="submit" className="btn">
