@@ -3,6 +3,7 @@ import type { Translation, ServiceItem } from "../../data/types";
 import Field from "./Field";
 import FormShell from "./FormShell";
 import { useFormSubmit } from "./useFormSubmit";
+import { useT } from "../../hooks/useT";
 
 type Props = {
   t: Translation;
@@ -10,10 +11,11 @@ type Props = {
 };
 
 export default function ServiceForm({ t, service }: Props) {
+  const { lang } = useT();
   const [values, setValues] = useState<Record<string, string>>({});
   const [consent, setConsent] = useState(true);
 
-  const { submit, sent, submitting } = useFormSubmit(`service:${service.slug}`);
+  const { submit, sent, submitting } = useFormSubmit(`service:${service.slug}`, lang);
 
   const valid =
     consent &&
@@ -22,7 +24,10 @@ export default function ServiceForm({ t, service }: Props) {
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!valid) return;
-    void submit({ service: service.slug, ...values, consent });
+    void submit(
+      service.formFields.map((f) => ({ label: f.label, value: values[f.key] || "" })),
+      service.name
+    );
   };
 
   const setField = (k: string, v: string) => setValues((p) => ({ ...p, [k]: v }));

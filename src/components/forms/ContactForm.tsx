@@ -4,9 +4,11 @@ import Field from "./Field";
 import FormShell from "./FormShell";
 import { useFormSubmit } from "./useFormSubmit";
 import { useBreakpoints } from "../../hooks/useMediaQuery";
+import { useT } from "../../hooks/useT";
 
 export default function ContactForm({ t }: { t: Translation }) {
   const cf = t.contact_form;
+  const { lang } = useT();
   const { isMobile } = useBreakpoints();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,7 +17,7 @@ export default function ContactForm({ t }: { t: Translation }) {
   const [message, setMessage] = useState("");
   const [consent, setConsent] = useState(true);
 
-  const { submit, sent, submitting } = useFormSubmit("contact");
+  const { submit, sent, submitting } = useFormSubmit("contact", lang);
 
   const valid =
     name.trim() && email.trim() && phone.trim() && message.trim().length >= 10 && consent;
@@ -23,7 +25,16 @@ export default function ContactForm({ t }: { t: Translation }) {
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!valid) return;
-    void submit({ name, email, phone, subject, message, consent });
+    void submit(
+      [
+        { label: cf.labels.name, value: name },
+        { label: cf.labels.email, value: email },
+        { label: cf.labels.phone, value: phone },
+        { label: cf.labels.subject, value: subject },
+        { label: cf.labels.message, value: message },
+      ],
+      subject
+    );
   };
 
   return (

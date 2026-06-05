@@ -5,6 +5,7 @@ import FormShell from "./FormShell";
 import { useFormSubmit } from "./useFormSubmit";
 import { useBreakpoints } from "../../hooks/useMediaQuery";
 import AutoQuoteForm from "./AutoQuoteForm";
+import { useT } from "../../hooks/useT";
 
 type Props = {
   t: Translation;
@@ -27,6 +28,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
   const [slug, setSlug] = useState(initialSlug);
   const [step, setStep] = useState(0);
   const { isMobile } = useBreakpoints();
+  const { lang } = useT();
 
   // Step 1 — basics
   const [name, setName] = useState("");
@@ -41,7 +43,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
   // Step 3 — consent
   const [consent, setConsent] = useState(true);
 
-  const { submit, sent, submitting } = useFormSubmit("product-quote");
+  const { submit, sent, submitting } = useFormSubmit("product-quote", lang);
 
   const product = useMemo(
     () => t.products.items.find((p) => p.slug === slug),
@@ -66,16 +68,18 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
       return;
     }
     if (!canNext) return;
-    void submit({
-      product: slug,
-      name,
-      phone,
-      email,
-      zip,
-      preferred_language: langp,
-      ...extras,
-      consent,
-    });
+    void submit(
+      [
+        { label: t.quote.labels.type, value: productName },
+        { label: t.quote.labels.name, value: name },
+        { label: t.quote.labels.phone, value: phone },
+        { label: "Email", value: email },
+        { label: t.quote.labels.zip, value: zip },
+        { label: t.quote.labels.lang_pref, value: langp },
+        ...extraFields.map((f) => ({ label: f.label, value: extras[f.key] || "" })),
+      ],
+      productName
+    );
   };
 
   const setExtra = (k: string, v: string) => setExtras((p) => ({ ...p, [k]: v }));
