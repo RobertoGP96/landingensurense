@@ -261,7 +261,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
                   lineHeight: 1.5,
                 }}
               >
-                Cotización instantánea con nuestro partner National General Health. Te llevamos directo a su portal para que veas precios en tiempo real.
+                Cotización instantánea en línea. Te llevamos directo al portal de cotización para que veas precios en tiempo real.
               </div>
               <div className="flex flex-wrap" style={{ gap: 12, marginTop: 4 }}>
                 <a
