@@ -65,13 +65,15 @@ export default function Testimonials({ t }: { t: Translation }) {
           >
             <span
               className="serif-it absolute"
+              aria-hidden="true"
               style={{
-                top: isMobile ? -10 : -30,
-                left: isMobile ? -4 : -10,
+                top: isMobile ? 0 : -30,
+                left: isMobile ? 0 : -10,
                 fontSize: isMobile ? 96 : 200,
                 color: "var(--color-sky)",
                 lineHeight: 1,
                 fontStyle: "italic",
+                pointerEvents: "none",
               }}
             >
               "

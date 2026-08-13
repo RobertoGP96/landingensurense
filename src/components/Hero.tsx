@@ -106,7 +106,9 @@ export default function Hero({ t }: { t: Translation }) {
               style={{
                 borderRight: i < 2 ? "1px solid var(--color-rule)" : isMobile ? "none" : "1px solid var(--color-rule)",
                 paddingRight: isMobile ? 12 : 24,
-                paddingLeft: i === 0 ? 0 : isMobile ? 12 : 0,
+                paddingLeft: i === 0 ? 0 : isMobile ? 12 : 24,
+                minWidth: 0,
+                overflowWrap: "break-word",
               }}
             >
               <div

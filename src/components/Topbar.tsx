@@ -38,7 +38,8 @@ export default function Topbar({ t, lang, setLang }: TopbarProps) {
       <div
         className="wrap flex items-center justify-between"
         style={{
-          padding: isMobile ? "8px 0" : "10px 56px",
+          paddingTop: isMobile ? 8 : 10,
+          paddingBottom: isMobile ? 8 : 10,
           fontFamily: "var(--font-mono)",
           letterSpacing: "0.06em",
           textTransform: "uppercase",

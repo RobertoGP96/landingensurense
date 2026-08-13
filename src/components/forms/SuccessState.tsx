@@ -6,7 +6,7 @@ type Props = {
 export default function SuccessState({ title, body }: Props) {
   return (
     <div className="text-center" style={{ padding: "60px 0" }}>
-      <div className="serif-it" style={{ fontSize: 56, color: "var(--color-sky-ink)" }}>
+      <div className="serif-it" style={{ fontSize: "clamp(32px, 9vw, 56px)", color: "var(--color-sky-ink)" }}>
         {title}
       </div>
       <p

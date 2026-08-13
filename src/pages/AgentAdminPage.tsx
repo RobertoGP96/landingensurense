@@ -192,7 +192,7 @@ function TextField({
           background: "transparent",
           borderRadius: 4,
           padding: "12px 14px",
-          fontSize: 15,
+          fontSize: 16,
           fontFamily: "var(--font-display)",
           color: "var(--color-ink)",
         }}
@@ -224,7 +224,7 @@ function TextAreaField({
           background: "transparent",
           borderRadius: 4,
           padding: "12px 14px",
-          fontSize: 15,
+          fontSize: 16,
           fontFamily: "var(--font-display)",
           color: "var(--color-ink)",
           resize: "vertical",

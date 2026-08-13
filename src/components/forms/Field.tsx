@@ -27,6 +27,7 @@ const baseInput: CSSProperties = {
   color: "var(--color-ink)",
   transition: "border-color .2s",
   width: "100%",
+  minWidth: 0,
   background: "transparent",
   outline: "none",
 };
@@ -134,6 +135,9 @@ export default function Field({
             backgroundRepeat: "no-repeat",
             backgroundPosition: "right 4px center",
             paddingRight: 24,
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            overflow: "hidden",
           }}
         >
           <option value="" disabled>

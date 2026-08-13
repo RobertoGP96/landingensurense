@@ -2,8 +2,10 @@ import type { Translation } from "../data/types";
 import { useBreakpoints } from "../hooks/useMediaQuery";
 
 export default function Process({ t }: { t: Translation }) {
-  const { isMobile, isSmall } = useBreakpoints();
-  const cols = isSmall ? "1fr" : isMobile ? "repeat(2, 1fr)" : "repeat(4, 1fr)";
+  const { isMobile, isSmall, isDesktop } = useBreakpoints();
+  // 4 columns only at desktop widths; the 769-1023px band gets 2x2.
+  const twoCol = !isSmall && !isDesktop;
+  const cols = isSmall ? "1fr" : twoCol ? "repeat(2, 1fr)" : "repeat(4, 1fr)";
   return (
     <section
       id="process"
@@ -53,20 +55,24 @@ export default function Process({ t }: { t: Translation }) {
           {t.process.steps.map((s, i) => {
             const lastInRow = isSmall
               ? true
-              : isMobile
+              : twoCol
               ? (i + 1) % 2 === 0
               : i === 3;
             const isLast = i === t.process.steps.length - 1;
+            const firstInRow = isSmall ? true : twoCol ? i % 2 === 0 : i === 0;
             return (
               <div
                 key={i}
                 className="relative"
                 style={{
                   padding: isMobile ? "28px 0" : "40px 24px 40px 0",
-                  borderRight: !isMobile && i < 3 ? "1px solid rgba(241,236,226,0.2)" : "none",
+                  borderRight:
+                    !isSmall && !lastInRow ? "1px solid rgba(241,236,226,0.2)" : "none",
                   borderBottom:
-                    isMobile && !isLast ? "1px solid rgba(241,236,226,0.18)" : "none",
-                  paddingLeft: !isMobile && i > 0 ? 24 : 0,
+                    (isSmall && !isLast) || (twoCol && i < 2)
+                      ? "1px solid rgba(241,236,226,0.18)"
+                      : "none",
+                  paddingLeft: !isMobile && !firstInRow ? 24 : 0,
                 }}
               >
                 <div

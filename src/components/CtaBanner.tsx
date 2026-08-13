@@ -61,6 +61,7 @@ export default function CtaBanner({ t }: { t: Translation }) {
             gap: isSmall ? 10 : 16,
             flexDirection: isSmall ? "column" : "row",
             alignItems: isSmall ? "stretch" : "center",
+            flexWrap: "wrap",
           }}
         >
           <Link

@@ -18,7 +18,9 @@ function CoverageRow({ it, hovered, onEnter, onLeave, isMobile }: RowProps) {
       onMouseLeave={onLeave}
       className="grid items-center relative"
       style={{
-        gridTemplateColumns: isMobile ? "auto 1fr 36px" : "80px 240px 1fr 320px 80px",
+        gridTemplateColumns: isMobile
+          ? "auto 1fr 36px"
+          : "80px minmax(180px, 240px) 1fr minmax(200px, 320px) 80px",
         gap: isMobile ? 12 : 24,
         padding: isMobile
           ? "20px 0"
@@ -95,7 +97,10 @@ function CoverageRow({ it, hovered, onEnter, onLeave, isMobile }: RowProps) {
 
 export default function Coverage({ t }: { t: Translation }) {
   const [hovered, setHovered] = useState<number | null>(null);
-  const { isMobile } = useBreakpoints();
+  const { isMobile, isDesktop } = useBreakpoints();
+  // The 5-column desktop row needs ~900px of track space; use the compact
+  // layout for everything below the desktop breakpoint, not just phones.
+  const compactRows = !isDesktop;
   return (
     <section
       id="coverage"
@@ -155,7 +160,7 @@ export default function Coverage({ t }: { t: Translation }) {
               hovered={hovered === i}
               onEnter={() => setHovered(i)}
               onLeave={() => setHovered(null)}
-              isMobile={isMobile}
+              isMobile={compactRows}
             />
           ))}
         </div>

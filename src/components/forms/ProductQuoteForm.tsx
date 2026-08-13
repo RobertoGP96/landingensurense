@@ -27,7 +27,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
   const initialSlug = productSlug || DEFAULT_PRODUCT;
   const [slug, setSlug] = useState(initialSlug);
   const [step, setStep] = useState(0);
-  const { isMobile } = useBreakpoints();
+  const { isMobile, isDesktop } = useBreakpoints();
   const { lang } = useT();
 
   // Step 1 — basics
@@ -91,7 +91,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
   return (
     <section
       id="quote"
-      className="relative overflow-hidden"
+      className="relative"
       style={{ padding: isMobile ? "56px 0 72px" : "100px 0 120px" }}
     >
       <div className="wrap">
@@ -139,12 +139,12 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
         <div
           className="grid items-start"
           style={{
-            gridTemplateColumns: isMobile ? "1fr" : "1fr 1.6fr",
+            gridTemplateColumns: isDesktop ? "1fr 1.6fr" : "1fr",
             gap: isMobile ? 24 : 48,
           }}
         >
           {/* Left column: product picker (only when not pre-selected) + summary */}
-          <div className={isMobile ? "" : "sticky"} style={isMobile ? {} : { top: 100 }}>
+          <div className={isDesktop ? "sticky" : ""} style={isDesktop ? { top: 100 } : {}}>
             <div className="mono" style={{ marginBottom: 16, opacity: 0.6 }}>
               {t.quote.labels.type}
             </div>
@@ -261,7 +261,9 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
                   lineHeight: 1.5,
                 }}
               >
-                Cotización instantánea en línea. Te llevamos directo al portal de cotización para que veas precios en tiempo real.
+                {lang === "en"
+                  ? "Instant online quote. We take you straight to the quoting portal so you can see real-time prices."
+                  : "Cotización instantánea en línea. Te llevamos directo al portal de cotización para que veas precios en tiempo real."}
               </div>
               <div className="flex flex-wrap" style={{ gap: 12, marginTop: 4 }}>
                 <a
@@ -463,6 +465,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
                           color: "var(--color-ink)",
                           fontFamily: "var(--font-display)",
                           fontSize: 16,
+                          overflowWrap: "anywhere",
                         }}
                       >
                         {v}

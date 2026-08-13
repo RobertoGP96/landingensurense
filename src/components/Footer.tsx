@@ -31,7 +31,7 @@ export default function Footer({ t }: { t: Translation }) {
         >
           <div>
             <div className="flex items-center" style={{ gap: 14, marginBottom: 24 }}>
-              <img src="/assets/eagle.png" alt="" style={{ height: 48 }} />
+              <img src="/assets/eagle.png" alt="" style={{ height: 48, width: "auto" }} />
               <div>
                 <div className="display" style={{ fontSize: 22, fontWeight: 700 }}>
                   M C Solutions Insurance
@@ -98,7 +98,7 @@ export default function Footer({ t }: { t: Translation }) {
                 <Link to="/contact">{t.nav[5]}</Link>
               </li>
               <li style={{ fontSize: 14, color: "var(--color-ink-soft)" }}>{t.topbar.phone}</li>
-              <li style={{ fontSize: 14, color: "var(--color-ink-soft)" }}>
+              <li style={{ fontSize: 14, color: "var(--color-ink-soft)", overflowWrap: "anywhere" }}>
                 catillomaris120@gmail.com
               </li>
               <li style={{ fontSize: 13, color: "var(--color-ink-soft)" }}>{t.footer.states}</li>
@@ -113,7 +113,7 @@ export default function Footer({ t }: { t: Translation }) {
           <span className="mono" style={{ opacity: 0.55 }}>
             {t.footer.copy}
           </span>
-          <div className="flex" style={{ gap: 24 }}>
+          <div className="flex flex-wrap" style={{ gap: "8px 24px" }}>
             {t.footer.links.map((l, i) => (
               <a key={i} href="#" className="mono" style={{ opacity: 0.6 }}>
                 {l}

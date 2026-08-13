@@ -126,6 +126,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  max-width: 100%;
   padding: 14px 22px;
   border-radius: 999px;
   font-family: var(--font-body);
@@ -258,6 +259,18 @@ img {
 }
 .reveal.d5 {
   animation-delay: 0.45s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  .dot.live,
+  [style*="marquee"] {
+    animation: none !important;
+  }
 }
 
 ::view-transition-old(root),

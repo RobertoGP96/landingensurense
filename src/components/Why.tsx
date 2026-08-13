@@ -3,7 +3,7 @@ import Eagle from "./Eagle";
 import { useBreakpoints } from "../hooks/useMediaQuery";
 
 export default function Why({ t }: { t: Translation }) {
-  const { isMobile } = useBreakpoints();
+  const { isMobile, isDesktop } = useBreakpoints();
   return (
     <section
       id="about"
@@ -59,10 +59,12 @@ export default function Why({ t }: { t: Translation }) {
               style={{
                 padding: isMobile
                   ? "28px 0"
-                  : "44px 32px 44px 0",
+                  : isDesktop
+                  ? "44px 32px 44px 0"
+                  : "36px 20px 36px 0",
                 borderRight: !isMobile && i < 2 ? "1px solid var(--color-rule)" : "none",
                 borderBottom: isMobile && i < t.why.values.length - 1 ? "1px solid var(--color-rule)" : "none",
-                paddingLeft: !isMobile && i > 0 ? 32 : 0,
+                paddingLeft: !isMobile && i > 0 ? (isDesktop ? 32 : 20) : 0,
               }}
             >
               <div
@@ -79,7 +81,7 @@ export default function Why({ t }: { t: Translation }) {
               <h3
                 className="display"
                 style={{
-                  fontSize: isMobile ? 24 : 32,
+                  fontSize: isMobile ? 24 : isDesktop ? 32 : 26,
                   margin: "0 0 16px 0",
                   color: "var(--color-ink)",
                 }}

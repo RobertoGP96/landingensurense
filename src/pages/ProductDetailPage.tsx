@@ -1,18 +1,20 @@
 import { Link, useOutletContext, useParams } from "react-router";
 import type { Translation, Lang } from "../data/types";
 import ProductQuoteForm from "../components/forms/ProductQuoteForm";
+import { useBreakpoints } from "../hooks/useMediaQuery";
 
 type Ctx = { t: Translation; lang: Lang; setLang: (l: Lang) => void };
 
 export default function ProductDetailPage() {
   const { t } = useOutletContext<Ctx>();
   const { slug } = useParams();
+  const { isMobile, isDesktop } = useBreakpoints();
 
   const item = t.products.items.find((i) => i.slug === slug);
 
   if (!item) {
     return (
-      <main className="wrap" style={{ padding: "120px 0", minHeight: "60vh" }}>
+      <main className="wrap" style={{ padding: isMobile ? "80px 0" : "120px 0", minHeight: "60dvh" }}>
         <div className="secnum">
           <b>404 / </b>
           <span>{slug}</span>
@@ -31,7 +33,7 @@ export default function ProductDetailPage() {
   }
 
   return (
-    <main style={{ padding: "80px 0 0" }}>
+    <main style={{ padding: isMobile ? "48px 0 0" : "80px 0 0" }}>
       <div className="wrap">
         <div className="secnum" style={{ marginBottom: 24 }}>
           <b>{item.num} / </b>
@@ -39,13 +41,18 @@ export default function ProductDetailPage() {
         </div>
         <h1
           className="display"
-          style={{ fontSize: "clamp(64px, 11vw, 168px)", margin: "0 0 24px", color: "var(--color-ink)" }}
+          style={{ fontSize: "clamp(40px, 11vw, 168px)", margin: "0 0 24px", color: "var(--color-ink)" }}
         >
           {item.name}
         </h1>
         <p
           className="serif-it"
-          style={{ fontSize: 32, color: "var(--color-sky-ink)", margin: "0 0 48px", maxWidth: 720 }}
+          style={{
+            fontSize: isMobile ? 22 : 32,
+            color: "var(--color-sky-ink)",
+            margin: isMobile ? "0 0 32px" : "0 0 48px",
+            maxWidth: 720,
+          }}
         >
           {item.tagline}
         </p>
@@ -53,15 +60,18 @@ export default function ProductDetailPage() {
         <div
           className="grid"
           style={{
-            gridTemplateColumns: "1fr 1.5fr",
-            gap: 64,
-            marginTop: 48,
-            paddingTop: 48,
+            gridTemplateColumns: isDesktop ? "1fr 1.5fr" : "1fr",
+            gap: isMobile ? 32 : 48,
+            marginTop: isMobile ? 32 : 48,
+            paddingTop: isMobile ? 32 : 48,
             borderTop: "1px solid var(--color-ink)",
-            paddingBottom: 64,
+            paddingBottom: isMobile ? 48 : 64,
           }}
         >
-          <div className="sticky" style={{ top: 100, alignSelf: "start" }}>
+          <div
+            className={isDesktop ? "sticky" : undefined}
+            style={isDesktop ? { top: 100, alignSelf: "start" } : undefined}
+          >
             <div className="mono" style={{ marginBottom: 16, opacity: 0.6 }}>
               {t.products.detail.coverage}
             </div>

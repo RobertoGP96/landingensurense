@@ -59,7 +59,7 @@ export default function MobileNav({ open, onClose, t }: Props) {
           zIndex: 100,
           display: "flex",
           flexDirection: "column",
-          padding: "20px 24px 32px",
+          padding: "20px 24px calc(32px + env(safe-area-inset-bottom, 0px))",
           boxShadow: "-12px 0 40px -12px rgba(10,22,40,0.25)",
           animation: "fade-in-down 0.25s ease both",
           overflowY: "auto",

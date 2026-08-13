@@ -19,6 +19,11 @@ export default function Header({ t }: { t: Translation }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Close the drawer if the viewport grows past the mobile breakpoint.
+  useEffect(() => {
+    if (!isMobile && mobileOpen) setMobileOpen(false);
+  }, [isMobile, mobileOpen]);
+
   // nav: [Coverage, Get a quote, Products, Services, About, Contact]
   const items: { label: string; kind: NavKind; href: string; dropdown?: DropdownKey }[] = [
     { label: t.nav[0], kind: "page", href: "/coverage" },
@@ -41,7 +46,7 @@ export default function Header({ t }: { t: Translation }) {
     >
       <div
         className="wrap flex items-center justify-between"
-        style={{ padding: isMobile ? "14px 0" : "20px 56px" }}
+        style={{ paddingTop: isMobile ? 14 : 20, paddingBottom: isMobile ? 14 : 20 }}
         onMouseLeave={() => setOpen(null)}
       >
         <Link to="/" className="flex items-center" style={{ gap: isMobile ? 10 : 14 }}>
@@ -103,7 +108,8 @@ export default function Header({ t }: { t: Translation }) {
                         borderRadius: 4,
                         padding: 12,
                         minWidth: 260,
-                        maxHeight: 480,
+                        maxWidth: "calc(100vw - 48px)",
+                        maxHeight: "min(480px, 70vh)",
                         overflowY: "auto",
                         boxShadow: "0 18px 40px -12px rgba(10,22,40,.18)",
                         zIndex: 60,

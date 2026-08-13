@@ -1,17 +1,23 @@
 import { Link, useOutletContext } from "react-router";
 import type { Translation, Lang } from "../data/types";
+import { useBreakpoints } from "../hooks/useMediaQuery";
 
 type Ctx = { t: Translation; lang: Lang; setLang: (l: Lang) => void };
 
 export default function ServicesPage() {
   const { t } = useOutletContext<Ctx>();
+  const { isMobile } = useBreakpoints();
 
   return (
-    <main style={{ padding: "80px 0 120px" }}>
+    <main style={{ padding: isMobile ? "48px 0 80px" : "80px 0 120px" }}>
       <div className="wrap">
         <div
           className="grid"
-          style={{ gridTemplateColumns: "1fr 2fr", gap: 64, marginBottom: 80 }}
+          style={{
+            gridTemplateColumns: isMobile ? "1fr" : "1fr 2fr",
+            gap: isMobile ? 24 : 64,
+            marginBottom: isMobile ? 48 : 80,
+          }}
         >
           <div className="secnum">
             <b>00 / </b>
@@ -21,7 +27,7 @@ export default function ServicesPage() {
             <h1
               className="display"
               style={{
-                fontSize: "clamp(48px, 8vw, 120px)",
+                fontSize: "clamp(40px, 9vw, 120px)",
                 margin: 0,
                 color: "var(--color-ink)",
               }}
@@ -49,7 +55,7 @@ export default function ServicesPage() {
         <div
           className="grid"
           style={{
-            gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(320px, 100%), 1fr))",
             gap: 24,
             borderTop: "1px solid var(--color-ink)",
             paddingTop: 32,

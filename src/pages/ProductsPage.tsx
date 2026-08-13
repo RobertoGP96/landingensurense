@@ -1,5 +1,6 @@
 import { Link, useOutletContext } from "react-router";
 import type { Translation, Lang, ProductCategory, ProductItem } from "../data/types";
+import { useBreakpoints } from "../hooks/useMediaQuery";
 
 type Ctx = { t: Translation; lang: Lang; setLang: (l: Lang) => void };
 
@@ -7,6 +8,7 @@ const ORDER: ProductCategory[] = ["personal", "commercial", "specialty"];
 
 export default function ProductsPage() {
   const { t } = useOutletContext<Ctx>();
+  const { isMobile } = useBreakpoints();
 
   const grouped = ORDER.reduce<Record<ProductCategory, ProductItem[]>>(
     (acc, cat) => {
@@ -17,9 +19,16 @@ export default function ProductsPage() {
   );
 
   return (
-    <main style={{ padding: "80px 0 120px" }}>
+    <main style={{ padding: isMobile ? "48px 0 80px" : "80px 0 120px" }}>
       <div className="wrap">
-        <div className="grid" style={{ gridTemplateColumns: "1fr 2fr", gap: 64, marginBottom: 80 }}>
+        <div
+          className="grid"
+          style={{
+            gridTemplateColumns: isMobile ? "1fr" : "1fr 2fr",
+            gap: isMobile ? 24 : 64,
+            marginBottom: isMobile ? 48 : 80,
+          }}
+        >
           <div className="secnum">
             <b>00 / </b>
             <span>{t.products.kicker}</span>
@@ -27,7 +36,7 @@ export default function ProductsPage() {
           <div>
             <h1
               className="display"
-              style={{ fontSize: "clamp(48px, 8vw, 120px)", margin: 0, color: "var(--color-ink)" }}
+              style={{ fontSize: "clamp(40px, 9vw, 120px)", margin: 0, color: "var(--color-ink)" }}
             >
               {t.products.heading_a}{" "}
               <span className="serif-it" style={{ color: "var(--color-sky-ink)" }}>
@@ -74,7 +83,7 @@ export default function ProductsPage() {
             <div
               className="grid"
               style={{
-                gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))",
                 gap: 24,
               }}
             >
