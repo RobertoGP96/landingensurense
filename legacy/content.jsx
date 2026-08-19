@@ -102,7 +102,7 @@ const CONTENT = {
       copy: "© 2026 M C Solutions Insurance LLC. Todos los derechos reservados.",
       links: ["Política de privacidad", "Accesibilidad", "Aviso legal", "Términos"],
       address: "1820 NW 27th Ave, Suite 410 · Miami, FL 33125",
-      lic: "Florida Lic. P074-2024 · NPN 19384021",
+      lic: "Florida Lic. #L134505 · NPN 21664423",
     },
   },
   en: {
@@ -207,7 +207,7 @@ const CONTENT = {
       copy: "© 2026 M C Solutions Insurance LLC. All rights reserved.",
       links: ["Privacy policy", "Accessibility", "Legal notice", "Terms"],
       address: "1820 NW 27th Ave, Suite 410 · Miami, FL 33125",
-      lic: "Florida Lic. P074-2024 · NPN 19384021",
+      lic: "Florida Lic. #L134505 · NPN 21664423",
     },
   },
 };
