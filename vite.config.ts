@@ -28,9 +28,12 @@ export default defineConfig(({ command, mode }) => {
     const env = loadEnv(mode, process.cwd(), "VITE_");
     const missing = REQUIRED_ENV.filter((k) => !env[k]?.trim());
     if (missing.length) {
-      throw new Error(
-        `Faltan variables de entorno: ${missing.join(", ")}. ` +
-          "Copia .env.example a .env.local o defínelas en el panel del hosting."
+      // No se aborta la build para no bloquear el deploy, pero la web saldría
+      // con datos de contacto vacíos: defínelas en el panel del hosting.
+      console.warn(
+        `\n[config] AVISO: faltan variables de entorno: ${missing.join(", ")}. ` +
+          "Los datos de contacto saldrán vacíos. Copia .env.example a .env.local o " +
+          "defínelas en el panel del hosting (Netlify: Site configuration > Environment variables).\n"
       );
     }
   }
