@@ -30,7 +30,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         phone: CONTACT.phone,
         email: CONTACT.email,
         address: CONTACT.address,
-        photo: "/assets/agent.jpg",
+        photo: "/assets/agent.jpeg",
       },
     },
     lifeFocus: {
@@ -475,7 +475,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         phone: CONTACT.phone,
         email: CONTACT.email,
         address: CONTACT.address,
-        photo: "/assets/agent.jpg",
+        photo: "/assets/agent.jpeg",
       },
     },
     lifeFocus: {
