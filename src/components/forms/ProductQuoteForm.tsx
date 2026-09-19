@@ -76,6 +76,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
         { label: "Email", value: email },
         { label: t.quote.labels.zip, value: zip },
         { label: t.quote.labels.lang_pref, value: langp },
+        { label: productName, value: "", section: true },
         ...extraFields.map((f) => ({ label: f.label, value: extras[f.key] || "" })),
       ],
       productName

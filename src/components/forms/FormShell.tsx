@@ -65,6 +65,14 @@ export default function FormShell({
         <SuccessState title={successTitle} body={successBody} />
       ) : (
         <>
+          <input
+            type="text"
+            name="_honey"
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            style={{ position: "absolute", left: -9999, width: 1, height: 1, opacity: 0 }}
+          />
           {children}
           <div
             className="flex justify-between items-center flex-wrap"

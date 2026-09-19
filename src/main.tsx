@@ -17,6 +17,7 @@ import ContactPage from "./pages/ContactPage";
 import AgentAdminPage from "./pages/AgentAdminPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import { SanityContentProvider } from "./sanity/SanityContentProvider";
+import { ENABLE_AGENT_ADMIN } from "./config/site";
 
 createRoot(document.getElementById("root") as HTMLElement).render(
   <StrictMode>
@@ -34,7 +35,7 @@ createRoot(document.getElementById("root") as HTMLElement).render(
             <Route path="services" element={<ServicesPage />} />
             <Route path="services/:slug" element={<ServiceDetailPage />} />
             <Route path="contact" element={<ContactPage />} />
-            <Route path="admin/agent" element={<AgentAdminPage />} />
+            {ENABLE_AGENT_ADMIN && <Route path="admin/agent" element={<AgentAdminPage />} />}
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

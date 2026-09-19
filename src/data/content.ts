@@ -1,10 +1,11 @@
 // Bilingual content for M C Solutions Insurance LLC
 import type { Translation } from "./types";
+import { CONTACT } from "../config/site";
 
 export const CONTENT: Record<"es" | "en", Translation> = {
   es: {
     nav: ["Coberturas", "Cotizar", "Productos", "Servicios", "Nosotros", "Contacto"],
-    topbar: { hours: "Lun–Vie · 9:00 a 18:00", phone: "(580) 754-1911", license: "Lic. FL · TX · GA" },
+    topbar: { hours: "Lun–Vie · 9:00 a 18:00", phone: CONTACT.phone, license: "Lic. FL · TX · GA" },
     cta: { quote: "Cotizar en 2 minutos", agent: "Hablar con un agente", call: "Llamar ahora", explore: "Ver coberturas" },
     hero: {
       eyebrow: "Servicios de seguros · Establecidos 2024",
@@ -26,10 +27,10 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         label: "Tu agente",
         name: "Marisnelis Castillo",
         role: "Agente licenciada",
-        phone: "(580) 754-1911",
-        email: "catillomaris120@gmail.com",
-        address: "3832 Orlando Dr, Sanford, FL",
-        photo: "/assets/agent.png",
+        phone: CONTACT.phone,
+        email: CONTACT.email,
+        address: CONTACT.address,
+        photo: "/assets/agent.jpg",
       },
     },
     lifeFocus: {
@@ -124,9 +125,9 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       heading_it: "vale más",
       heading_b: " que un formulario.",
       cards: [
-        { label: "Llámanos", value: "(580) 754-1911", sub: "Lun a Vie · 9:00 — 18:00 EST" },
-        { label: "Escríbenos", value: "catillomaris120@gmail.com", sub: "Respuesta en menos de 4 horas hábiles" },
-        { label: "Visítanos", value: "3832 Orlando Dr, Sanford, FL", sub: "Cita previa recomendada" },
+        { label: "Llámanos", value: CONTACT.phone, sub: "Lun a Vie · 9:00 — 18:00 EST" },
+        { label: "Escríbenos", value: CONTACT.email, sub: "Respuesta en menos de 4 horas hábiles" },
+        { label: "Visítanos", value: CONTACT.address, sub: "Cita previa recomendada" },
       ],
       after: "Después de horas",
       after_d: "Si es una emergencia (accidente, robo, incendio) llama directo al carrier. El número está en tu tarjeta y en nuestro portal de clientes 24/7.",
@@ -320,7 +321,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       review: "Revisar y enviar",
       submitting: "Enviando…",
       success_title: "Recibido.",
-      success_body: "Te respondemos en menos de 4 horas hábiles. Si es urgente, llámanos al (580) 754-1911.",
+      success_body: `Te respondemos en menos de 4 horas hábiles. Si es urgente, llámanos al ${CONTACT.phone}.`,
       required: "Requerido",
       summary: "Resumen",
     },
@@ -411,7 +412,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       ],
       hogar: [
         { key: "property_type", label: "Tipo de propiedad", type: "select", options: ["Casa (HO-3)", "Inquilino (HO-4)", "Condominio (HO-6)", "Casa móvil"], required: true },
-        { key: "property_address", label: "Dirección de la propiedad", type: "text", placeholder: "3832 Orlando Dr, Sanford, FL", required: true },
+        { key: "property_address", label: "Dirección de la propiedad", type: "text", placeholder: "123 Main St, Orlando, FL", required: true },
         { key: "year_built", label: "Año de construcción", type: "text", placeholder: "1998", required: true },
         { key: "square_feet", label: "Pies cuadrados", type: "text", placeholder: "1,850", required: true },
         { key: "roof_year", label: "Año del techo", type: "text", placeholder: "2019", required: false },
@@ -442,14 +443,14 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       states: "Licenciados en Florida · Texas · Georgia",
       copy: "© 2026 M C Solutions Insurance LLC. Todos los derechos reservados.",
       links: ["Política de privacidad", "Accesibilidad", "Aviso legal", "Términos"],
-      address: "3832 Orlando Dr · Sanford, FL",
+      address: CONTACT.address,
       lic: "Florida Lic. #L134505 · NPN 21664423",
       cols: { products: "Productos", services: "Servicios", company: "Compañía" },
     },
   },
   en: {
     nav: ["Coverage", "Get a quote", "Products", "Services", "About", "Contact"],
-    topbar: { hours: "Mon–Fri · 9:00am to 6:00pm", phone: "(580) 754-1911", license: "Licensed FL · TX · GA" },
+    topbar: { hours: "Mon–Fri · 9:00am to 6:00pm", phone: CONTACT.phone, license: "Licensed FL · TX · GA" },
     cta: { quote: "Quote in 2 minutes", agent: "Talk to an agent", call: "Call now", explore: "See coverage" },
     hero: {
       eyebrow: "Insurance services · Established 2024",
@@ -471,10 +472,10 @@ export const CONTENT: Record<"es" | "en", Translation> = {
         label: "Your agent",
         name: "Marisnelis Castillo",
         role: "Licensed agent",
-        phone: "(580) 754-1911",
-        email: "catillomaris120@gmail.com",
-        address: "3832 Orlando Dr, Sanford, FL",
-        photo: "/assets/agent.png",
+        phone: CONTACT.phone,
+        email: CONTACT.email,
+        address: CONTACT.address,
+        photo: "/assets/agent.jpg",
       },
     },
     lifeFocus: {
@@ -569,9 +570,9 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       heading_it: "is worth more",
       heading_b: " than a form.",
       cards: [
-        { label: "Call us", value: "(580) 754-1911", sub: "Mon–Fri · 9:00am — 6:00pm EST" },
-        { label: "Email us", value: "catillomaris120@gmail.com", sub: "Reply within 4 business hours" },
-        { label: "Visit us", value: "3832 Orlando Dr, Sanford, FL", sub: "By appointment recommended" },
+        { label: "Call us", value: CONTACT.phone, sub: "Mon–Fri · 9:00am — 6:00pm EST" },
+        { label: "Email us", value: CONTACT.email, sub: "Reply within 4 business hours" },
+        { label: "Visit us", value: CONTACT.address, sub: "By appointment recommended" },
       ],
       after: "After hours",
       after_d: "If it's an emergency (accident, theft, fire) call your carrier directly. The number is on your card and in our 24/7 client portal.",
@@ -765,7 +766,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       review: "Review and submit",
       submitting: "Submitting…",
       success_title: "Received.",
-      success_body: "We'll get back to you within 4 business hours. If urgent, call us at (580) 754-1911.",
+      success_body: `We'll get back to you within 4 business hours. If urgent, call us at ${CONTACT.phone}.`,
       required: "Required",
       summary: "Summary",
     },
@@ -856,7 +857,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       ],
       hogar: [
         { key: "property_type", label: "Property type", type: "select", options: ["House (HO-3)", "Renter (HO-4)", "Condo (HO-6)", "Mobile home"], required: true },
-        { key: "property_address", label: "Property address", type: "text", placeholder: "3832 Orlando Dr, Sanford, FL", required: true },
+        { key: "property_address", label: "Property address", type: "text", placeholder: "123 Main St, Orlando, FL", required: true },
         { key: "year_built", label: "Year built", type: "text", placeholder: "1998", required: true },
         { key: "square_feet", label: "Square feet", type: "text", placeholder: "1,850", required: true },
         { key: "roof_year", label: "Roof year", type: "text", placeholder: "2019", required: false },
@@ -887,7 +888,7 @@ export const CONTENT: Record<"es" | "en", Translation> = {
       states: "Licensed in Florida · Texas · Georgia",
       copy: "© 2026 M C Solutions Insurance LLC. All rights reserved.",
       links: ["Privacy policy", "Accessibility", "Legal notice", "Terms"],
-      address: "3832 Orlando Dr · Sanford, FL",
+      address: CONTACT.address,
       lic: "Florida Lic. #L134505 · NPN 21664423",
       cols: { products: "Products", services: "Services", company: "Company" },
     },

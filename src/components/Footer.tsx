@@ -1,6 +1,7 @@
 import type { Translation } from "../data/types";
 import { Link } from "react-router";
 import { useBreakpoints } from "../hooks/useMediaQuery";
+import { CONTACT } from "../config/site";
 
 export default function Footer({ t }: { t: Translation }) {
   const productCols = t.products.items.slice(0, 8);
@@ -99,7 +100,7 @@ export default function Footer({ t }: { t: Translation }) {
               </li>
               <li style={{ fontSize: 14, color: "var(--color-ink-soft)" }}>{t.topbar.phone}</li>
               <li style={{ fontSize: 14, color: "var(--color-ink-soft)", overflowWrap: "anywhere" }}>
-                catillomaris120@gmail.com
+                {CONTACT.email}
               </li>
               <li style={{ fontSize: 13, color: "var(--color-ink-soft)" }}>{t.footer.states}</li>
             </ul>
