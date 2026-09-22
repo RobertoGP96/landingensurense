@@ -25,19 +25,8 @@ const COMPANY_EMAIL = FORM_RECIPIENT_EMAIL;
 // entregarse las solicitudes.
 const SUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${COMPANY_EMAIL}`;
 
-// Texto fijo del correo por idioma.
-const TEXT: Record<Lang, { intro: string; footer: string; yes: string }> = {
-  es: {
-    intro: "Nueva solicitud recibida desde el sitio web:",
-    footer: "— Enviado automáticamente desde el formulario web.",
-    yes: "Sí",
-  },
-  en: {
-    intro: "New request received from the website:",
-    footer: "— Sent automatically from the website form.",
-    yes: "Yes",
-  },
-};
+// Etiqueta afirmativa por idioma para los campos booleanos del correo.
+const YES: Record<Lang, string> = { es: "Sí", en: "Yes" };
 
 // Asunto del correo según el formulario de origen y el idioma de la página.
 // `title` aporta la parte dinámica (producto, servicio o asunto de contacto).
@@ -71,7 +60,7 @@ function isSectionPair(pair: [string, string]): boolean {
 // Campos no vacíos como pares etiqueta → texto, listos para el correo. Los
 // encabezados de sección se conservan solo si les sigue al menos un campo.
 function usableFields(fields: SubmitField[], lang: Lang): [string, string][] {
-  const yes = TEXT[lang].yes;
+  const yes = YES[lang];
   const pairs: [string, string][] = [];
   for (const f of fields) {
     if (f.section) {
@@ -103,15 +92,6 @@ function findReplyTo(pairs: [string, string][]): string | null {
   return null;
 }
 
-// Cuerpo del correo para el respaldo mailto: una línea "Etiqueta: valor" y
-// las secciones como títulos separados por una línea en blanco.
-function buildBody(pairs: [string, string][], lang: Lang): string {
-  const lines = pairs.map((pair) =>
-    isSectionPair(pair) ? `\n${pair[0]}` : `${pair[0]}: ${pair[1]}`
-  );
-  return [TEXT[lang].intro, ...lines, "", TEXT[lang].footer].join("\n");
-}
-
 // Envío real por HTTP: FormSubmit entrega el contenido a COMPANY_EMAIL.
 async function sendViaFormSubmit(
   subject: string,
@@ -137,9 +117,10 @@ async function sendViaFormSubmit(
 }
 
 // Cada formulario llama a este hook con el idioma activo de la página; al
-// enviar, la solicitud se manda por HTTP a COMPANY_EMAIL. Si el envío por red
-// falla, como respaldo se abre el cliente de correo del usuario con el mensaje
-// ya redactado (mailto) en ese mismo idioma.
+// enviar, la solicitud se manda por HTTP a COMPANY_EMAIL mediante FormSubmit,
+// sin que la persona tenga que abrir su cliente de correo. Si el envío por red
+// falla, el motivo queda en `error` para que el formulario lo muestre y la
+// persona pueda reintentar.
 export function useFormSubmit(formName: string, lang: Lang): SubmitState {
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -167,19 +148,12 @@ export function useFormSubmit(formName: string, lang: Lang): SubmitState {
       const pairs = usableFields(fields, lang);
       try {
         await sendViaFormSubmit(subject, pairs);
-      } catch {
-        // Respaldo: abrir el cliente de correo del usuario con el borrador.
-        try {
-          const body = buildBody(pairs, lang);
-          const mailto = `mailto:${COMPANY_EMAIL}?subject=${encodeURIComponent(
-            subject
-          )}&body=${encodeURIComponent(body)}`;
-          window.location.href = mailto;
-        } catch (e) {
-          setSubmitting(false);
-          setError(e instanceof Error ? e.message : "Submit error");
-          return;
-        }
+      } catch (e) {
+        // Sin respaldo mailto: si la entrega por red falla se informa del error
+        // y se conserva el formulario para que la persona pueda reintentar.
+        setSubmitting(false);
+        setError(e instanceof Error ? e.message : "Submit error");
+        return;
       }
       withViewTransition(() => {
         setSubmitting(false);

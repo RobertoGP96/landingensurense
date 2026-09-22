@@ -43,7 +43,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
   // Step 3 — consent
   const [consent, setConsent] = useState(true);
 
-  const { submit, sent, submitting } = useFormSubmit("product-quote", lang);
+  const { submit, sent, submitting, error } = useFormSubmit("product-quote", lang);
 
   const product = useMemo(
     () => t.products.items.find((p) => p.slug === slug),
@@ -305,6 +305,7 @@ export default function ProductQuoteForm({ t, productSlug, hideHeader }: Props) 
             sent={sent}
             successTitle={t.forms.success_title}
             successBody={t.forms.success_body}
+            error={error ? t.forms.error : null}
             submitLabel={submitLabel}
             footerNote={step === total - 1 ? t.quote.note : stepLabel}
             footerExtra={

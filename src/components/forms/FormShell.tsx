@@ -15,6 +15,7 @@ type Props = {
   sent: boolean;
   successTitle: string;
   successBody: string;
+  error?: string | null;
   viewTransitionName?: string;
 };
 
@@ -31,6 +32,7 @@ export default function FormShell({
   sent,
   successTitle,
   successBody,
+  error,
   viewTransitionName = "vt-quote-card",
 }: Props) {
   const { isMobile } = useBreakpoints();
@@ -74,6 +76,22 @@ export default function FormShell({
             style={{ position: "absolute", left: -9999, width: 1, height: 1, opacity: 0 }}
           />
           {children}
+          {error && (
+            <div
+              role="alert"
+              style={{
+                marginTop: 24,
+                padding: "12px 16px",
+                border: "1px solid var(--color-warn)",
+                borderRadius: 4,
+                color: "var(--color-warn)",
+                fontSize: 13,
+                lineHeight: 1.5,
+              }}
+            >
+              {error}
+            </div>
+          )}
           <div
             className="flex justify-between items-center flex-wrap"
             style={{

@@ -290,7 +290,7 @@ export default function AutoQuoteForm({ t }: Props) {
   // Consent
   const [consent, setConsent] = useState(true);
 
-  const { submit, sent, submitting } = useFormSubmit("auto-quote", lang);
+  const { submit, sent, submitting, error } = useFormSubmit("auto-quote", lang);
 
   const yesNo = useMemo(() => [L.yes, L.no], [L.yes, L.no]);
 
@@ -403,6 +403,7 @@ export default function AutoQuoteForm({ t }: Props) {
       sent={sent}
       successTitle={t.forms.success_title}
       successBody={t.forms.success_body}
+      error={error ? t.forms.error : null}
       submitLabel={submitLabel}
       footerNote={step === totalSteps - 1 ? t.quote.note : stepLabel}
       footerExtra={

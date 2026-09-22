@@ -17,7 +17,7 @@ export default function ContactForm({ t }: { t: Translation }) {
   const [message, setMessage] = useState("");
   const [consent, setConsent] = useState(true);
 
-  const { submit, sent, submitting } = useFormSubmit("contact", lang);
+  const { submit, sent, submitting, error } = useFormSubmit("contact", lang);
 
   const valid =
     name.trim() && email.trim() && phone.trim() && message.trim().length >= 10 && consent;
@@ -47,6 +47,7 @@ export default function ContactForm({ t }: { t: Translation }) {
       sent={sent}
       successTitle={t.forms.success_title}
       successBody={t.forms.success_body}
+      error={error ? t.forms.error : null}
       submitLabel={cf.submit}
       footerNote={t.quote.note}
       viewTransitionName="vt-contact-card"

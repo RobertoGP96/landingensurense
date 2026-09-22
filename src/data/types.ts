@@ -184,6 +184,7 @@ export type Translation = {
     submitting: string;
     success_title: string;
     success_body: string;
+    error: string;
     required: string;
     summary: string;
   };

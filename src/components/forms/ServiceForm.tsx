@@ -15,7 +15,7 @@ export default function ServiceForm({ t, service }: Props) {
   const [values, setValues] = useState<Record<string, string>>({});
   const [consent, setConsent] = useState(true);
 
-  const { submit, sent, submitting } = useFormSubmit(`service:${service.slug}`, lang);
+  const { submit, sent, submitting, error } = useFormSubmit(`service:${service.slug}`, lang);
 
   const valid =
     consent &&
@@ -42,6 +42,7 @@ export default function ServiceForm({ t, service }: Props) {
       sent={sent}
       successTitle={t.forms.success_title}
       successBody={t.forms.success_body}
+      error={error ? t.forms.error : null}
       submitLabel={t.services.detail.request}
       viewTransitionName="vt-service-card"
     >
