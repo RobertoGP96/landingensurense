@@ -1,5 +1,5 @@
 import type { Translation } from "../data/types";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
 type Props = {
@@ -8,7 +8,25 @@ type Props = {
   t: Translation;
 };
 
+// Fallback in case animationend never fires (e.g. throttled background tab).
+// Slightly longer than the .is-closing animations in index.css.
+const CLOSE_MS = 400;
+
 export default function MobileNav({ open, onClose, t }: Props) {
+  // Keep the drawer mounted while the exit animation plays.
+  const [mounted, setMounted] = useState(open);
+  const closing = mounted && !open;
+
+  useEffect(() => {
+    if (open) {
+      setMounted(true);
+      return;
+    }
+    if (!mounted) return;
+    const id = window.setTimeout(() => setMounted(false), CLOSE_MS);
+    return () => window.clearTimeout(id);
+  }, [open, mounted]);
+
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -23,7 +41,7 @@ export default function MobileNav({ open, onClose, t }: Props) {
     };
   }, [open, onClose]);
 
-  if (!open) return null;
+  if (!mounted) return null;
 
   const items: { label: string; href: string; isLink: boolean }[] = [
     { label: t.nav[0], href: "/coverage", isLink: true },
@@ -38,17 +56,22 @@ export default function MobileNav({ open, onClose, t }: Props) {
     <>
       <div
         onClick={onClose}
+        className={`drawer-backdrop${closing ? " is-closing" : ""}`}
         style={{
           position: "fixed",
           inset: 0,
           background: "rgba(10,22,40,0.45)",
           zIndex: 90,
-          animation: "fade-in 0.2s ease both",
         }}
       />
       <aside
         role="dialog"
         aria-modal="true"
+        aria-hidden={closing || undefined}
+        className={`drawer-panel${closing ? " is-closing" : ""}`}
+        onAnimationEnd={(e) => {
+          if (closing && e.target === e.currentTarget) setMounted(false);
+        }}
         style={{
           position: "fixed",
           top: 0,
@@ -61,8 +84,8 @@ export default function MobileNav({ open, onClose, t }: Props) {
           flexDirection: "column",
           padding: "20px 24px calc(32px + env(safe-area-inset-bottom, 0px))",
           boxShadow: "-12px 0 40px -12px rgba(10,22,40,0.25)",
-          animation: "fade-in-down 0.25s ease both",
           overflowY: "auto",
+          pointerEvents: closing ? "none" : "auto",
         }}
       >
         <div className="flex items-center justify-between" style={{ marginBottom: 24 }}>

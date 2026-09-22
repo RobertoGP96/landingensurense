@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { createBrowserRouter, createRoutesFromElements, Route } from "react-router";
+import { RouterProvider } from "react-router/dom";
 import "./index.css";
 import "./i18n";
 import Layout from "./components/Layout";
@@ -19,27 +20,31 @@ import NotFoundPage from "./pages/NotFoundPage";
 import { SanityContentProvider } from "./sanity/SanityContentProvider";
 import { ENABLE_AGENT_ADMIN } from "./config/site";
 
+// A data router (vs. the declarative <BrowserRouter>) is required for
+// <ScrollRestoration> and per-link view transitions to work.
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<Layout />}>
+      <Route index element={<HomePage />} />
+      <Route path="about" element={<AboutPage />} />
+      <Route path="coverage" element={<CoveragePage />} />
+      <Route path="coverage/:slug" element={<CoverageDetailPage />} />
+      <Route path="quote" element={<QuotePage />} />
+      <Route path="products" element={<ProductsPage />} />
+      <Route path="products/:slug" element={<ProductDetailPage />} />
+      <Route path="services" element={<ServicesPage />} />
+      <Route path="services/:slug" element={<ServiceDetailPage />} />
+      <Route path="contact" element={<ContactPage />} />
+      {ENABLE_AGENT_ADMIN && <Route path="admin/agent" element={<AgentAdminPage />} />}
+      <Route path="*" element={<NotFoundPage />} />
+    </Route>
+  )
+);
+
 createRoot(document.getElementById("root") as HTMLElement).render(
   <StrictMode>
     <SanityContentProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route index element={<HomePage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="coverage" element={<CoveragePage />} />
-            <Route path="coverage/:slug" element={<CoverageDetailPage />} />
-            <Route path="quote" element={<QuotePage />} />
-            <Route path="products" element={<ProductsPage />} />
-            <Route path="products/:slug" element={<ProductDetailPage />} />
-            <Route path="services" element={<ServicesPage />} />
-            <Route path="services/:slug" element={<ServiceDetailPage />} />
-            <Route path="contact" element={<ContactPage />} />
-            {ENABLE_AGENT_ADMIN && <Route path="admin/agent" element={<AgentAdminPage />} />}
-            <Route path="*" element={<NotFoundPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <RouterProvider router={router} />
     </SanityContentProvider>
   </StrictMode>
 );

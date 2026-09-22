@@ -240,6 +240,80 @@ img {
   }
 }
 
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes drawer-in {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes drawer-out {
+  from {
+    opacity: 1;
+    transform: none;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+@keyframes dropdown-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Route change: the Outlet wrapper is keyed by pathname, so each page mounts
+   with a short rise-in. Kept subtle so it composes with .reveal in the hero. */
+.page-enter {
+  animation: page-in 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+/* Mobile drawer + backdrop. The drawer stays mounted while .is-closing plays. */
+.drawer-backdrop {
+  animation: fade-in 0.22s ease both;
+}
+.drawer-backdrop.is-closing {
+  animation: fade-out 0.22s ease both;
+}
+.drawer-panel {
+  animation: drawer-in 0.28s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.drawer-panel.is-closing {
+  animation: drawer-out 0.22s ease both;
+}
+
+/* Header dropdown (Products / Services). */
+.nav-dropdown {
+  animation: dropdown-in 0.18s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(8px);
@@ -270,6 +344,24 @@ img {
   .dot.live,
   [style*="marquee"] {
     animation: none !important;
+  }
+  .page-enter,
+  .drawer-backdrop,
+  .drawer-panel,
+  .nav-dropdown {
+    animation-duration: 0.01ms !important;
+  }
+  .btn,
+  .btn .arr {
+    transition: none;
+  }
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  ::view-transition-old(vt-testimonial-quote),
+  ::view-transition-new(vt-testimonial-quote),
+  ::view-transition-old(vt-quote-card),
+  ::view-transition-new(vt-quote-card) {
+    animation-duration: 0.01ms !important;
   }
 }
 

@@ -99,7 +99,7 @@ export default function Header({ t }: { t: Translation }) {
                   </Link>
                   {isOpen && (
                     <div
-                      className="absolute"
+                      className="absolute nav-dropdown"
                       style={{
                         top: "calc(100% + 16px)",
                         left: -16,
