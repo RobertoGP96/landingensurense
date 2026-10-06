@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import { withViewTransition } from "../../hooks/useT";
 import type { Lang } from "../../data/types";
-import { FORM_RECIPIENT_EMAIL } from "../../config/site";
+import { WEB3FORMS_ACCESS_KEY } from "../../config/site";
 
 /** Un campo del correo, con su etiqueta ya traducida al idioma de la página.
  * Con `section: true` el campo actúa como encabezado de sección (sin valor). */
@@ -15,15 +15,11 @@ export type SubmitState = {
   error: string | null;
 };
 
-// Correo que recibe las solicitudes. Se define en VITE_FORM_RECIPIENT_EMAIL (o
-// VITE_CONTACT_EMAIL) — ver .env.example — para no fijarlo en el repositorio.
-const COMPANY_EMAIL = FORM_RECIPIENT_EMAIL;
-
-// Servicio que entrega el formulario por correo sin backend propio. La primera
-// vez que llegue un envío, FormSubmit manda un correo de activación a
-// COMPANY_EMAIL; hay que pulsar "Activate" una sola vez para que empiecen a
-// entregarse las solicitudes.
-const SUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${COMPANY_EMAIL}`;
+// Servicio que entrega el formulario por correo sin backend propio. A diferencia
+// de otros servicios, Web3Forms no requiere activación por correo ni por dominio:
+// basta una access key (VITE_WEB3FORMS_ACCESS_KEY, ver .env.example) creada en
+// web3forms.com, donde también se define el correo receptor.
+const SUBMIT_ENDPOINT = "https://api.web3forms.com/submit";
 
 // Etiqueta afirmativa por idioma para los campos booleanos del correo.
 const YES: Record<Lang, string> = { es: "Sí", en: "Yes" };
@@ -92,18 +88,21 @@ function findReplyTo(pairs: [string, string][]): string | null {
   return null;
 }
 
-// Envío real por HTTP: FormSubmit entrega el contenido a COMPANY_EMAIL.
-async function sendViaFormSubmit(
+// Envío real por HTTP: Web3Forms entrega el contenido al correo de la access key.
+async function sendViaWeb3Forms(
   subject: string,
   pairs: [string, string][]
 ): Promise<void> {
   const payload: Record<string, string> = {
-    _subject: subject,
-    _template: "box",
-    _captcha: "false",
+    access_key: WEB3FORMS_ACCESS_KEY,
+    subject,
+    from_name: "Sitio web — M C Solutions Insurance",
+    // Honeypot de Web3Forms: lo enviamos vacío (el chequeo real lo hace el
+    // honeypot `_honey` de FormShell antes de llamar a submit).
+    botcheck: "",
   };
   const replyTo = findReplyTo(pairs);
-  if (replyTo) payload._replyto = replyTo;
+  if (replyTo) payload.replyto = replyTo;
   for (const [label, value] of pairs) payload[label] = value;
 
   const res = await fetch(SUBMIT_ENDPOINT, {
@@ -111,16 +110,19 @@ async function sendViaFormSubmit(
     headers: { "Content-Type": "application/json", Accept: "application/json" },
     body: JSON.stringify(payload),
   });
-  if (!res.ok) throw new Error(`FormSubmit HTTP ${res.status}`);
-  const data: { success?: string | boolean } = await res.json();
-  if (String(data.success) !== "true") throw new Error("FormSubmit rejected");
+  const data: { success?: boolean; message?: string } = await res
+    .json()
+    .catch(() => ({}));
+  if (!res.ok || data.success !== true) {
+    throw new Error(data.message || `Web3Forms HTTP ${res.status}`);
+  }
 }
 
 // Cada formulario llama a este hook con el idioma activo de la página; al
-// enviar, la solicitud se manda por HTTP a COMPANY_EMAIL mediante FormSubmit,
-// sin que la persona tenga que abrir su cliente de correo. Si el envío por red
-// falla, el motivo queda en `error` para que el formulario lo muestre y la
-// persona pueda reintentar.
+// enviar, la solicitud se manda por HTTP a Web3Forms, que la entrega al correo
+// de la access key, sin que la persona tenga que abrir su cliente de correo. Si
+// el envío por red falla, el motivo queda en `error` para que el formulario lo
+// muestre y la persona pueda reintentar.
 export function useFormSubmit(formName: string, lang: Lang): SubmitState {
   const [sent, setSent] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -130,8 +132,8 @@ export function useFormSubmit(formName: string, lang: Lang): SubmitState {
     async (fields: SubmitField[], title?: string) => {
       setSubmitting(true);
       setError(null);
-      if (!COMPANY_EMAIL) {
-        console.error("[forms] Falta VITE_FORM_RECIPIENT_EMAIL / VITE_CONTACT_EMAIL; no se puede enviar.");
+      if (!WEB3FORMS_ACCESS_KEY) {
+        console.error("[forms] Falta VITE_WEB3FORMS_ACCESS_KEY; no se puede enviar.");
         setSubmitting(false);
         setError("Form not configured");
         return;
@@ -147,7 +149,7 @@ export function useFormSubmit(formName: string, lang: Lang): SubmitState {
       const subject = buildSubject(formName, lang, title);
       const pairs = usableFields(fields, lang);
       try {
-        await sendViaFormSubmit(subject, pairs);
+        await sendViaWeb3Forms(subject, pairs);
       } catch (e) {
         // Sin respaldo mailto: si la entrega por red falla se informa del error
         // y se conserva el formulario para que la persona pueda reintentar.

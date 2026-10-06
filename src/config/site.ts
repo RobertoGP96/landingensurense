@@ -19,8 +19,11 @@ export const CONTACT = {
   address: read("VITE_CONTACT_ADDRESS"),
 } as const;
 
-/** Buzón que recibe los formularios. Si no se define, usa el correo de contacto. */
-export const FORM_RECIPIENT_EMAIL = read("VITE_FORM_RECIPIENT_EMAIL") || CONTACT.email;
+/** Access key de Web3Forms (https://web3forms.com) que entrega los formularios.
+ * Es pública por diseño (va incrustada en el bundle): solo enruta al correo
+ * asociado a la key en web3forms.com, no permite cambiar el destinatario. El
+ * correo receptor se configura al crear la key, no en estas variables. */
+export const WEB3FORMS_ACCESS_KEY = read("VITE_WEB3FORMS_ACCESS_KEY");
 
 /** Habilita la ruta /admin/agent (solo útil en desarrollo). */
 export const ENABLE_AGENT_ADMIN = read("VITE_ENABLE_AGENT_ADMIN") === "true";
