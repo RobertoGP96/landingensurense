@@ -8,6 +8,7 @@ dist
 
 .env.*.local
 
+
 # Sanity Studio
 studio/node_modules
 studio/dist
